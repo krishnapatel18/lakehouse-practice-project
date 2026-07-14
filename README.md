@@ -6,7 +6,7 @@ This is end-to-end Lakhouse project which performs ETL:
 Ingestion => Transformation => Load 
 
 Why: 
-This project provides hands-on-learning about pyspark, databricks, python, lakehouse concepts. 
+This project demonstrates the implementation of an end-to-end Lakehouse architecture using PySpark and Databricks. It focuses on building production-inspired ETL pipelines, implementing the Medallion Architecture (Bronze, Silver, Gold), applying Delta Lake features, and following software engineering best practices such as modular code organization, logging, configuration management, and testing. 
 
 Technologies used: 
 VS Code 

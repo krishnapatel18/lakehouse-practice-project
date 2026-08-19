@@ -1,0 +1,30 @@
+2026-07-29 06:04:14,180 | INFO     | silver.clean_products | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/silver_clean_products_20260729.log
+2026-07-29 06:04:14,181 | INFO     | silver.clean_products | Starting Silver pipeline at 2026-07-29 06:04:14.140852
+2026-07-29 06:04:15,955 | INFO     | silver.clean_products | Initial load from catalog_project1.bronze.products table
+2026-07-29 06:04:17,461 | INFO     | silver.clean_products | Read 10 records from catalog_project1.bronze.products
+2026-07-29 06:04:17,462 | INFO     | silver.clean_products | All required columns exists in the catalog_project1.bronze.products
+2026-07-29 06:04:17,464 | WARNING  | silver.clean_products | New columns detected in catalog_project1.bronze.products: {'_source_table', '_ingestion_pipeline_id', '_source_file', '_ingestion_timestamp'}
+2026-07-29 06:04:18,291 | INFO     | silver.clean_products | Data standardization completed for the catalog_project1.bronze.products
+2026-07-29 06:04:18,718 | INFO     | silver.clean_products | Data type casting completed for the catalog_project1.bronze.products
+2026-07-29 06:04:19,841 | INFO     | silver.clean_products | Data validation completed for the catalog_project1.bronze.products
+2026-07-29 06:04:20,399 | INFO     | silver.clean_products | Deduplication completed for the catalog_project1.bronze.products
+2026-07-29 06:04:25,936 | INFO     | silver.clean_products | Data written to the catalog_project1.silver.clean_products
+2026-07-29 06:04:27,840 | INFO     | silver.clean_products | Data validation for catalog_project1.silver.clean_products completed
+2026-07-29 06:04:27,841 | INFO     | silver.clean_products | Silver pipeline for catalog_project1.silver.clean_products completed successfully
+2026-07-29 06:04:28,354 | INFO     | silver.clean_products | New watermark: 2024-11-30 00:00:00
+2026-07-29 06:04:30,497 | INFO     | silver.clean_products | Audit for catalog_project1.silver.clean_products written successfully
+2026-07-29 06:06:12,346 | INFO     | silver.clean_products | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/silver_clean_products_20260729.log
+2026-07-29 06:06:12,347 | INFO     | silver.clean_products | Starting Silver pipeline at 2026-07-29 06:06:12.268394
+2026-07-29 06:06:13,492 | INFO     | silver.clean_products | Incremental load from catalog_project1.bronze.products
+2026-07-29 06:06:14,676 | INFO     | silver.clean_products | Read 0 records from catalog_project1.bronze.products
+2026-07-29 06:06:14,678 | INFO     | silver.clean_products | All required columns exists in the catalog_project1.bronze.products
+2026-07-29 06:06:14,679 | WARNING  | silver.clean_products | New columns detected in catalog_project1.bronze.products: {'_source_table', '_ingestion_pipeline_id', '_source_file', '_ingestion_timestamp'}
+2026-07-29 06:06:15,241 | INFO     | silver.clean_products | Data standardization completed for the catalog_project1.bronze.products
+2026-07-29 06:06:15,860 | INFO     | silver.clean_products | Data type casting completed for the catalog_project1.bronze.products
+2026-07-29 06:06:16,731 | INFO     | silver.clean_products | Data validation completed for the catalog_project1.bronze.products
+2026-07-29 06:06:17,258 | INFO     | silver.clean_products | Deduplication completed for the catalog_project1.bronze.products
+2026-07-29 06:06:20,385 | INFO     | silver.clean_products | Data written to the catalog_project1.silver.clean_products
+2026-07-29 06:06:21,928 | INFO     | silver.clean_products | Data validation for catalog_project1.silver.clean_products completed
+2026-07-29 06:06:21,930 | INFO     | silver.clean_products | Silver pipeline for catalog_project1.silver.clean_products completed successfully
+2026-07-29 06:06:21,931 | INFO     | silver.clean_products | No new data, watermark value unchanged: 2024-11-30 00:00:00
+2026-07-29 06:06:23,995 | INFO     | silver.clean_products | Audit for catalog_project1.silver.clean_products written successfully

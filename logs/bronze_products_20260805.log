@@ -1,0 +1,40 @@
+2026-08-05 10:05:33,856 | INFO     | bronze.products | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_products_20260805.log
+2026-08-05 10:05:33,856 | INFO     | bronze.products | Checking for last successful run
+2026-08-05 10:05:34,482 | INFO     | bronze.products | Fetched watermark value: 2024-12-04 00:00:00
+2026-08-05 10:05:34,483 | INFO     | bronze.products | Reading source products_raw table
+2026-08-05 10:05:34,517 | INFO     | bronze.products | Starting pre-write validations
+2026-08-05 10:05:36,147 | INFO     | bronze.products | Rows read from source: 0
+2026-08-05 10:05:36,349 | INFO     | bronze.products | Pre-write validations passed. Source products_raw ready for ingestion.
+2026-08-05 10:05:36,354 | INFO     | bronze.products | Starting Bronze products ingestion
+2026-08-05 10:05:36,355 | INFO     | bronze.products | Source table: products_raw
+2026-08-05 10:05:36,356 | INFO     | bronze.products | Target table: products
+2026-08-05 10:05:38,609 | INFO     | bronze.products | Bronze products table written successfully.
+2026-08-05 10:05:38,611 | INFO     | bronze.products | Starting post-write validations
+2026-08-05 10:05:39,053 | INFO     | bronze.products | No new data found. Using previous watermark: 2024-12-04 00:00:00
+2026-08-05 10:05:39,058 | INFO     | bronze.products | Rows written in this run: 0
+2026-08-05 10:05:39,572 | INFO     | bronze.products | Total rows in bronze table: 18
+2026-08-05 10:05:40,561 | WARNING  | bronze.products | ⚠️ PRIMARY KEY duplicates found: 4 groups
+2026-08-05 10:05:41,193 | INFO     | bronze.products | No full row duplicates found
+2026-08-05 10:05:41,545 | INFO     | bronze.products | No NULL values found
+2026-08-05 10:05:41,547 | INFO     | bronze.products | Post-write validations completed. Bronze products ingestion finished successfully.
+2026-08-05 10:05:43,059 | INFO     | bronze.products | Audit log written successfully
+2026-08-05 12:59:57,389 | INFO     | bronze.products | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_products_20260805.log
+2026-08-05 12:59:57,393 | INFO     | bronze.products | Checking for last successful run
+2026-08-05 12:59:57,975 | INFO     | bronze.products | Fetched watermark value: 2024-12-04 00:00:00
+2026-08-05 12:59:57,976 | INFO     | bronze.products | Reading source products_raw table
+2026-08-05 12:59:58,007 | INFO     | bronze.products | Starting pre-write validations
+2026-08-05 12:59:59,158 | INFO     | bronze.products | Rows read from source: 0
+2026-08-05 12:59:59,362 | INFO     | bronze.products | Pre-write validations passed. Source products_raw ready for ingestion.
+2026-08-05 12:59:59,363 | INFO     | bronze.products | Starting Bronze products ingestion
+2026-08-05 12:59:59,365 | INFO     | bronze.products | Source table: products_raw
+2026-08-05 12:59:59,367 | INFO     | bronze.products | Target table: products
+2026-08-05 13:00:01,106 | INFO     | bronze.products | Bronze products table written successfully.
+2026-08-05 13:00:01,107 | INFO     | bronze.products | Starting post-write validations
+2026-08-05 13:00:01,712 | INFO     | bronze.products | No new data found. Using previous watermark: 2024-12-04 00:00:00
+2026-08-05 13:00:01,713 | INFO     | bronze.products | Rows written in this run: 0
+2026-08-05 13:00:02,240 | INFO     | bronze.products | Total rows in bronze table: 18
+2026-08-05 13:00:02,871 | WARNING  | bronze.products | ⚠️ PRIMARY KEY duplicates found: 4 groups
+2026-08-05 13:00:03,297 | INFO     | bronze.products | No full row duplicates found
+2026-08-05 13:00:03,792 | INFO     | bronze.products | No NULL values found
+2026-08-05 13:00:03,794 | INFO     | bronze.products | Post-write validations completed. Bronze products ingestion finished successfully.
+2026-08-05 13:00:05,599 | INFO     | bronze.products | Audit log written successfully

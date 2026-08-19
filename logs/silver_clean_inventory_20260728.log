@@ -1,0 +1,26 @@
+2026-07-28 13:03:36,090 | INFO     | silver.clean_inventory | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/silver_clean_inventory_20260728.log
+2026-07-28 13:03:36,092 | INFO     | silver.clean_inventory | Starting Silver pipeline at 2026-07-28 13:03:36.063928
+2026-07-28 13:03:36,346 | INFO     | silver.clean_inventory | Reading catalog_project1.bronze.inventory table
+2026-07-28 13:03:37,388 | INFO     | silver.clean_inventory | Read 10 records from catalog_project1.bronze.inventory
+2026-07-28 13:03:37,391 | INFO     | silver.clean_inventory | All required columns exists in the catalog_project1.bronze.inventory
+2026-07-28 13:03:37,934 | INFO     | silver.clean_inventory | Data standardization completed for the catalog_project1.bronze.inventory
+2026-07-28 13:03:38,307 | INFO     | silver.clean_inventory | Data type casting completed for the catalog_project1.bronze.inventory
+2026-07-28 13:03:39,172 | INFO     | silver.clean_inventory | Data validation completed for the catalog_project1.bronze.inventory
+2026-07-28 13:03:39,551 | INFO     | silver.clean_inventory | Deduplication completed for the catalog_project1.bronze.inventory
+2026-07-28 13:03:42,514 | INFO     | silver.clean_inventory | Data written to the catalog_project1.silver.clean_inventory
+2026-07-28 13:03:43,894 | INFO     | silver.clean_inventory | Data validation for catalog_project1.silver.clean_inventory completed
+2026-07-28 13:03:43,895 | INFO     | silver.clean_inventory | Silver pipeline for catalog_project1.silver.clean_inventory completed successfully
+2026-07-28 13:03:45,793 | INFO     | silver.clean_inventory | Audit for catalog_project1.silver.clean_inventory written successfully
+2026-07-28 13:07:42,711 | INFO     | silver.clean_inventory | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/silver_clean_inventory_20260728.log
+2026-07-28 13:07:42,713 | INFO     | silver.clean_inventory | Starting Silver pipeline at 2026-07-28 13:07:42.669036
+2026-07-28 13:07:42,905 | INFO     | silver.clean_inventory | Reading catalog_project1.bronze.inventory table
+2026-07-28 13:07:44,041 | INFO     | silver.clean_inventory | Read 10 records from catalog_project1.bronze.inventory
+2026-07-28 13:07:44,042 | INFO     | silver.clean_inventory | All required columns exists in the catalog_project1.bronze.inventory
+2026-07-28 13:07:44,707 | INFO     | silver.clean_inventory | Data standardization completed for the catalog_project1.bronze.inventory
+2026-07-28 13:07:45,271 | INFO     | silver.clean_inventory | Data type casting completed for the catalog_project1.bronze.inventory
+2026-07-28 13:07:45,979 | INFO     | silver.clean_inventory | Data validation completed for the catalog_project1.bronze.inventory
+2026-07-28 13:07:46,347 | INFO     | silver.clean_inventory | Deduplication completed for the catalog_project1.bronze.inventory
+2026-07-28 13:07:49,992 | INFO     | silver.clean_inventory | Data written to the catalog_project1.silver.clean_inventory
+2026-07-28 13:07:51,771 | INFO     | silver.clean_inventory | Data validation for catalog_project1.silver.clean_inventory completed
+2026-07-28 13:07:51,773 | INFO     | silver.clean_inventory | Silver pipeline for catalog_project1.silver.clean_inventory completed successfully
+2026-07-28 13:07:53,609 | INFO     | silver.clean_inventory | Audit for catalog_project1.silver.clean_inventory written successfully

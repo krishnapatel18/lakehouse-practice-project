@@ -1,0 +1,88 @@
+2026-07-21 07:19:52,021 | INFO     | bronze.inventory | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_inventory_20260721.log
+2026-07-21 07:19:52,022 | INFO     | bronze.inventory | Reading source table
+2026-07-21 07:19:53,107 | INFO     | bronze.inventory | Rows read: 10
+2026-07-21 07:19:53,294 | INFO     | bronze.inventory | Source fetching completed successfully
+2026-07-21 07:19:53,295 | INFO     | bronze.inventory | Starting Bronze ingestion
+2026-07-21 07:19:53,296 | INFO     | bronze.inventory | Source table: inventory_raw
+2026-07-21 07:19:53,297 | INFO     | bronze.inventory | Target table: inventory
+2026-07-21 07:19:56,812 | INFO     | bronze.inventory | Bronze table written successfully.
+2026-07-21 07:19:57,230 | INFO     | bronze.inventory | Rows written: 10
+2026-07-21 07:19:58,079 | INFO     | bronze.inventory | Duplicate customer_ids: 0
+2026-07-21 07:19:58,966 | INFO     | bronze.inventory | Bronze customer ingestion completed.
+2026-07-21 07:26:47,755 | INFO     | bronze.inventory | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_inventory_20260721.log
+2026-07-21 07:26:47,755 | INFO     | bronze.inventory | Reading source table
+2026-07-21 07:26:49,168 | INFO     | bronze.inventory | Rows read: 10
+2026-07-21 07:26:49,341 | INFO     | bronze.inventory | Source fetching completed successfully
+2026-07-21 07:26:49,341 | INFO     | bronze.inventory | Starting Bronze ingestion
+2026-07-21 07:26:49,342 | INFO     | bronze.inventory | Source table: inventory_raw
+2026-07-21 07:26:49,343 | INFO     | bronze.inventory | Target table: inventory
+2026-07-21 07:26:52,609 | INFO     | bronze.inventory | Bronze table written successfully.
+2026-07-21 07:26:53,122 | INFO     | bronze.inventory | Rows written: 10
+2026-07-21 07:26:53,685 | INFO     | bronze.inventory | Duplicate customer_ids: 0
+2026-07-21 07:26:54,331 | INFO     | bronze.inventory | Bronze customer ingestion completed.
+2026-07-21 07:30:17,095 | INFO     | bronze.inventory | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_inventory_20260721.log
+2026-07-21 07:30:17,096 | INFO     | bronze.inventory | Reading source table
+2026-07-21 07:30:18,088 | INFO     | bronze.inventory | Rows read: 10
+2026-07-21 07:30:18,291 | INFO     | bronze.inventory | Source fetching completed successfully
+2026-07-21 07:30:18,292 | INFO     | bronze.inventory | Starting Bronze ingestion
+2026-07-21 07:30:18,292 | INFO     | bronze.inventory | Source table: inventory_raw
+2026-07-21 07:30:18,293 | INFO     | bronze.inventory | Target table: inventory
+2026-07-21 07:30:21,613 | INFO     | bronze.inventory | Bronze table written successfully.
+2026-07-21 07:30:22,030 | INFO     | bronze.inventory | Rows written: 10
+2026-07-21 07:30:22,735 | INFO     | bronze.inventory | Duplicate customer_ids: 0
+2026-07-21 07:30:23,411 | INFO     | bronze.inventory | Bronze customer ingestion completed.
+2026-07-21 07:36:37,410 | INFO     | bronze.inventory | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_inventory_20260721.log
+2026-07-21 07:36:37,410 | INFO     | bronze.inventory | Reading source table
+2026-07-21 07:36:38,306 | INFO     | bronze.inventory | Rows read: 10
+2026-07-21 07:36:38,509 | INFO     | bronze.inventory | Source fetching completed successfully
+2026-07-21 07:36:38,511 | INFO     | bronze.inventory | Starting Bronze ingestion
+2026-07-21 07:36:38,512 | INFO     | bronze.inventory | Source table: inventory_raw
+2026-07-21 07:36:38,513 | INFO     | bronze.inventory | Target table: inventory
+2026-07-21 07:36:42,569 | INFO     | bronze.inventory | Bronze table written successfully.
+2026-07-21 07:36:43,058 | INFO     | bronze.inventory | Rows written: 10
+2026-07-21 07:36:43,608 | INFO     | bronze.inventory | Duplicate customer_ids: 0
+2026-07-21 07:36:44,480 | INFO     | bronze.inventory | Bronze customer ingestion completed.
+2026-07-21 07:37:42,757 | INFO     | bronze.inventory | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_inventory_20260721.log
+2026-07-21 07:37:42,758 | INFO     | bronze.inventory | Reading source table
+2026-07-21 07:37:43,596 | INFO     | bronze.inventory | Rows read: 10
+2026-07-21 07:37:43,803 | INFO     | bronze.inventory | Source fetching completed successfully
+2026-07-21 07:37:43,804 | INFO     | bronze.inventory | Starting Bronze ingestion
+2026-07-21 07:37:43,805 | INFO     | bronze.inventory | Source table: inventory_raw
+2026-07-21 07:37:43,805 | INFO     | bronze.inventory | Target table: inventory
+2026-07-21 07:37:47,721 | INFO     | bronze.inventory | Bronze table written successfully.
+2026-07-21 07:37:48,104 | INFO     | bronze.inventory | Rows written: 10
+2026-07-21 07:37:48,638 | INFO     | bronze.inventory | Duplicate customer_ids: 0
+2026-07-21 07:37:49,460 | INFO     | bronze.inventory | Bronze customer ingestion completed.
+2026-07-21 07:38:51,015 | INFO     | bronze.inventory | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_inventory_20260721.log
+2026-07-21 07:38:51,016 | INFO     | bronze.inventory | Reading source inventory_raw table
+2026-07-21 07:38:52,414 | INFO     | bronze.inventory | Rows read: 10
+2026-07-21 07:38:52,660 | INFO     | bronze.inventory | Source inventory_raw fetching completed successfully
+2026-07-21 07:38:52,661 | INFO     | bronze.inventory | Starting Bronze inventory ingestion
+2026-07-21 07:38:52,662 | INFO     | bronze.inventory | Source table: inventory_raw
+2026-07-21 07:38:52,662 | INFO     | bronze.inventory | Target table: inventory
+2026-07-21 07:38:55,703 | INFO     | bronze.inventory | Bronze inventory table written successfully.
+2026-07-21 07:38:56,098 | INFO     | bronze.inventory | Rows written: 10
+2026-07-21 07:38:56,710 | INFO     | bronze.inventory | Duplicate inventory_id: 0
+2026-07-21 07:38:57,521 | INFO     | bronze.inventory | Bronze inventory ingestion completed
+2026-07-21 09:06:21,572 | INFO     | bronze.inventory | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_inventory_20260721.log
+2026-07-21 09:06:21,573 | INFO     | bronze.inventory | Reading source inventory_raw table
+2026-07-21 09:06:22,540 | INFO     | bronze.inventory | Rows read: 10
+2026-07-21 09:06:22,980 | INFO     | bronze.inventory | Source inventory_raw fetching completed successfully
+2026-07-21 09:06:22,981 | INFO     | bronze.inventory | Starting Bronze inventory ingestion
+2026-07-21 09:06:22,982 | INFO     | bronze.inventory | Source table: inventory_raw
+2026-07-21 09:06:22,982 | INFO     | bronze.inventory | Target table: inventory
+2026-07-21 09:06:27,783 | INFO     | bronze.inventory | Bronze inventory table written successfully.
+2026-07-21 09:06:28,653 | INFO     | bronze.inventory | Rows written: 10
+2026-07-21 09:06:29,306 | INFO     | bronze.inventory | Duplicate inventory_id: 0
+2026-07-21 09:06:30,046 | INFO     | bronze.inventory | Bronze inventory ingestion completed
+2026-07-21 10:39:33,189 | INFO     | bronze.inventory | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_inventory_20260721.log
+2026-07-21 10:39:33,190 | INFO     | bronze.inventory | Reading source inventory_raw table
+2026-07-21 10:39:34,213 | INFO     | bronze.inventory | Rows read: 10
+2026-07-21 10:39:34,707 | INFO     | bronze.inventory | Source inventory_raw fetching completed successfully
+2026-07-21 10:39:34,708 | INFO     | bronze.inventory | Starting Bronze inventory ingestion
+2026-07-21 10:39:34,709 | INFO     | bronze.inventory | Source table: inventory_raw
+2026-07-21 10:39:34,709 | INFO     | bronze.inventory | Target table: inventory
+2026-07-21 10:39:38,745 | INFO     | bronze.inventory | Bronze inventory table written successfully.
+2026-07-21 10:39:39,161 | INFO     | bronze.inventory | Rows written: 10
+2026-07-21 10:39:39,845 | INFO     | bronze.inventory | Duplicate inventory_id: 0
+2026-07-21 10:39:40,633 | INFO     | bronze.inventory | Bronze inventory ingestion completed

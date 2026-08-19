@@ -1,0 +1,26 @@
+2026-07-28 13:03:13,537 | INFO     | silver.clean_orders | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/silver_clean_orders_20260728.log
+2026-07-28 13:03:13,538 | INFO     | silver.clean_orders | Starting Silver pipeline at 2026-07-28 13:03:13.519194
+2026-07-28 13:03:13,990 | INFO     | silver.clean_orders | Reading catalog_project1.bronze.orders table
+2026-07-28 13:03:15,043 | INFO     | silver.clean_orders | Read 10 records from catalog_project1.bronze.orders
+2026-07-28 13:03:15,044 | INFO     | silver.clean_orders | All required columns exists in the catalog_project1.bronze.orders
+2026-07-28 13:03:15,676 | INFO     | silver.clean_orders | Data standardization completed for the catalog_project1.bronze.orders
+2026-07-28 13:03:16,080 | INFO     | silver.clean_orders | Data type casting completed for the catalog_project1.bronze.orders
+2026-07-28 13:03:16,900 | INFO     | silver.clean_orders | Data validation completed for the catalog_project1.bronze.orders
+2026-07-28 13:03:17,315 | INFO     | silver.clean_orders | Deduplication completed for the catalog_project1.bronze.orders
+2026-07-28 13:03:20,959 | INFO     | silver.clean_orders | Data written to the catalog_project1.silver.clean_orders
+2026-07-28 13:03:22,610 | INFO     | silver.clean_orders | Data validation for catalog_project1.silver.clean_orders completed
+2026-07-28 13:03:22,614 | INFO     | silver.clean_orders | Silver pipeline for catalog_project1.silver.clean_orders completed successfully
+2026-07-28 13:03:24,572 | INFO     | silver.clean_orders | Audit for catalog_project1.silver.clean_orders written successfully
+2026-07-28 13:07:20,813 | INFO     | silver.clean_orders | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/silver_clean_orders_20260728.log
+2026-07-28 13:07:20,814 | INFO     | silver.clean_orders | Starting Silver pipeline at 2026-07-28 13:07:20.774432
+2026-07-28 13:07:21,022 | INFO     | silver.clean_orders | Reading catalog_project1.bronze.orders table
+2026-07-28 13:07:21,902 | INFO     | silver.clean_orders | Read 10 records from catalog_project1.bronze.orders
+2026-07-28 13:07:21,903 | INFO     | silver.clean_orders | All required columns exists in the catalog_project1.bronze.orders
+2026-07-28 13:07:22,683 | INFO     | silver.clean_orders | Data standardization completed for the catalog_project1.bronze.orders
+2026-07-28 13:07:23,387 | INFO     | silver.clean_orders | Data type casting completed for the catalog_project1.bronze.orders
+2026-07-28 13:07:24,109 | INFO     | silver.clean_orders | Data validation completed for the catalog_project1.bronze.orders
+2026-07-28 13:07:24,510 | INFO     | silver.clean_orders | Deduplication completed for the catalog_project1.bronze.orders
+2026-07-28 13:07:28,314 | INFO     | silver.clean_orders | Data written to the catalog_project1.silver.clean_orders
+2026-07-28 13:07:29,888 | INFO     | silver.clean_orders | Data validation for catalog_project1.silver.clean_orders completed
+2026-07-28 13:07:29,889 | INFO     | silver.clean_orders | Silver pipeline for catalog_project1.silver.clean_orders completed successfully
+2026-07-28 13:07:31,958 | INFO     | silver.clean_orders | Audit for catalog_project1.silver.clean_orders written successfully

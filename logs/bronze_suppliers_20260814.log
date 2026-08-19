@@ -1,0 +1,20 @@
+2026-08-14 08:23:44,532 | INFO     | bronze.suppliers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_suppliers_20260814.log
+2026-08-14 08:23:44,533 | INFO     | bronze.suppliers | Checking for last successful run
+2026-08-14 08:23:45,175 | INFO     | bronze.suppliers | Fetched watermark value: 2024-12-01 00:00:00
+2026-08-14 08:23:45,176 | INFO     | bronze.suppliers | Reading source suppliers_raw table
+2026-08-14 08:23:45,217 | INFO     | bronze.suppliers | Starting pre-write validations
+2026-08-14 08:23:46,443 | INFO     | bronze.suppliers | Rows read from source: 0
+2026-08-14 08:23:46,615 | INFO     | bronze.suppliers | Pre-write validations passed. Source suppliers_raw ready for ingestion.
+2026-08-14 08:23:46,616 | INFO     | bronze.suppliers | Starting Bronze suppliers ingestion
+2026-08-14 08:23:46,617 | INFO     | bronze.suppliers | Source table: suppliers_raw
+2026-08-14 08:23:46,618 | INFO     | bronze.suppliers | Target table: suppliers
+2026-08-14 08:23:48,114 | INFO     | bronze.suppliers | Bronze suppliers table written successfully.
+2026-08-14 08:23:48,116 | INFO     | bronze.suppliers | Starting post-write validations
+2026-08-14 08:23:48,540 | INFO     | bronze.suppliers | No new data found. Using previous watermark: 2024-12-01 00:00:00
+2026-08-14 08:23:48,541 | INFO     | bronze.suppliers | Rows written in this run: 0
+2026-08-14 08:23:49,036 | INFO     | bronze.suppliers | Total rows in bronze table: 12
+2026-08-14 08:23:49,573 | WARNING  | bronze.suppliers | ⚠️ PRIMARY KEY duplicates found: 1 groups
+2026-08-14 08:23:49,994 | INFO     | bronze.suppliers | No full row duplicates found
+2026-08-14 08:23:50,541 | INFO     | bronze.suppliers | No NULL values found
+2026-08-14 08:23:50,542 | INFO     | bronze.suppliers | Post-write validations completed. Bronze suppliers ingestion finished successfully.
+2026-08-14 08:23:52,268 | INFO     | bronze.suppliers | Audit log written successfully

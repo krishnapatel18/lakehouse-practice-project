@@ -1,0 +1,166 @@
+2026-08-07 06:52:32,945 | INFO     | gold.dim_customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/gold_dim_customers_20260807.log
+2026-08-07 06:52:32,947 | INFO     | gold.dim_customers | Starting Gold pipeline at 2026-08-07 06:52:32.885170
+2026-08-07 06:52:34,138 | INFO     | gold.dim_customers | Read 1 records from catalog_project1.silver.clean_customers table
+2026-08-07 06:52:34,667 | INFO     | gold.dim_customers | Incremental load from catalog_project1.silver.clean_customers table
+2026-08-07 06:52:38,207 | INFO     | gold.dim_customers | Inserted 1 new records to catalog_project1.gold.dim_customers table
+2026-08-07 06:52:40,681 | INFO     | gold.dim_customers | New watermark: 2025-02-15 00:00:00
+2026-08-07 06:52:40,682 | INFO     | gold.dim_customers | Incremental load completed for catalog_project1.gold.dim_customers
+2026-08-07 06:52:40,684 | INFO     | gold.dim_customers | Gold pipeline for catalog_project1.gold.dim_customers completed successfully
+2026-08-07 06:52:42,379 | INFO     | gold.dim_customers | Audit for catalog_project1.gold.dim_customers is written successfully
+2026-08-07 07:43:03,167 | INFO     | gold.dim_customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/gold_dim_customers_20260807.log
+2026-08-07 07:43:03,175 | INFO     | gold.dim_customers | Starting Gold pipeline at 2026-08-07 07:43:03.063225
+2026-08-07 07:43:04,485 | INFO     | gold.dim_customers | Read 1 records from catalog_project1.silver.clean_customers table
+2026-08-07 07:43:05,179 | INFO     | gold.dim_customers | Incremental load from catalog_project1.silver.clean_customers table
+2026-08-07 07:43:13,737 | INFO     | gold.dim_customers | Inserted 1 new versions (SCD2) to catalog_project1.gold.dim_customers table
+2026-08-07 07:43:13,738 | INFO     | gold.dim_customers | SCD2: Expired and inserted new versions for 1 records
+2026-08-07 07:43:14,815 | INFO     | gold.dim_customers | New watermark: 2025-02-16 00:00:00
+2026-08-07 07:43:14,816 | INFO     | gold.dim_customers | Incremental load completed for catalog_project1.gold.dim_customers
+2026-08-07 07:43:14,817 | INFO     | gold.dim_customers | Gold pipeline for catalog_project1.gold.dim_customers completed successfully
+2026-08-07 07:43:16,225 | INFO     | gold.dim_customers | Audit for catalog_project1.gold.dim_customers is written successfully
+2026-08-07 07:49:13,224 | INFO     | gold.dim_customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/gold_dim_customers_20260807.log
+2026-08-07 07:49:13,225 | INFO     | gold.dim_customers | Starting Gold pipeline at 2026-08-07 07:49:13.199724
+2026-08-07 07:49:14,742 | INFO     | gold.dim_customers | Read 1 records from catalog_project1.silver.clean_customers table
+2026-08-07 07:49:14,962 | INFO     | gold.dim_customers | Incremental load from catalog_project1.silver.clean_customers table
+2026-08-07 07:49:18,119 | INFO     | gold.dim_customers | Inserted 1 new records to catalog_project1.gold.dim_customers table
+2026-08-07 07:49:20,475 | INFO     | gold.dim_customers | New watermark: 2025-02-16 00:00:00
+2026-08-07 07:49:20,476 | INFO     | gold.dim_customers | Incremental load completed for catalog_project1.gold.dim_customers
+2026-08-07 07:49:20,477 | INFO     | gold.dim_customers | Gold pipeline for catalog_project1.gold.dim_customers completed successfully
+2026-08-07 07:49:22,160 | INFO     | gold.dim_customers | Audit for catalog_project1.gold.dim_customers is written successfully
+2026-08-07 07:55:17,355 | INFO     | gold.dim_customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/gold_dim_customers_20260807.log
+2026-08-07 07:55:17,356 | INFO     | gold.dim_customers | Starting Gold pipeline at 2026-08-07 07:55:17.322862
+2026-08-07 07:55:18,561 | INFO     | gold.dim_customers | Read 0 records from catalog_project1.silver.clean_customers table
+2026-08-07 07:55:18,768 | INFO     | gold.dim_customers | Incremental load from catalog_project1.silver.clean_customers table
+2026-08-07 07:55:21,263 | INFO     | gold.dim_customers | No new data processed, watermark unchanged: 2025-02-16 00:00:00
+2026-08-07 07:55:21,264 | INFO     | gold.dim_customers | Incremental load completed for catalog_project1.gold.dim_customers
+2026-08-07 07:55:21,265 | INFO     | gold.dim_customers | Gold pipeline for catalog_project1.gold.dim_customers completed successfully
+2026-08-07 07:55:22,852 | INFO     | gold.dim_customers | Audit for catalog_project1.gold.dim_customers is written successfully
+2026-08-07 07:57:31,774 | INFO     | gold.dim_customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/gold_dim_customers_20260807.log
+2026-08-07 07:57:31,775 | INFO     | gold.dim_customers | Starting Gold pipeline at 2026-08-07 07:57:31.755122
+2026-08-07 07:57:33,007 | INFO     | gold.dim_customers | Read 0 records from catalog_project1.silver.clean_customers table
+2026-08-07 07:57:33,195 | INFO     | gold.dim_customers | Incremental load from catalog_project1.silver.clean_customers table
+2026-08-07 07:57:35,647 | INFO     | gold.dim_customers | No new data processed, watermark unchanged: 2025-02-16 00:00:00
+2026-08-07 07:57:35,648 | INFO     | gold.dim_customers | Incremental load completed for catalog_project1.gold.dim_customers
+2026-08-07 07:57:35,649 | INFO     | gold.dim_customers | Gold pipeline for catalog_project1.gold.dim_customers completed successfully
+2026-08-07 07:57:37,109 | INFO     | gold.dim_customers | Audit for catalog_project1.gold.dim_customers is written successfully
+2026-08-07 08:01:34,735 | INFO     | gold.dim_customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/gold_dim_customers_20260807.log
+2026-08-07 08:01:34,736 | INFO     | gold.dim_customers | Starting Gold pipeline at 2026-08-07 08:01:34.707348
+2026-08-07 08:01:35,797 | INFO     | gold.dim_customers | Read 0 records from catalog_project1.silver.clean_customers table
+2026-08-07 08:01:35,994 | INFO     | gold.dim_customers | Incremental load from catalog_project1.silver.clean_customers table
+2026-08-07 08:01:39,555 | INFO     | gold.dim_customers | Inserted 0 new versions (SCD2) to catalog_project1.gold.dim_customers table
+2026-08-07 08:01:39,556 | INFO     | gold.dim_customers | SCD2: Expired and inserted new versions for 0 records
+2026-08-07 08:01:40,134 | INFO     | gold.dim_customers | No new data processed, watermark unchanged: 2025-02-16 00:00:00
+2026-08-07 08:01:40,135 | INFO     | gold.dim_customers | Incremental load completed for catalog_project1.gold.dim_customers
+2026-08-07 08:01:40,136 | INFO     | gold.dim_customers | Gold pipeline for catalog_project1.gold.dim_customers completed successfully
+2026-08-07 08:01:41,639 | INFO     | gold.dim_customers | Audit for catalog_project1.gold.dim_customers is written successfully
+2026-08-07 08:04:15,488 | INFO     | gold.dim_customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/gold_dim_customers_20260807.log
+2026-08-07 08:04:15,489 | INFO     | gold.dim_customers | Starting Gold pipeline at 2026-08-07 08:04:15.469628
+2026-08-07 08:04:16,447 | INFO     | gold.dim_customers | Read 0 records from catalog_project1.silver.clean_customers table
+2026-08-07 08:04:16,637 | INFO     | gold.dim_customers | Incremental load from catalog_project1.silver.clean_customers table
+2026-08-07 08:04:20,207 | INFO     | gold.dim_customers | Inserted 0 new versions (SCD2) to catalog_project1.gold.dim_customers table
+2026-08-07 08:04:20,208 | INFO     | gold.dim_customers | SCD2: Expired and inserted new versions for 0 records
+2026-08-07 08:04:20,761 | INFO     | gold.dim_customers | No new data processed, watermark unchanged: 2025-02-16 00:00:00
+2026-08-07 08:04:20,763 | INFO     | gold.dim_customers | Incremental load completed for catalog_project1.gold.dim_customers
+2026-08-07 08:04:20,763 | INFO     | gold.dim_customers | Gold pipeline for catalog_project1.gold.dim_customers completed successfully
+2026-08-07 08:04:22,247 | INFO     | gold.dim_customers | Audit for catalog_project1.gold.dim_customers is written successfully
+2026-08-07 08:10:43,765 | INFO     | gold.dim_customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/gold_dim_customers_20260807.log
+2026-08-07 08:10:43,766 | INFO     | gold.dim_customers | Starting Gold pipeline at 2026-08-07 08:10:43.740449
+2026-08-07 08:10:45,136 | INFO     | gold.dim_customers | Read 0 records from catalog_project1.silver.clean_customers table
+2026-08-07 08:10:45,309 | INFO     | gold.dim_customers | Incremental load from catalog_project1.silver.clean_customers table
+2026-08-07 08:10:48,780 | INFO     | gold.dim_customers | Inserted 0 new versions (SCD2) to catalog_project1.gold.dim_customers table
+2026-08-07 08:10:48,781 | INFO     | gold.dim_customers | SCD2: Expired and inserted new versions for 0 records
+2026-08-07 08:10:49,307 | INFO     | gold.dim_customers | No new data processed, watermark unchanged: 2025-02-16 00:00:00
+2026-08-07 08:10:49,311 | INFO     | gold.dim_customers | Incremental load completed for catalog_project1.gold.dim_customers
+2026-08-07 08:10:49,312 | INFO     | gold.dim_customers | Gold pipeline for catalog_project1.gold.dim_customers completed successfully
+2026-08-07 08:10:50,726 | INFO     | gold.dim_customers | Audit for catalog_project1.gold.dim_customers is written successfully
+2026-08-07 08:12:05,011 | INFO     | gold.dim_customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/gold_dim_customers_20260807.log
+2026-08-07 08:12:05,012 | INFO     | gold.dim_customers | Starting Gold pipeline at 2026-08-07 08:12:04.992086
+2026-08-07 08:12:06,147 | INFO     | gold.dim_customers | Read 0 records from catalog_project1.silver.clean_customers table
+2026-08-07 08:12:06,319 | INFO     | gold.dim_customers | Incremental load from catalog_project1.silver.clean_customers table
+2026-08-07 08:12:09,998 | INFO     | gold.dim_customers | Inserted 0 new versions (SCD2) to catalog_project1.gold.dim_customers table
+2026-08-07 08:12:09,999 | INFO     | gold.dim_customers | SCD2: Expired and inserted new versions for 0 records
+2026-08-07 08:12:10,691 | INFO     | gold.dim_customers | No new data processed, watermark unchanged: 2025-02-16 00:00:00
+2026-08-07 08:12:10,692 | INFO     | gold.dim_customers | Incremental load completed for catalog_project1.gold.dim_customers
+2026-08-07 08:12:10,693 | INFO     | gold.dim_customers | Gold pipeline for catalog_project1.gold.dim_customers completed successfully
+2026-08-07 08:12:12,062 | INFO     | gold.dim_customers | Audit for catalog_project1.gold.dim_customers is written successfully
+2026-08-07 08:13:40,038 | INFO     | gold.dim_customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/gold_dim_customers_20260807.log
+2026-08-07 08:13:40,039 | INFO     | gold.dim_customers | Starting Gold pipeline at 2026-08-07 08:13:40.020306
+2026-08-07 08:13:41,002 | INFO     | gold.dim_customers | Read 0 records from catalog_project1.silver.clean_customers table
+2026-08-07 08:13:41,273 | INFO     | gold.dim_customers | Incremental load from catalog_project1.silver.clean_customers table
+2026-08-07 08:13:45,096 | INFO     | gold.dim_customers | Inserted 0 new versions (SCD2) to catalog_project1.gold.dim_customers table
+2026-08-07 08:13:45,097 | INFO     | gold.dim_customers | SCD2: Expired and inserted new versions for 0 records
+2026-08-07 08:13:45,616 | INFO     | gold.dim_customers | No new data processed, watermark unchanged: 2025-02-16 00:00:00
+2026-08-07 08:13:45,617 | INFO     | gold.dim_customers | Incremental load completed for catalog_project1.gold.dim_customers
+2026-08-07 08:13:45,618 | INFO     | gold.dim_customers | Gold pipeline for catalog_project1.gold.dim_customers completed successfully
+2026-08-07 08:13:46,912 | INFO     | gold.dim_customers | Audit for catalog_project1.gold.dim_customers is written successfully
+2026-08-07 08:27:08,191 | INFO     | gold.dim_customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/gold_dim_customers_20260807.log
+2026-08-07 08:27:08,192 | INFO     | gold.dim_customers | Starting Gold pipeline at 2026-08-07 08:27:08.168347
+2026-08-07 08:27:09,148 | INFO     | gold.dim_customers | Read 0 records from catalog_project1.silver.clean_customers table
+2026-08-07 08:27:09,320 | INFO     | gold.dim_customers | Incremental load from catalog_project1.silver.clean_customers table
+2026-08-07 08:27:11,679 | INFO     | gold.dim_customers | No new data processed, watermark unchanged: 2025-02-16 00:00:00
+2026-08-07 08:27:11,680 | INFO     | gold.dim_customers | Incremental load completed for catalog_project1.gold.dim_customers
+2026-08-07 08:27:11,683 | INFO     | gold.dim_customers | Gold pipeline for catalog_project1.gold.dim_customers completed successfully
+2026-08-07 08:27:13,213 | INFO     | gold.dim_customers | Audit for catalog_project1.gold.dim_customers is written successfully
+2026-08-07 08:28:31,886 | INFO     | gold.dim_customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/gold_dim_customers_20260807.log
+2026-08-07 08:28:31,887 | INFO     | gold.dim_customers | Starting Gold pipeline at 2026-08-07 08:28:31.865419
+2026-08-07 08:28:33,071 | INFO     | gold.dim_customers | Read 1 records from catalog_project1.silver.clean_customers table
+2026-08-07 08:28:33,255 | INFO     | gold.dim_customers | Incremental load from catalog_project1.silver.clean_customers table
+2026-08-07 08:28:35,703 | INFO     | gold.dim_customers | No new data processed, watermark unchanged: 2025-02-16 00:00:00
+2026-08-07 08:28:35,705 | INFO     | gold.dim_customers | Incremental load completed for catalog_project1.gold.dim_customers
+2026-08-07 08:28:35,706 | INFO     | gold.dim_customers | Gold pipeline for catalog_project1.gold.dim_customers completed successfully
+2026-08-07 08:28:37,132 | INFO     | gold.dim_customers | Audit for catalog_project1.gold.dim_customers is written successfully
+2026-08-07 08:35:29,981 | INFO     | gold.dim_customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/gold_dim_customers_20260807.log
+2026-08-07 08:35:29,983 | INFO     | gold.dim_customers | Starting Gold pipeline at 2026-08-07 08:35:29.955878
+2026-08-07 08:35:31,301 | INFO     | gold.dim_customers | Read 1 records from catalog_project1.silver.clean_customers table
+2026-08-07 08:35:31,485 | INFO     | gold.dim_customers | Incremental load from catalog_project1.silver.clean_customers table
+2026-08-07 08:35:33,926 | INFO     | gold.dim_customers | No new data processed, watermark unchanged: 2025-02-16 00:00:00
+2026-08-07 08:35:33,927 | INFO     | gold.dim_customers | Incremental load completed for catalog_project1.gold.dim_customers
+2026-08-07 08:35:33,928 | INFO     | gold.dim_customers | Gold pipeline for catalog_project1.gold.dim_customers completed successfully
+2026-08-07 08:35:35,250 | INFO     | gold.dim_customers | Audit for catalog_project1.gold.dim_customers is written successfully
+2026-08-07 08:37:07,576 | INFO     | gold.dim_customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/gold_dim_customers_20260807.log
+2026-08-07 08:37:07,577 | INFO     | gold.dim_customers | Starting Gold pipeline at 2026-08-07 08:37:07.559661
+2026-08-07 08:37:08,615 | INFO     | gold.dim_customers | Read 1 records from catalog_project1.silver.clean_customers table
+2026-08-07 08:37:08,805 | INFO     | gold.dim_customers | Incremental load from catalog_project1.silver.clean_customers table
+2026-08-07 08:37:11,990 | INFO     | gold.dim_customers | No new data processed, watermark unchanged: 2025-02-16 00:00:00
+2026-08-07 08:37:11,993 | INFO     | gold.dim_customers | Incremental load completed for catalog_project1.gold.dim_customers
+2026-08-07 08:37:11,994 | INFO     | gold.dim_customers | Gold pipeline for catalog_project1.gold.dim_customers completed successfully
+2026-08-07 08:37:13,379 | INFO     | gold.dim_customers | Audit for catalog_project1.gold.dim_customers is written successfully
+2026-08-07 08:41:13,299 | INFO     | gold.dim_customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/gold_dim_customers_20260807.log
+2026-08-07 08:41:13,300 | INFO     | gold.dim_customers | Starting Gold pipeline at 2026-08-07 08:41:13.278475
+2026-08-07 08:41:14,497 | INFO     | gold.dim_customers | Read 1 records from catalog_project1.silver.clean_customers table
+2026-08-07 08:41:14,912 | INFO     | gold.dim_customers | Incremental load from catalog_project1.silver.clean_customers table
+2026-08-07 08:41:17,160 | INFO     | gold.dim_customers | No new data processed, watermark unchanged: 2025-02-16 00:00:00
+2026-08-07 08:41:17,161 | INFO     | gold.dim_customers | Incremental load completed for catalog_project1.gold.dim_customers
+2026-08-07 08:41:17,162 | INFO     | gold.dim_customers | Gold pipeline for catalog_project1.gold.dim_customers completed successfully
+2026-08-07 08:41:18,683 | INFO     | gold.dim_customers | Audit for catalog_project1.gold.dim_customers is written successfully
+2026-08-07 08:42:28,312 | INFO     | gold.dim_customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/gold_dim_customers_20260807.log
+2026-08-07 08:42:28,313 | INFO     | gold.dim_customers | Starting Gold pipeline at 2026-08-07 08:42:28.290732
+2026-08-07 08:42:29,328 | INFO     | gold.dim_customers | Read 1 records from catalog_project1.silver.clean_customers table
+2026-08-07 08:42:29,736 | INFO     | gold.dim_customers | Incremental load from catalog_project1.silver.clean_customers table
+2026-08-07 08:42:32,243 | INFO     | gold.dim_customers | No new data processed, watermark unchanged: 2025-02-16 00:00:00
+2026-08-07 08:42:32,244 | INFO     | gold.dim_customers | Incremental load completed for catalog_project1.gold.dim_customers
+2026-08-07 08:42:32,245 | INFO     | gold.dim_customers | Gold pipeline for catalog_project1.gold.dim_customers completed successfully
+2026-08-07 08:42:33,702 | INFO     | gold.dim_customers | Audit for catalog_project1.gold.dim_customers is written successfully
+2026-08-07 08:48:22,933 | INFO     | gold.dim_customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/gold_dim_customers_20260807.log
+2026-08-07 08:48:22,934 | INFO     | gold.dim_customers | Starting Gold pipeline at 2026-08-07 08:48:22.911681
+2026-08-07 08:48:24,133 | INFO     | gold.dim_customers | Read 1 records from catalog_project1.silver.clean_customers table
+2026-08-07 08:48:24,365 | INFO     | gold.dim_customers | Incremental load from catalog_project1.silver.clean_customers table
+2026-08-07 08:48:26,489 | INFO     | gold.dim_customers | No new data processed, watermark unchanged: 2025-02-16 00:00:00
+2026-08-07 08:48:26,490 | INFO     | gold.dim_customers | Incremental load completed for catalog_project1.gold.dim_customers
+2026-08-07 08:48:26,491 | INFO     | gold.dim_customers | Gold pipeline for catalog_project1.gold.dim_customers completed successfully
+2026-08-07 08:48:27,770 | INFO     | gold.dim_customers | Audit for catalog_project1.gold.dim_customers is written successfully
+2026-08-07 11:14:19,104 | INFO     | gold.dim_customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/gold_dim_customers_20260807.log
+2026-08-07 11:14:19,105 | INFO     | gold.dim_customers | Starting Gold pipeline at 2026-08-07 11:14:19.061766
+2026-08-07 11:14:20,344 | INFO     | gold.dim_customers | Read 1 records from catalog_project1.silver.clean_customers table
+2026-08-07 11:14:20,674 | INFO     | gold.dim_customers | Incremental load from catalog_project1.silver.clean_customers table
+2026-08-07 11:14:23,536 | INFO     | gold.dim_customers | No new data processed, watermark unchanged: 2025-02-16 00:00:00
+2026-08-07 11:14:23,538 | INFO     | gold.dim_customers | Incremental load completed for catalog_project1.gold.dim_customers
+2026-08-07 11:14:23,539 | INFO     | gold.dim_customers | Gold pipeline for catalog_project1.gold.dim_customers completed successfully
+2026-08-07 11:14:25,299 | INFO     | gold.dim_customers | Audit for catalog_project1.gold.dim_customers is written successfully
+2026-08-07 11:15:27,287 | INFO     | gold.dim_customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/gold_dim_customers_20260807.log
+2026-08-07 11:15:27,288 | INFO     | gold.dim_customers | Starting Gold pipeline at 2026-08-07 11:15:27.267355
+2026-08-07 11:15:28,827 | INFO     | gold.dim_customers | Read 1 records from catalog_project1.silver.clean_customers table
+2026-08-07 11:15:29,022 | INFO     | gold.dim_customers | Incremental load from catalog_project1.silver.clean_customers table
+2026-08-07 11:15:31,927 | INFO     | gold.dim_customers | No new data processed, watermark unchanged: 2025-02-16 00:00:00
+2026-08-07 11:15:31,928 | INFO     | gold.dim_customers | Incremental load completed for catalog_project1.gold.dim_customers
+2026-08-07 11:15:31,930 | INFO     | gold.dim_customers | Gold pipeline for catalog_project1.gold.dim_customers completed successfully
+2026-08-07 11:15:33,621 | INFO     | gold.dim_customers | Audit for catalog_project1.gold.dim_customers is written successfully

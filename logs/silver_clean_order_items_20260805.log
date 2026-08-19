@@ -1,0 +1,30 @@
+2026-08-05 10:08:22,901 | INFO     | silver.clean_order_items | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/silver_clean_order_items_20260805.log
+2026-08-05 10:08:22,901 | INFO     | silver.clean_order_items | Starting Silver pipeline at 2026-08-05 10:08:22.899958
+2026-08-05 10:08:23,778 | INFO     | silver.clean_order_items | Incremental load from catalog_project1.bronze.order_items
+2026-08-05 10:08:24,913 | INFO     | silver.clean_order_items | Read 0 records from catalog_project1.bronze.order_items
+2026-08-05 10:08:24,914 | INFO     | silver.clean_order_items | All required columns exists in the catalog_project1.bronze.order_items
+2026-08-05 10:08:24,914 | WARNING  | silver.clean_order_items | New columns detected in catalog_project1.bronze.order_items: {'_source_table', '_ingestion_pipeline_id', '_source_file', '_ingestion_timestamp'}
+2026-08-05 10:08:25,626 | INFO     | silver.clean_order_items | Data standardization completed for the catalog_project1.bronze.order_items
+2026-08-05 10:08:25,988 | INFO     | silver.clean_order_items | Data type casting completed for the catalog_project1.bronze.order_items
+2026-08-05 10:08:26,854 | INFO     | silver.clean_order_items | Data validation completed for the catalog_project1.bronze.order_items
+2026-08-05 10:08:27,242 | INFO     | silver.clean_order_items | Deduplication completed for the catalog_project1.bronze.order_items
+2026-08-05 10:08:30,687 | INFO     | silver.clean_order_items | Data written to the catalog_project1.silver.clean_order_items
+2026-08-05 10:08:32,031 | INFO     | silver.clean_order_items | Data validation for catalog_project1.silver.clean_order_items completed
+2026-08-05 10:08:32,032 | INFO     | silver.clean_order_items | Silver pipeline for catalog_project1.silver.clean_order_items completed successfully
+2026-08-05 10:08:32,032 | INFO     | silver.clean_order_items | No new data, watermark value unchanged: 2025-03-05 00:00:00
+2026-08-05 10:08:33,511 | INFO     | silver.clean_order_items | Audit for catalog_project1.silver.clean_order_items is written successfully
+2026-08-05 13:02:48,933 | INFO     | silver.clean_order_items | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/silver_clean_order_items_20260805.log
+2026-08-05 13:02:48,937 | INFO     | silver.clean_order_items | Starting Silver pipeline at 2026-08-05 13:02:48.932017
+2026-08-05 13:02:50,053 | INFO     | silver.clean_order_items | Incremental load from catalog_project1.bronze.order_items
+2026-08-05 13:02:51,049 | INFO     | silver.clean_order_items | Read 0 records from catalog_project1.bronze.order_items
+2026-08-05 13:02:51,051 | INFO     | silver.clean_order_items | All required columns exists in the catalog_project1.bronze.order_items
+2026-08-05 13:02:51,053 | WARNING  | silver.clean_order_items | New columns detected in catalog_project1.bronze.order_items: {'_source_table', '_ingestion_pipeline_id', '_source_file', '_ingestion_timestamp'}
+2026-08-05 13:02:51,769 | INFO     | silver.clean_order_items | Data standardization completed for the catalog_project1.bronze.order_items
+2026-08-05 13:02:52,299 | INFO     | silver.clean_order_items | Data type casting completed for the catalog_project1.bronze.order_items
+2026-08-05 13:02:53,039 | INFO     | silver.clean_order_items | Data validation completed for the catalog_project1.bronze.order_items
+2026-08-05 13:02:53,464 | INFO     | silver.clean_order_items | Deduplication completed for the catalog_project1.bronze.order_items
+2026-08-05 13:02:57,269 | INFO     | silver.clean_order_items | Data written to the catalog_project1.silver.clean_order_items
+2026-08-05 13:02:58,548 | INFO     | silver.clean_order_items | Data validation for catalog_project1.silver.clean_order_items completed
+2026-08-05 13:02:58,550 | INFO     | silver.clean_order_items | Silver pipeline for catalog_project1.silver.clean_order_items completed successfully
+2026-08-05 13:02:58,551 | INFO     | silver.clean_order_items | No new data, watermark value unchanged: 2025-03-05 00:00:00
+2026-08-05 13:03:00,310 | INFO     | silver.clean_order_items | Audit for catalog_project1.silver.clean_order_items is written successfully

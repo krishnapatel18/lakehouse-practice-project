@@ -1,0 +1,349 @@
+2026-07-24 07:01:07,276 | INFO     | bronze.customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_customers_20260724.log
+2026-07-24 07:01:07,276 | INFO     | bronze.customers | Checking for last successful run
+2026-07-24 07:01:09,800 | INFO     | bronze.customers | Fetched watermark value: None
+2026-07-24 07:01:09,801 | INFO     | bronze.customers | Reading source customers_raw table
+2026-07-24 07:01:10,735 | INFO     | bronze.customers | Rows read: 10
+2026-07-24 07:01:10,917 | INFO     | bronze.customers | Source customers_raw fetching completed successfully
+2026-07-24 07:01:10,919 | INFO     | bronze.customers | Starting Bronze customers ingestion
+2026-07-24 07:01:10,921 | INFO     | bronze.customers | Source table: customers_raw
+2026-07-24 07:01:10,922 | INFO     | bronze.customers | Target table: customers
+2026-07-24 07:01:15,894 | INFO     | bronze.customers | Bronze customers table written successfully.
+2026-07-24 07:01:16,687 | INFO     | bronze.customers | Rows written: 10
+2026-07-24 07:01:17,158 | INFO     | bronze.customers | Duplicate records: 0
+2026-07-24 07:01:17,781 | INFO     | bronze.customers | Bronze customers ingestion completed
+2026-07-24 07:08:34,565 | INFO     | bronze.customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_customers_20260724.log
+2026-07-24 07:08:34,566 | INFO     | bronze.customers | Checking for last successful run
+2026-07-24 07:08:35,416 | INFO     | bronze.customers | Fetched watermark value: None
+2026-07-24 07:08:35,419 | INFO     | bronze.customers | Reading source customers_raw table
+2026-07-24 07:08:36,252 | INFO     | bronze.customers | Rows read: 10
+2026-07-24 07:08:36,451 | INFO     | bronze.customers | Source customers_raw fetching completed successfully
+2026-07-24 07:08:36,452 | INFO     | bronze.customers | Starting Bronze customers ingestion
+2026-07-24 07:08:36,453 | INFO     | bronze.customers | Source table: customers_raw
+2026-07-24 07:08:36,454 | INFO     | bronze.customers | Target table: customers
+2026-07-24 07:08:39,980 | INFO     | bronze.customers | Bronze customers table written successfully.
+2026-07-24 07:08:40,590 | ERROR    | bronze.customers | Bronze customers ingestion failed
+Traceback (most recent call last):
+  File "/Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/src/ingestion/bronze.py", line 154, in ingest_table
+    new_watermark = raw.agg(max_(col(bronze_watermark_column)).cast("timestamp")).first()[0]
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/dataframe.py", line 574, in first
+    return self.head()
+           ^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/dataframe.py", line 718, in head
+    rs = self.head(1)
+         ^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/dataframe.py", line 720, in head
+    return self.take(n)
+           ^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/dataframe.py", line 723, in take
+    return self.limit(num).collect()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/dataframe.py", line 1846, in collect
+    table, schema = self._to_table()
+                    ^^^^^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/dataframe.py", line 1930, in _to_table
+    table, schema, self._execution_info = self._session.client.to_table(
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/client/core.py", line 1273, in to_table
+    table, schema, metrics, observed_metrics, _ = self._execute_and_fetch(req, observations)
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/client/core.py", line 2086, in _execute_and_fetch
+    for response in self._execute_and_fetch_as_iterator(
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/client/core.py", line 2062, in _execute_and_fetch_as_iterator
+    self._handle_error(error)
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/client/core.py", line 2380, in _handle_error
+    self._handle_rpc_error(error)
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/client/core.py", line 2458, in _handle_rpc_error
+    raise convert_exception(
+pyspark.errors.exceptions.connect.DateTimeException: [CAST_INVALID_INPUT] The value '29-01-2025' of the type "STRING" cannot be cast to "TIMESTAMP" because it is malformed. Correct the value as per the syntax, or change its target type. Use `try_cast` to tolerate malformed input and return NULL instead. SQLSTATE: 22018
+== DataFrame ==
+"cast" was called from
+<command-8241068847773641>, line 154 in cell [16]
+
+
+JVM stacktrace:
+org.apache.spark.SparkDateTimeException
+	at org.apache.spark.sql.errors.QueryExecutionErrors$.invalidInputInCastToDatetimeError(QueryExecutionErrors.scala:162)
+	at com.databricks.photon.PhotonException$.getSparkException(PhotonException.scala:189)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$21(SQLExecution.scala:1121)
+	at com.databricks.unity.UCSManager$.withTemporaryScope(UCSManager.scala:168)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$20(SQLExecution.scala:928)
+	at org.apache.spark.sql.execution.SQLExecution$.withSessionTagsApplied(SQLExecution.scala:1572)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$19(SQLExecution.scala:917)
+	at org.apache.spark.JobArtifactSet$.withActiveJobArtifactState(JobArtifactSet.scala:97)
+	at org.apache.spark.sql.artifact.ArtifactManager.$anonfun$withResources$1(ArtifactManager.scala:124)
+	at org.apache.spark.sql.artifact.ArtifactManager.withClassLoaderIfNeeded(ArtifactManager.scala:118)
+	at org.apache.spark.sql.artifact.ArtifactManager.withResources(ArtifactManager.scala:123)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$18(SQLExecution.scala:917)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:1607)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$1(SQLExecution.scala:916)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:866)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId0(SQLExecution.scala:657)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:1525)
+	at org.apache.spark.sql.connect.execution.SparkConnectPlanExecution.processArrowBatchesImpl(SparkConnectPlanExecution.scala:560)
+	at org.apache.spark.sql.connect.execution.SparkConnectPlanExecution.processAsArrowBatches(SparkConnectPlanExecution.scala:341)
+	at org.apache.spark.sql.connect.execution.SparkConnectPlanExecution.handlePlan(SparkConnectPlanExecution.scala:205)
+	at org.apache.spark.sql.connect.execution.ExecuteThreadRunner.handlePlan(ExecuteThreadRunner.scala:522)
+	at org.apache.spark.sql.connect.execution.ExecuteThreadRunner.$anonfun$executeInternal$1(ExecuteThreadRunner.scala:421)
+	at org.apache.spark.sql.connect.execution.ExecuteThreadRunner.$anonfun$executeInternal$1$adapted(ExecuteThreadRunner.scala:340)
+	at org.apache.spark.sql.connect.service.SessionHolder.$anonfun$withSession$2(SessionHolder.scala:844)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:866)
+	at org.apache.spark.sql.connect.service.SessionHolder.$anonfun$withSession$1(SessionHolder.scala:844)
+	at org.apache.spark.JobArtifactSet$.withActiveJobArtifactState(JobArtifactSet.scala:97)
+	at org.apache.spark.sql.artifact.ArtifactManager.$anonfun$withResources$1(ArtifactManager.scala:124)
+	at org.apache.spark.sql.artifact.ArtifactManager.withClassLoaderIfNeeded(ArtifactManager.scala:118)
+	at org.apache.spark.sql.artifact.ArtifactManager.withResources(ArtifactManager.scala:123)
+	at org.apache.spark.sql.connect.service.SessionHolder.withSession(SessionHolder.scala:843)
+	at org.apache.spark.sql.connect.execution.ExecuteThreadRunner.executeInternal(ExecuteThreadRunner.scala:340)
+	at org.apache.spark.sql.connect.execution.ExecuteThreadRunner.$anonfun$execute$1(ExecuteThreadRunner.scala:200)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at com.databricks.spark.connect.service.UtilizationMetrics.recordActiveQueries(UtilizationMetrics.scala:92)
+	at com.databricks.spark.connect.service.UtilizationMetrics.recordActiveQueries$(UtilizationMetrics.scala:89)
+	at org.apache.spark.sql.connect.execution.ExecuteThreadRunner.recordActiveQueries(ExecuteThreadRunner.scala:61)
+	at org.apache.spark.sql.connect.execution.ExecuteThreadRunner.org$apache$spark$sql$connect$execution$ExecuteThreadRunner$$execute(ExecuteThreadRunner.scala:192)
+	at org.apache.spark.sql.connect.execution.ExecuteThreadRunner$ExecutionThread.$anonfun$run$3(ExecuteThreadRunner.scala:601)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at com.databricks.spark.util.DBRTracing$.withSpanFromParent(DBRTracing.scala:70)
+	at org.apache.spark.sql.connect.execution.ExecuteThreadRunner$ExecutionThread.$anonfun$run$2(ExecuteThreadRunner.scala:601)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at com.databricks.unity.UCSEphemeralState$Handle.runWith(UCSEphemeralState.scala:51)
+	at com.databricks.unity.HandleImpl.runWith(UCSHandle.scala:128)
+	at com.databricks.unity.HandleImpl.$anonfun$runWithAndClose$1(UCSHandle.scala:133)
+	at scala.util.Using$.resource(Using.scala:296)
+	at com.databricks.unity.HandleImpl.runWithAndClose(UCSHandle.scala:132)
+	at org.apache.spark.sql.connect.execution.ExecuteThreadRunner$ExecutionThread.run(ExecuteThreadRunner.scala:600)
+2026-07-24 07:13:01,723 | INFO     | bronze.customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_customers_20260724.log
+2026-07-24 07:13:01,724 | INFO     | bronze.customers | Checking for last successful run
+2026-07-24 07:13:02,685 | INFO     | bronze.customers | Fetched watermark value: None
+2026-07-24 07:13:02,686 | INFO     | bronze.customers | Reading source customers_raw table
+2026-07-24 07:13:03,461 | INFO     | bronze.customers | Rows read: 10
+2026-07-24 07:13:03,668 | INFO     | bronze.customers | Source customers_raw fetching completed successfully
+2026-07-24 07:13:03,669 | INFO     | bronze.customers | Starting Bronze customers ingestion
+2026-07-24 07:13:03,669 | INFO     | bronze.customers | Source table: customers_raw
+2026-07-24 07:13:03,670 | INFO     | bronze.customers | Target table: customers
+2026-07-24 07:13:06,987 | INFO     | bronze.customers | Bronze customers table written successfully.
+2026-07-24 07:13:07,507 | ERROR    | bronze.customers | Bronze customers ingestion failed
+Traceback (most recent call last):
+  File "/Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/src/ingestion/bronze.py", line 154, in ingest_table
+    new_watermark = raw.agg(max_(to_timestamp(col(bronze_watermark_column)))).first()[0]
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/dataframe.py", line 574, in first
+    return self.head()
+           ^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/dataframe.py", line 718, in head
+    rs = self.head(1)
+         ^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/dataframe.py", line 720, in head
+    return self.take(n)
+           ^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/dataframe.py", line 723, in take
+    return self.limit(num).collect()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/dataframe.py", line 1846, in collect
+    table, schema = self._to_table()
+                    ^^^^^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/dataframe.py", line 1930, in _to_table
+    table, schema, self._execution_info = self._session.client.to_table(
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/client/core.py", line 1273, in to_table
+    table, schema, metrics, observed_metrics, _ = self._execute_and_fetch(req, observations)
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/client/core.py", line 2086, in _execute_and_fetch
+    for response in self._execute_and_fetch_as_iterator(
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/client/core.py", line 2062, in _execute_and_fetch_as_iterator
+    self._handle_error(error)
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/client/core.py", line 2380, in _handle_error
+    self._handle_rpc_error(error)
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/client/core.py", line 2458, in _handle_rpc_error
+    raise convert_exception(
+pyspark.errors.exceptions.connect.DateTimeException: [CAST_INVALID_INPUT] The value '10-01-2025' of the type "STRING" cannot be cast to "TIMESTAMP" because it is malformed. Correct the value as per the syntax, or change its target type. Use `try_cast` to tolerate malformed input and return NULL instead. SQLSTATE: 22018
+
+JVM stacktrace:
+org.apache.spark.SparkDateTimeException
+	at org.apache.spark.sql.errors.QueryExecutionErrors$.invalidInputInCastToDatetimeError(QueryExecutionErrors.scala:162)
+	at com.databricks.photon.PhotonException$.getSparkException(PhotonException.scala:189)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$21(SQLExecution.scala:1121)
+	at com.databricks.unity.UCSManager$.withTemporaryScope(UCSManager.scala:168)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$20(SQLExecution.scala:928)
+	at org.apache.spark.sql.execution.SQLExecution$.withSessionTagsApplied(SQLExecution.scala:1572)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$19(SQLExecution.scala:917)
+	at org.apache.spark.JobArtifactSet$.withActiveJobArtifactState(JobArtifactSet.scala:97)
+	at org.apache.spark.sql.artifact.ArtifactManager.$anonfun$withResources$1(ArtifactManager.scala:124)
+	at org.apache.spark.sql.artifact.ArtifactManager.withClassLoaderIfNeeded(ArtifactManager.scala:118)
+	at org.apache.spark.sql.artifact.ArtifactManager.withResources(ArtifactManager.scala:123)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$18(SQLExecution.scala:917)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:1607)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId0$1(SQLExecution.scala:916)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:866)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId0(SQLExecution.scala:657)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:1525)
+	at org.apache.spark.sql.connect.execution.SparkConnectPlanExecution.processArrowBatchesImpl(SparkConnectPlanExecution.scala:560)
+	at org.apache.spark.sql.connect.execution.SparkConnectPlanExecution.processAsArrowBatches(SparkConnectPlanExecution.scala:341)
+	at org.apache.spark.sql.connect.execution.SparkConnectPlanExecution.handlePlan(SparkConnectPlanExecution.scala:205)
+	at org.apache.spark.sql.connect.execution.ExecuteThreadRunner.handlePlan(ExecuteThreadRunner.scala:522)
+	at org.apache.spark.sql.connect.execution.ExecuteThreadRunner.$anonfun$executeInternal$1(ExecuteThreadRunner.scala:421)
+	at org.apache.spark.sql.connect.execution.ExecuteThreadRunner.$anonfun$executeInternal$1$adapted(ExecuteThreadRunner.scala:340)
+	at org.apache.spark.sql.connect.service.SessionHolder.$anonfun$withSession$2(SessionHolder.scala:844)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:866)
+	at org.apache.spark.sql.connect.service.SessionHolder.$anonfun$withSession$1(SessionHolder.scala:844)
+	at org.apache.spark.JobArtifactSet$.withActiveJobArtifactState(JobArtifactSet.scala:97)
+	at org.apache.spark.sql.artifact.ArtifactManager.$anonfun$withResources$1(ArtifactManager.scala:124)
+	at org.apache.spark.sql.artifact.ArtifactManager.withClassLoaderIfNeeded(ArtifactManager.scala:118)
+	at org.apache.spark.sql.artifact.ArtifactManager.withResources(ArtifactManager.scala:123)
+	at org.apache.spark.sql.connect.service.SessionHolder.withSession(SessionHolder.scala:843)
+	at org.apache.spark.sql.connect.execution.ExecuteThreadRunner.executeInternal(ExecuteThreadRunner.scala:340)
+	at org.apache.spark.sql.connect.execution.ExecuteThreadRunner.$anonfun$execute$1(ExecuteThreadRunner.scala:200)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at com.databricks.spark.connect.service.UtilizationMetrics.recordActiveQueries(UtilizationMetrics.scala:92)
+	at com.databricks.spark.connect.service.UtilizationMetrics.recordActiveQueries$(UtilizationMetrics.scala:89)
+	at org.apache.spark.sql.connect.execution.ExecuteThreadRunner.recordActiveQueries(ExecuteThreadRunner.scala:61)
+	at org.apache.spark.sql.connect.execution.ExecuteThreadRunner.org$apache$spark$sql$connect$execution$ExecuteThreadRunner$$execute(ExecuteThreadRunner.scala:192)
+	at org.apache.spark.sql.connect.execution.ExecuteThreadRunner$ExecutionThread.$anonfun$run$3(ExecuteThreadRunner.scala:601)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at com.databricks.spark.util.DBRTracing$.withSpanFromParent(DBRTracing.scala:70)
+	at org.apache.spark.sql.connect.execution.ExecuteThreadRunner$ExecutionThread.$anonfun$run$2(ExecuteThreadRunner.scala:601)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at com.databricks.unity.UCSEphemeralState$Handle.runWith(UCSEphemeralState.scala:51)
+	at com.databricks.unity.HandleImpl.runWith(UCSHandle.scala:128)
+	at com.databricks.unity.HandleImpl.$anonfun$runWithAndClose$1(UCSHandle.scala:133)
+	at scala.util.Using$.resource(Using.scala:296)
+	at com.databricks.unity.HandleImpl.runWithAndClose(UCSHandle.scala:132)
+	at org.apache.spark.sql.connect.execution.ExecuteThreadRunner$ExecutionThread.run(ExecuteThreadRunner.scala:600)
+2026-07-24 07:14:26,764 | INFO     | bronze.customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_customers_20260724.log
+2026-07-24 07:14:26,765 | INFO     | bronze.customers | Checking for last successful run
+2026-07-24 07:14:27,609 | INFO     | bronze.customers | Fetched watermark value: None
+2026-07-24 07:14:27,610 | INFO     | bronze.customers | Reading source customers_raw table
+2026-07-24 07:14:28,289 | INFO     | bronze.customers | Rows read: 10
+2026-07-24 07:14:28,475 | INFO     | bronze.customers | Source customers_raw fetching completed successfully
+2026-07-24 07:14:28,476 | INFO     | bronze.customers | Starting Bronze customers ingestion
+2026-07-24 07:14:28,477 | INFO     | bronze.customers | Source table: customers_raw
+2026-07-24 07:14:28,478 | INFO     | bronze.customers | Target table: customers
+2026-07-24 07:14:32,133 | INFO     | bronze.customers | Bronze customers table written successfully.
+2026-07-24 07:14:32,926 | INFO     | bronze.customers | Rows written: 10
+2026-07-24 07:14:33,408 | INFO     | bronze.customers | Duplicate records: 0
+2026-07-24 07:14:34,026 | INFO     | bronze.customers | Bronze customers ingestion completed
+2026-07-24 07:14:53,214 | INFO     | bronze.customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_customers_20260724.log
+2026-07-24 07:14:53,216 | INFO     | bronze.customers | Checking for last successful run
+2026-07-24 07:14:54,023 | INFO     | bronze.customers | Fetched watermark value: 2025-02-01 00:00:00
+2026-07-24 07:14:54,024 | INFO     | bronze.customers | Reading source customers_raw table
+2026-07-24 07:14:54,203 | ERROR    | bronze.customers | Bronze customers ingestion failed
+Traceback (most recent call last):
+  File "/Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/src/ingestion/bronze.py", line 133, in ingest_table
+    raw = spark.read.table(f"{CATALOG}.{SOURCE_SCHEMA.lower()}.{SOURCE_TABLE}").inferSchema(True)\
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/dataframe.py", line 1770, in __getattr__
+    raise PySparkAttributeError(
+pyspark.errors.exceptions.base.PySparkAttributeError: [ATTRIBUTE_NOT_SUPPORTED] Attribute `inferSchema` is not supported.
+2026-07-24 07:32:30,503 | INFO     | bronze.customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_customers_20260724.log
+2026-07-24 07:32:30,506 | INFO     | bronze.customers | Checking for last successful run
+2026-07-24 07:32:31,757 | INFO     | bronze.customers | Fetched watermark value: 2025-02-01 00:00:00
+2026-07-24 07:32:31,758 | INFO     | bronze.customers | Reading source customers_raw table
+2026-07-24 07:32:32,003 | ERROR    | bronze.customers | Bronze customers ingestion failed
+Traceback (most recent call last):
+  File "/Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/src/ingestion/bronze.py", line 133, in ingest_table
+    raw = spark.read.table(f"{CATALOG}.{SOURCE_SCHEMA.lower()}.{SOURCE_TABLE}").inferSchema(True)\
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/dataframe.py", line 1770, in __getattr__
+    raise PySparkAttributeError(
+pyspark.errors.exceptions.base.PySparkAttributeError: [ATTRIBUTE_NOT_SUPPORTED] Attribute `inferSchema` is not supported.
+2026-07-24 07:36:11,713 | INFO     | bronze.customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_customers_20260724.log
+2026-07-24 07:36:11,715 | INFO     | bronze.customers | Checking for last successful run
+2026-07-24 07:36:12,621 | INFO     | bronze.customers | Fetched watermark value: 2025-02-01 00:00:00
+2026-07-24 07:36:12,622 | INFO     | bronze.customers | Reading source customers_raw table
+2026-07-24 07:36:13,494 | INFO     | bronze.customers | Rows read: 0
+2026-07-24 07:36:13,684 | INFO     | bronze.customers | Source customers_raw fetching completed successfully
+2026-07-24 07:36:13,684 | INFO     | bronze.customers | Starting Bronze customers ingestion
+2026-07-24 07:36:13,687 | INFO     | bronze.customers | Source table: customers_raw
+2026-07-24 07:36:13,688 | INFO     | bronze.customers | Target table: customers
+2026-07-24 07:36:16,769 | INFO     | bronze.customers | Bronze customers table written successfully.
+2026-07-24 07:36:17,636 | INFO     | bronze.customers | Rows written: 0
+2026-07-24 07:36:17,996 | INFO     | bronze.customers | Duplicate records: 0
+2026-07-24 07:36:18,586 | INFO     | bronze.customers | Bronze customers ingestion completed
+2026-07-24 07:43:20,008 | INFO     | bronze.customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_customers_20260724.log
+2026-07-24 07:43:20,009 | INFO     | bronze.customers | Checking for last successful run
+2026-07-24 07:43:20,949 | INFO     | bronze.customers | Fetched watermark value: None
+2026-07-24 07:43:20,950 | INFO     | bronze.customers | Reading source customers_raw table
+2026-07-24 07:43:21,840 | INFO     | bronze.customers | Rows read: 10
+2026-07-24 07:43:22,027 | INFO     | bronze.customers | Source customers_raw fetching completed successfully
+2026-07-24 07:43:22,028 | INFO     | bronze.customers | Starting Bronze customers ingestion
+2026-07-24 07:43:22,029 | INFO     | bronze.customers | Source table: customers_raw
+2026-07-24 07:43:22,030 | INFO     | bronze.customers | Target table: customers
+2026-07-24 07:43:25,397 | INFO     | bronze.customers | Bronze customers table written successfully.
+2026-07-24 07:43:26,200 | INFO     | bronze.customers | Rows written: 10
+2026-07-24 07:43:26,695 | INFO     | bronze.customers | Duplicate records: 0
+2026-07-24 07:43:27,248 | INFO     | bronze.customers | Bronze customers ingestion completed
+2026-07-24 07:52:55,207 | INFO     | bronze.customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_customers_20260724.log
+2026-07-24 07:52:55,208 | INFO     | bronze.customers | Checking for last successful run
+2026-07-24 07:52:55,939 | INFO     | bronze.customers | Fetched watermark value: 2025-02-01 00:00:00
+2026-07-24 07:52:55,940 | INFO     | bronze.customers | Reading source customers_raw table
+2026-07-24 07:52:56,739 | INFO     | bronze.customers | Rows read: 0
+2026-07-24 07:52:56,919 | INFO     | bronze.customers | Source customers_raw fetching completed successfully
+2026-07-24 07:52:56,921 | INFO     | bronze.customers | Starting Bronze customers ingestion
+2026-07-24 07:52:56,921 | INFO     | bronze.customers | Source table: customers_raw
+2026-07-24 07:52:56,922 | INFO     | bronze.customers | Target table: customers
+2026-07-24 07:53:00,172 | INFO     | bronze.customers | Bronze customers table written successfully.
+2026-07-24 07:53:00,616 | INFO     | bronze.customers | No new data found. Using previous watermark: 2025-02-01 00:00:00
+2026-07-24 07:53:00,961 | INFO     | bronze.customers | Rows written: 0
+2026-07-24 07:53:01,424 | INFO     | bronze.customers | Duplicate records: 0
+2026-07-24 07:53:01,994 | INFO     | bronze.customers | Bronze customers ingestion completed
+2026-07-24 09:11:31,263 | INFO     | bronze.customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_customers_20260724.log
+2026-07-24 09:11:31,264 | INFO     | bronze.customers | Checking for last successful run
+2026-07-24 09:11:36,918 | INFO     | bronze.customers | Fetched watermark value: 2025-02-01 00:00:00
+2026-07-24 09:11:36,919 | INFO     | bronze.customers | Reading source customers_raw table
+2026-07-24 09:11:38,238 | INFO     | bronze.customers | Rows read: 0
+2026-07-24 09:11:38,647 | INFO     | bronze.customers | Source customers_raw fetching completed successfully
+2026-07-24 09:11:38,649 | INFO     | bronze.customers | Starting Bronze customers ingestion
+2026-07-24 09:11:38,650 | INFO     | bronze.customers | Source table: customers_raw
+2026-07-24 09:11:38,651 | INFO     | bronze.customers | Target table: customers
+2026-07-24 09:11:47,341 | INFO     | bronze.customers | Bronze customers table written successfully.
+2026-07-24 09:11:47,850 | INFO     | bronze.customers | No new data found. Using previous watermark: 2025-02-01 00:00:00
+2026-07-24 09:11:48,308 | INFO     | bronze.customers | Rows written: 0
+2026-07-24 09:11:48,776 | INFO     | bronze.customers | Duplicate records: 0
+2026-07-24 09:11:49,671 | INFO     | bronze.customers | Bronze customers ingestion completed
+2026-07-24 09:24:43,704 | INFO     | bronze.customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_customers_20260724.log
+2026-07-24 09:24:43,706 | INFO     | bronze.customers | Checking for last successful run
+2026-07-24 09:24:44,456 | INFO     | bronze.customers | Fetched watermark value: None
+2026-07-24 09:24:44,457 | INFO     | bronze.customers | Reading source customers_raw table
+2026-07-24 09:24:45,343 | INFO     | bronze.customers | Rows read: 10
+2026-07-24 09:24:45,532 | INFO     | bronze.customers | Source customers_raw fetching completed successfully
+2026-07-24 09:24:45,534 | INFO     | bronze.customers | Starting Bronze customers ingestion
+2026-07-24 09:24:45,535 | INFO     | bronze.customers | Source table: customers_raw
+2026-07-24 09:24:45,538 | INFO     | bronze.customers | Target table: customers
+2026-07-24 09:24:47,187 | INFO     | bronze.customers | Bronze customers table written successfully.
+2026-07-24 09:24:48,083 | INFO     | bronze.customers | Rows written: 10
+2026-07-24 09:24:48,619 | INFO     | bronze.customers | Duplicate records: 0
+2026-07-24 09:24:49,262 | INFO     | bronze.customers | Bronze customers ingestion completed
+2026-07-24 09:48:39,540 | INFO     | bronze.customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_customers_20260724.log
+2026-07-24 09:48:39,543 | INFO     | bronze.customers | Checking for last successful run
+2026-07-24 09:48:40,792 | INFO     | bronze.customers | Fetched watermark value: 2025-02-01 00:00:00
+2026-07-24 09:48:40,796 | INFO     | bronze.customers | Reading source customers_raw table
+2026-07-24 09:48:41,779 | INFO     | bronze.customers | Rows read: 0
+2026-07-24 09:48:41,954 | INFO     | bronze.customers | Source customers_raw fetching completed successfully
+2026-07-24 09:48:41,955 | INFO     | bronze.customers | Starting Bronze customers ingestion
+2026-07-24 09:48:41,956 | INFO     | bronze.customers | Source table: customers_raw
+2026-07-24 09:48:41,962 | INFO     | bronze.customers | Target table: customers
+2026-07-24 09:48:43,400 | INFO     | bronze.customers | Bronze customers table written successfully.
+2026-07-24 09:48:43,796 | INFO     | bronze.customers | No new data found. Using previous watermark: 2025-02-01 00:00:00
+2026-07-24 09:48:44,124 | INFO     | bronze.customers | Rows written: 10
+2026-07-24 09:48:44,695 | INFO     | bronze.customers | Duplicate records: 0
+2026-07-24 09:48:45,087 | INFO     | bronze.customers | Bronze customers ingestion completed
+2026-07-24 10:07:11,981 | INFO     | bronze.customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_customers_20260724.log
+2026-07-24 10:07:11,999 | INFO     | bronze.customers | Checking for last successful run
+2026-07-24 10:07:12,923 | INFO     | bronze.customers | Fetched watermark value: 2025-02-01 00:00:00
+2026-07-24 10:07:12,924 | INFO     | bronze.customers | Reading source customers_raw table
+2026-07-24 10:07:12,957 | INFO     | bronze.customers | Starting pre-write validations
+2026-07-24 10:07:13,730 | INFO     | bronze.customers | Rows read from source: 0
+2026-07-24 10:07:13,914 | INFO     | bronze.customers | Pre-write validations passed. Source customers_raw ready for ingestion.
+2026-07-24 10:07:13,915 | INFO     | bronze.customers | Starting Bronze customers ingestion
+2026-07-24 10:07:13,915 | INFO     | bronze.customers | Source table: customers_raw
+2026-07-24 10:07:13,916 | INFO     | bronze.customers | Target table: customers
+2026-07-24 10:07:15,267 | INFO     | bronze.customers | Bronze customers table written successfully.
+2026-07-24 10:07:15,268 | INFO     | bronze.customers | Starting post-write validations
+2026-07-24 10:07:15,660 | INFO     | bronze.customers | No new data found. Using previous watermark: 2025-02-01 00:00:00
+2026-07-24 10:07:15,661 | INFO     | bronze.customers | Rows written in this run: 0
+2026-07-24 10:07:16,159 | INFO     | bronze.customers | Total rows in bronze table after ingestion: 10
+2026-07-24 10:07:16,682 | INFO     | bronze.customers | No primary key duplicates found
+2026-07-24 10:07:17,068 | INFO     | bronze.customers | No full row duplicates found
+2026-07-24 10:07:17,445 | INFO     | bronze.customers | No NULL values found
+2026-07-24 10:07:17,446 | INFO     | bronze.customers | Post-write validations completed. Bronze customers ingestion finished successfully.
+2026-07-24 10:07:19,619 | INFO     | bronze.customers | Audit log written

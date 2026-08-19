@@ -1,0 +1,30 @@
+2026-08-14 08:14:23,750 | INFO     | silver.clean_suppliers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/silver_clean_suppliers_20260814.log
+2026-08-14 08:14:23,751 | INFO     | silver.clean_suppliers | Starting Silver pipeline at 2026-08-14 08:14:21.438092
+2026-08-14 08:14:24,859 | INFO     | silver.clean_suppliers | Incremental load from catalog_project1.bronze.suppliers
+2026-08-14 08:14:26,138 | INFO     | silver.clean_suppliers | Read 0 records from catalog_project1.bronze.suppliers
+2026-08-14 08:14:26,139 | INFO     | silver.clean_suppliers | All required columns exists in the catalog_project1.bronze.suppliers
+2026-08-14 08:14:26,141 | WARNING  | silver.clean_suppliers | New columns detected in catalog_project1.bronze.suppliers: {'_source_table', '_ingestion_pipeline_id', '_source_file', '_ingestion_timestamp'}
+2026-08-14 08:14:26,890 | INFO     | silver.clean_suppliers | Data standardization completed for the catalog_project1.bronze.suppliers
+2026-08-14 08:14:27,492 | INFO     | silver.clean_suppliers | Data type casting completed for the catalog_project1.bronze.suppliers
+2026-08-14 08:14:28,521 | INFO     | silver.clean_suppliers | Data validation completed for the catalog_project1.bronze.suppliers
+2026-08-14 08:14:28,954 | INFO     | silver.clean_suppliers | Deduplication completed for the catalog_project1.bronze.suppliers
+2026-08-14 08:14:32,459 | INFO     | silver.clean_suppliers | Data written to the catalog_project1.silver.clean_suppliers
+2026-08-14 08:14:34,159 | INFO     | silver.clean_suppliers | Data validation for catalog_project1.silver.clean_suppliers completed
+2026-08-14 08:14:34,161 | INFO     | silver.clean_suppliers | Silver pipeline for catalog_project1.silver.clean_suppliers completed successfully
+2026-08-14 08:14:34,162 | INFO     | silver.clean_suppliers | No new data, watermark value unchanged: 2024-12-01 00:00:00
+2026-08-14 08:14:35,981 | INFO     | silver.clean_suppliers | Audit for catalog_project1.silver.clean_suppliers is written successfully
+2026-08-14 08:16:33,213 | INFO     | silver.clean_suppliers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/silver_clean_suppliers_20260814.log
+2026-08-14 08:16:33,214 | INFO     | silver.clean_suppliers | Starting Silver pipeline at 2026-08-14 08:16:32.526385
+2026-08-14 08:16:34,133 | INFO     | silver.clean_suppliers | Incremental load from catalog_project1.bronze.suppliers
+2026-08-14 08:16:35,262 | INFO     | silver.clean_suppliers | Read 0 records from catalog_project1.bronze.suppliers
+2026-08-14 08:16:35,263 | INFO     | silver.clean_suppliers | All required columns exists in the catalog_project1.bronze.suppliers
+2026-08-14 08:16:35,263 | WARNING  | silver.clean_suppliers | New columns detected in catalog_project1.bronze.suppliers: {'_source_table', '_ingestion_pipeline_id', '_source_file', '_ingestion_timestamp'}
+2026-08-14 08:16:35,806 | INFO     | silver.clean_suppliers | Data standardization completed for the catalog_project1.bronze.suppliers
+2026-08-14 08:16:36,361 | INFO     | silver.clean_suppliers | Data type casting completed for the catalog_project1.bronze.suppliers
+2026-08-14 08:16:37,259 | INFO     | silver.clean_suppliers | Data validation completed for the catalog_project1.bronze.suppliers
+2026-08-14 08:16:37,835 | INFO     | silver.clean_suppliers | Deduplication completed for the catalog_project1.bronze.suppliers
+2026-08-14 08:16:40,947 | INFO     | silver.clean_suppliers | Data written to the catalog_project1.silver.clean_suppliers
+2026-08-14 08:16:42,592 | INFO     | silver.clean_suppliers | Data validation for catalog_project1.silver.clean_suppliers completed
+2026-08-14 08:16:42,592 | INFO     | silver.clean_suppliers | Silver pipeline for catalog_project1.silver.clean_suppliers completed successfully
+2026-08-14 08:16:42,593 | INFO     | silver.clean_suppliers | No new data, watermark value unchanged: 2024-12-01 00:00:00
+2026-08-14 08:16:44,166 | INFO     | silver.clean_suppliers | Audit for catalog_project1.silver.clean_suppliers is written successfully

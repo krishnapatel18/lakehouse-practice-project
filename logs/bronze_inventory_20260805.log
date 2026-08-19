@@ -1,0 +1,40 @@
+2026-08-05 10:05:59,972 | INFO     | bronze.inventory | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_inventory_20260805.log
+2026-08-05 10:05:59,974 | INFO     | bronze.inventory | Checking for last successful run
+2026-08-05 10:06:00,615 | INFO     | bronze.inventory | Fetched watermark value: 2025-03-01 00:00:00
+2026-08-05 10:06:00,617 | INFO     | bronze.inventory | Reading source inventory_raw table
+2026-08-05 10:06:00,644 | INFO     | bronze.inventory | Starting pre-write validations
+2026-08-05 10:06:01,914 | INFO     | bronze.inventory | Rows read from source: 0
+2026-08-05 10:06:02,108 | INFO     | bronze.inventory | Pre-write validations passed. Source inventory_raw ready for ingestion.
+2026-08-05 10:06:02,111 | INFO     | bronze.inventory | Starting Bronze inventory ingestion
+2026-08-05 10:06:02,114 | INFO     | bronze.inventory | Source table: inventory_raw
+2026-08-05 10:06:02,119 | INFO     | bronze.inventory | Target table: inventory
+2026-08-05 10:06:04,060 | INFO     | bronze.inventory | Bronze inventory table written successfully.
+2026-08-05 10:06:04,061 | INFO     | bronze.inventory | Starting post-write validations
+2026-08-05 10:06:04,537 | INFO     | bronze.inventory | No new data found. Using previous watermark: 2025-03-01 00:00:00
+2026-08-05 10:06:04,538 | INFO     | bronze.inventory | Rows written in this run: 0
+2026-08-05 10:06:05,249 | INFO     | bronze.inventory | Total rows in bronze table: 10
+2026-08-05 10:06:05,740 | INFO     | bronze.inventory | No primary key duplicates found
+2026-08-05 10:06:06,231 | INFO     | bronze.inventory | No full row duplicates found
+2026-08-05 10:06:06,608 | INFO     | bronze.inventory | No NULL values found
+2026-08-05 10:06:06,616 | INFO     | bronze.inventory | Post-write validations completed. Bronze inventory ingestion finished successfully.
+2026-08-05 10:06:08,076 | INFO     | bronze.inventory | Audit log written successfully
+2026-08-05 13:00:23,700 | INFO     | bronze.inventory | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_inventory_20260805.log
+2026-08-05 13:00:23,701 | INFO     | bronze.inventory | Checking for last successful run
+2026-08-05 13:00:24,586 | INFO     | bronze.inventory | Fetched watermark value: 2025-03-01 00:00:00
+2026-08-05 13:00:24,587 | INFO     | bronze.inventory | Reading source inventory_raw table
+2026-08-05 13:00:24,621 | INFO     | bronze.inventory | Starting pre-write validations
+2026-08-05 13:00:25,758 | INFO     | bronze.inventory | Rows read from source: 0
+2026-08-05 13:00:26,248 | INFO     | bronze.inventory | Pre-write validations passed. Source inventory_raw ready for ingestion.
+2026-08-05 13:00:26,249 | INFO     | bronze.inventory | Starting Bronze inventory ingestion
+2026-08-05 13:00:26,250 | INFO     | bronze.inventory | Source table: inventory_raw
+2026-08-05 13:00:26,254 | INFO     | bronze.inventory | Target table: inventory
+2026-08-05 13:00:27,983 | INFO     | bronze.inventory | Bronze inventory table written successfully.
+2026-08-05 13:00:27,984 | INFO     | bronze.inventory | Starting post-write validations
+2026-08-05 13:00:28,401 | INFO     | bronze.inventory | No new data found. Using previous watermark: 2025-03-01 00:00:00
+2026-08-05 13:00:28,403 | INFO     | bronze.inventory | Rows written in this run: 0
+2026-08-05 13:00:29,061 | INFO     | bronze.inventory | Total rows in bronze table: 10
+2026-08-05 13:00:29,602 | INFO     | bronze.inventory | No primary key duplicates found
+2026-08-05 13:00:30,004 | INFO     | bronze.inventory | No full row duplicates found
+2026-08-05 13:00:30,384 | INFO     | bronze.inventory | No NULL values found
+2026-08-05 13:00:30,386 | INFO     | bronze.inventory | Post-write validations completed. Bronze inventory ingestion finished successfully.
+2026-08-05 13:00:32,033 | INFO     | bronze.inventory | Audit log written successfully

@@ -1,0 +1,60 @@
+2026-08-04 09:08:03,732 | INFO     | bronze.payments | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_payments_20260804.log
+2026-08-04 09:08:03,734 | INFO     | bronze.payments | Checking for last successful run
+2026-08-04 09:08:04,709 | INFO     | bronze.payments | Fetched watermark value: 2025-03-28 00:00:00
+2026-08-04 09:08:04,710 | INFO     | bronze.payments | Reading source payments_raw table
+2026-08-04 09:08:04,745 | INFO     | bronze.payments | Starting pre-write validations
+2026-08-04 09:08:06,035 | INFO     | bronze.payments | Rows read from source: 0
+2026-08-04 09:08:06,389 | INFO     | bronze.payments | Pre-write validations passed. Source payments_raw ready for ingestion.
+2026-08-04 09:08:06,390 | INFO     | bronze.payments | Starting Bronze payments ingestion
+2026-08-04 09:08:06,391 | INFO     | bronze.payments | Source table: payments_raw
+2026-08-04 09:08:06,391 | INFO     | bronze.payments | Target table: payments
+2026-08-04 09:08:08,495 | INFO     | bronze.payments | Bronze payments table written successfully.
+2026-08-04 09:08:08,498 | INFO     | bronze.payments | Starting post-write validations
+2026-08-04 09:08:08,932 | INFO     | bronze.payments | No new data found. Using previous watermark: 2025-03-28 00:00:00
+2026-08-04 09:08:08,933 | INFO     | bronze.payments | Rows written in this run: 0
+2026-08-04 09:08:09,471 | INFO     | bronze.payments | Total rows in bronze table: 10
+2026-08-04 09:08:09,960 | INFO     | bronze.payments | No primary key duplicates found
+2026-08-04 09:08:10,365 | INFO     | bronze.payments | No full row duplicates found
+2026-08-04 09:08:10,746 | INFO     | bronze.payments | No NULL values found
+2026-08-04 09:08:10,748 | INFO     | bronze.payments | Post-write validations completed. Bronze payments ingestion finished successfully.
+2026-08-04 09:08:12,381 | INFO     | bronze.payments | Audit log written successfully
+2026-08-04 09:33:33,715 | INFO     | bronze.payments | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_payments_20260804.log
+2026-08-04 09:33:33,716 | INFO     | bronze.payments | Checking for last successful run
+2026-08-04 09:33:34,580 | INFO     | bronze.payments | Fetched watermark value: 2025-03-28 00:00:00
+2026-08-04 09:33:34,582 | INFO     | bronze.payments | Reading source payments_raw table
+2026-08-04 09:33:34,607 | INFO     | bronze.payments | Starting pre-write validations
+2026-08-04 09:33:35,518 | INFO     | bronze.payments | Rows read from source: 0
+2026-08-04 09:33:35,693 | INFO     | bronze.payments | Pre-write validations passed. Source payments_raw ready for ingestion.
+2026-08-04 09:33:35,694 | INFO     | bronze.payments | Starting Bronze payments ingestion
+2026-08-04 09:33:35,694 | INFO     | bronze.payments | Source table: payments_raw
+2026-08-04 09:33:35,695 | INFO     | bronze.payments | Target table: payments
+2026-08-04 09:33:37,137 | INFO     | bronze.payments | Bronze payments table written successfully.
+2026-08-04 09:33:37,148 | INFO     | bronze.payments | Starting post-write validations
+2026-08-04 09:33:37,752 | INFO     | bronze.payments | No new data found. Using previous watermark: 2025-03-28 00:00:00
+2026-08-04 09:33:37,753 | INFO     | bronze.payments | Rows written in this run: 0
+2026-08-04 09:33:38,384 | INFO     | bronze.payments | Total rows in bronze table: 10
+2026-08-04 09:33:38,752 | INFO     | bronze.payments | No primary key duplicates found
+2026-08-04 09:33:39,143 | INFO     | bronze.payments | No full row duplicates found
+2026-08-04 09:33:39,585 | INFO     | bronze.payments | No NULL values found
+2026-08-04 09:33:39,591 | INFO     | bronze.payments | Post-write validations completed. Bronze payments ingestion finished successfully.
+2026-08-04 09:33:41,268 | INFO     | bronze.payments | Audit log written successfully
+2026-08-04 12:46:30,086 | INFO     | bronze.payments | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_payments_20260804.log
+2026-08-04 12:46:30,094 | INFO     | bronze.payments | Checking for last successful run
+2026-08-04 12:46:30,925 | INFO     | bronze.payments | Fetched watermark value: 2025-03-28 00:00:00
+2026-08-04 12:46:30,926 | INFO     | bronze.payments | Reading source payments_raw table
+2026-08-04 12:46:30,952 | INFO     | bronze.payments | Starting pre-write validations
+2026-08-04 12:46:32,241 | INFO     | bronze.payments | Rows read from source: 0
+2026-08-04 12:46:32,408 | INFO     | bronze.payments | Pre-write validations passed. Source payments_raw ready for ingestion.
+2026-08-04 12:46:32,413 | INFO     | bronze.payments | Starting Bronze payments ingestion
+2026-08-04 12:46:32,415 | INFO     | bronze.payments | Source table: payments_raw
+2026-08-04 12:46:32,416 | INFO     | bronze.payments | Target table: payments
+2026-08-04 12:46:34,014 | INFO     | bronze.payments | Bronze payments table written successfully.
+2026-08-04 12:46:34,019 | INFO     | bronze.payments | Starting post-write validations
+2026-08-04 12:46:34,564 | INFO     | bronze.payments | No new data found. Using previous watermark: 2025-03-28 00:00:00
+2026-08-04 12:46:34,567 | INFO     | bronze.payments | Rows written in this run: 0
+2026-08-04 12:46:35,251 | INFO     | bronze.payments | Total rows in bronze table: 10
+2026-08-04 12:46:35,680 | INFO     | bronze.payments | No primary key duplicates found
+2026-08-04 12:46:36,078 | INFO     | bronze.payments | No full row duplicates found
+2026-08-04 12:46:36,459 | INFO     | bronze.payments | No NULL values found
+2026-08-04 12:46:36,461 | INFO     | bronze.payments | Post-write validations completed. Bronze payments ingestion finished successfully.
+2026-08-04 12:46:38,126 | INFO     | bronze.payments | Audit log written successfully

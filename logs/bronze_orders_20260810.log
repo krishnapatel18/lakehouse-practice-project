@@ -1,0 +1,140 @@
+2026-08-10 05:16:05,430 | INFO     | bronze.orders | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_orders_20260810.log
+2026-08-10 05:16:05,432 | INFO     | bronze.orders | Checking for last successful run
+2026-08-10 05:16:06,322 | INFO     | bronze.orders | Fetched watermark value: 2025-03-28 00:00:00
+2026-08-10 05:16:06,323 | INFO     | bronze.orders | Reading source orders_raw table
+2026-08-10 05:16:06,353 | INFO     | bronze.orders | Starting pre-write validations
+2026-08-10 05:16:07,546 | INFO     | bronze.orders | Rows read from source: 0
+2026-08-10 05:16:07,785 | INFO     | bronze.orders | Pre-write validations passed. Source orders_raw ready for ingestion.
+2026-08-10 05:16:07,786 | INFO     | bronze.orders | Starting Bronze orders ingestion
+2026-08-10 05:16:07,789 | INFO     | bronze.orders | Source table: orders_raw
+2026-08-10 05:16:07,790 | INFO     | bronze.orders | Target table: orders
+2026-08-10 05:16:09,626 | INFO     | bronze.orders | Bronze orders table written successfully.
+2026-08-10 05:16:09,637 | INFO     | bronze.orders | Starting post-write validations
+2026-08-10 05:16:10,295 | INFO     | bronze.orders | No new data found. Using previous watermark: 2025-03-28 00:00:00
+2026-08-10 05:16:10,296 | INFO     | bronze.orders | Rows written in this run: 0
+2026-08-10 05:16:10,850 | INFO     | bronze.orders | Total rows in bronze table: 10
+2026-08-10 05:16:11,394 | INFO     | bronze.orders | No primary key duplicates found
+2026-08-10 05:16:11,799 | INFO     | bronze.orders | No full row duplicates found
+2026-08-10 05:16:12,292 | INFO     | bronze.orders | No NULL values found
+2026-08-10 05:16:12,294 | INFO     | bronze.orders | Post-write validations completed. Bronze orders ingestion finished successfully.
+2026-08-10 05:16:13,994 | INFO     | bronze.orders | Audit log written successfully
+2026-08-10 05:27:27,778 | INFO     | bronze.orders | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_orders_20260810.log
+2026-08-10 05:27:27,779 | INFO     | bronze.orders | Checking for last successful run
+2026-08-10 05:27:28,383 | INFO     | bronze.orders | Fetched watermark value: 2025-03-28 00:00:00
+2026-08-10 05:27:28,384 | INFO     | bronze.orders | Reading source orders_raw table
+2026-08-10 05:27:28,415 | INFO     | bronze.orders | Starting pre-write validations
+2026-08-10 05:27:29,197 | INFO     | bronze.orders | Rows read from source: 0
+2026-08-10 05:27:29,694 | INFO     | bronze.orders | Pre-write validations passed. Source orders_raw ready for ingestion.
+2026-08-10 05:27:29,695 | INFO     | bronze.orders | Starting Bronze orders ingestion
+2026-08-10 05:27:29,698 | INFO     | bronze.orders | Source table: orders_raw
+2026-08-10 05:27:29,699 | INFO     | bronze.orders | Target table: orders
+2026-08-10 05:27:31,013 | INFO     | bronze.orders | Bronze orders table written successfully.
+2026-08-10 05:27:31,014 | INFO     | bronze.orders | Starting post-write validations
+2026-08-10 05:27:31,386 | INFO     | bronze.orders | No new data found. Using previous watermark: 2025-03-28 00:00:00
+2026-08-10 05:27:31,388 | INFO     | bronze.orders | Rows written in this run: 0
+2026-08-10 05:27:31,879 | INFO     | bronze.orders | Total rows in bronze table: 10
+2026-08-10 05:27:32,712 | INFO     | bronze.orders | No primary key duplicates found
+2026-08-10 05:27:33,609 | INFO     | bronze.orders | No full row duplicates found
+2026-08-10 05:27:33,943 | INFO     | bronze.orders | No NULL values found
+2026-08-10 05:27:33,944 | INFO     | bronze.orders | Post-write validations completed. Bronze orders ingestion finished successfully.
+2026-08-10 05:27:35,539 | INFO     | bronze.orders | Audit log written successfully
+2026-08-10 05:28:54,343 | INFO     | bronze.orders | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_orders_20260810.log
+2026-08-10 05:28:54,344 | INFO     | bronze.orders | Checking for last successful run
+2026-08-10 05:28:55,333 | INFO     | bronze.orders | Fetched watermark value: 2025-03-28 00:00:00
+2026-08-10 05:28:55,335 | INFO     | bronze.orders | Reading source orders_raw table
+2026-08-10 05:28:55,366 | INFO     | bronze.orders | Starting pre-write validations
+2026-08-10 05:28:56,176 | INFO     | bronze.orders | Rows read from source: 0
+2026-08-10 05:28:56,349 | INFO     | bronze.orders | Pre-write validations passed. Source orders_raw ready for ingestion.
+2026-08-10 05:28:56,350 | INFO     | bronze.orders | Starting Bronze orders ingestion
+2026-08-10 05:28:56,351 | INFO     | bronze.orders | Source table: orders_raw
+2026-08-10 05:28:56,352 | INFO     | bronze.orders | Target table: orders
+2026-08-10 05:28:57,545 | INFO     | bronze.orders | Bronze orders table written successfully.
+2026-08-10 05:28:57,546 | INFO     | bronze.orders | Starting post-write validations
+2026-08-10 05:28:58,036 | INFO     | bronze.orders | No new data found. Using previous watermark: 2025-03-28 00:00:00
+2026-08-10 05:28:58,037 | INFO     | bronze.orders | Rows written in this run: 0
+2026-08-10 05:28:58,705 | INFO     | bronze.orders | Total rows in bronze table: 10
+2026-08-10 05:28:59,138 | INFO     | bronze.orders | No primary key duplicates found
+2026-08-10 05:28:59,574 | INFO     | bronze.orders | No full row duplicates found
+2026-08-10 05:28:59,991 | INFO     | bronze.orders | No NULL values found
+2026-08-10 05:28:59,992 | INFO     | bronze.orders | Post-write validations completed. Bronze orders ingestion finished successfully.
+2026-08-10 05:29:01,920 | INFO     | bronze.orders | Audit log written successfully
+2026-08-10 05:29:49,389 | INFO     | bronze.orders | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_orders_20260810.log
+2026-08-10 05:29:49,392 | INFO     | bronze.orders | Checking for last successful run
+2026-08-10 05:29:50,196 | INFO     | bronze.orders | Fetched watermark value: 2025-03-28 00:00:00
+2026-08-10 05:29:50,197 | INFO     | bronze.orders | Reading source orders_raw table
+2026-08-10 05:29:50,226 | INFO     | bronze.orders | Starting pre-write validations
+2026-08-10 05:29:51,135 | INFO     | bronze.orders | Rows read from source: 0
+2026-08-10 05:29:51,581 | INFO     | bronze.orders | Pre-write validations passed. Source orders_raw ready for ingestion.
+2026-08-10 05:29:51,591 | INFO     | bronze.orders | Starting Bronze orders ingestion
+2026-08-10 05:29:51,592 | INFO     | bronze.orders | Source table: orders_raw
+2026-08-10 05:29:51,593 | INFO     | bronze.orders | Target table: orders
+2026-08-10 05:29:52,777 | INFO     | bronze.orders | Bronze orders table written successfully.
+2026-08-10 05:29:52,778 | INFO     | bronze.orders | Starting post-write validations
+2026-08-10 05:29:53,198 | INFO     | bronze.orders | No new data found. Using previous watermark: 2025-03-28 00:00:00
+2026-08-10 05:29:53,200 | INFO     | bronze.orders | Rows written in this run: 0
+2026-08-10 05:29:53,715 | INFO     | bronze.orders | Total rows in bronze table: 10
+2026-08-10 05:29:54,085 | INFO     | bronze.orders | No primary key duplicates found
+2026-08-10 05:29:54,464 | INFO     | bronze.orders | No full row duplicates found
+2026-08-10 05:29:54,797 | INFO     | bronze.orders | No NULL values found
+2026-08-10 05:29:54,802 | INFO     | bronze.orders | Post-write validations completed. Bronze orders ingestion finished successfully.
+2026-08-10 05:29:56,496 | INFO     | bronze.orders | Audit log written successfully
+2026-08-10 05:34:45,704 | INFO     | bronze.orders | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_orders_20260810.log
+2026-08-10 05:34:45,705 | INFO     | bronze.orders | Checking for last successful run
+2026-08-10 05:34:46,520 | INFO     | bronze.orders | Fetched watermark value: 2025-03-28 00:00:00
+2026-08-10 05:34:46,521 | INFO     | bronze.orders | Reading source orders_raw table
+2026-08-10 05:34:46,548 | INFO     | bronze.orders | Starting pre-write validations
+2026-08-10 05:34:47,287 | INFO     | bronze.orders | Rows read from source: 0
+2026-08-10 05:34:47,482 | INFO     | bronze.orders | Pre-write validations passed. Source orders_raw ready for ingestion.
+2026-08-10 05:34:47,483 | INFO     | bronze.orders | Starting Bronze orders ingestion
+2026-08-10 05:34:47,484 | INFO     | bronze.orders | Source table: orders_raw
+2026-08-10 05:34:47,485 | INFO     | bronze.orders | Target table: orders
+2026-08-10 05:34:49,132 | INFO     | bronze.orders | Bronze orders table written successfully.
+2026-08-10 05:34:49,133 | INFO     | bronze.orders | Starting post-write validations
+2026-08-10 05:34:49,547 | INFO     | bronze.orders | No new data found. Using previous watermark: 2025-03-28 00:00:00
+2026-08-10 05:34:49,549 | INFO     | bronze.orders | Rows written in this run: 0
+2026-08-10 05:34:50,059 | INFO     | bronze.orders | Total rows in bronze table: 10
+2026-08-10 05:34:50,725 | INFO     | bronze.orders | No primary key duplicates found
+2026-08-10 05:34:51,147 | INFO     | bronze.orders | No full row duplicates found
+2026-08-10 05:34:51,706 | INFO     | bronze.orders | No NULL values found
+2026-08-10 05:34:51,708 | INFO     | bronze.orders | Post-write validations completed. Bronze orders ingestion finished successfully.
+2026-08-10 05:34:53,283 | INFO     | bronze.orders | Audit log written successfully
+2026-08-10 06:19:19,045 | INFO     | bronze.orders | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_orders_20260810.log
+2026-08-10 06:19:19,049 | INFO     | bronze.orders | Checking for last successful run
+2026-08-10 06:19:19,882 | INFO     | bronze.orders | Fetched watermark value: 2025-03-28 00:00:00
+2026-08-10 06:19:19,939 | INFO     | bronze.orders | Reading source orders_raw table
+2026-08-10 06:19:20,016 | INFO     | bronze.orders | Starting pre-write validations
+2026-08-10 06:19:21,165 | INFO     | bronze.orders | Rows read from source: 0
+2026-08-10 06:19:21,341 | INFO     | bronze.orders | Pre-write validations passed. Source orders_raw ready for ingestion.
+2026-08-10 06:19:21,342 | INFO     | bronze.orders | Starting Bronze orders ingestion
+2026-08-10 06:19:21,343 | INFO     | bronze.orders | Source table: orders_raw
+2026-08-10 06:19:21,343 | INFO     | bronze.orders | Target table: orders
+2026-08-10 06:19:22,802 | INFO     | bronze.orders | Bronze orders table written successfully.
+2026-08-10 06:19:22,804 | INFO     | bronze.orders | Starting post-write validations
+2026-08-10 06:19:23,238 | INFO     | bronze.orders | No new data found. Using previous watermark: 2025-03-28 00:00:00
+2026-08-10 06:19:23,240 | INFO     | bronze.orders | Rows written in this run: 0
+2026-08-10 06:19:23,832 | INFO     | bronze.orders | Total rows in bronze table: 10
+2026-08-10 06:19:24,205 | INFO     | bronze.orders | No primary key duplicates found
+2026-08-10 06:19:24,575 | INFO     | bronze.orders | No full row duplicates found
+2026-08-10 06:19:24,913 | INFO     | bronze.orders | No NULL values found
+2026-08-10 06:19:24,916 | INFO     | bronze.orders | Post-write validations completed. Bronze orders ingestion finished successfully.
+2026-08-10 06:19:26,253 | INFO     | bronze.orders | Audit log written successfully
+2026-08-10 06:22:33,909 | INFO     | bronze.orders | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_orders_20260810.log
+2026-08-10 06:22:33,910 | INFO     | bronze.orders | Checking for last successful run
+2026-08-10 06:22:34,777 | INFO     | bronze.orders | Fetched watermark value: 2025-03-28 00:00:00
+2026-08-10 06:22:34,778 | INFO     | bronze.orders | Reading source orders_raw table
+2026-08-10 06:22:34,836 | INFO     | bronze.orders | Starting pre-write validations
+2026-08-10 06:22:35,657 | INFO     | bronze.orders | Rows read from source: 0
+2026-08-10 06:22:35,850 | INFO     | bronze.orders | Pre-write validations passed. Source orders_raw ready for ingestion.
+2026-08-10 06:22:35,851 | INFO     | bronze.orders | Starting Bronze orders ingestion
+2026-08-10 06:22:35,851 | INFO     | bronze.orders | Source table: orders_raw
+2026-08-10 06:22:35,852 | INFO     | bronze.orders | Target table: orders
+2026-08-10 06:22:37,540 | INFO     | bronze.orders | Bronze orders table written successfully.
+2026-08-10 06:22:37,541 | INFO     | bronze.orders | Starting post-write validations
+2026-08-10 06:22:37,952 | INFO     | bronze.orders | No new data found. Using previous watermark: 2025-03-28 00:00:00
+2026-08-10 06:22:37,953 | INFO     | bronze.orders | Rows written in this run: 0
+2026-08-10 06:22:38,465 | INFO     | bronze.orders | Total rows in bronze table: 10
+2026-08-10 06:22:38,871 | INFO     | bronze.orders | No primary key duplicates found
+2026-08-10 06:22:39,381 | INFO     | bronze.orders | No full row duplicates found
+2026-08-10 06:22:39,759 | INFO     | bronze.orders | No NULL values found
+2026-08-10 06:22:39,760 | INFO     | bronze.orders | Post-write validations completed. Bronze orders ingestion finished successfully.
+2026-08-10 06:22:41,553 | INFO     | bronze.orders | Audit log written successfully

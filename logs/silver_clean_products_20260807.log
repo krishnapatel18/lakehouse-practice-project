@@ -1,0 +1,120 @@
+2026-08-07 06:42:58,563 | INFO     | silver.clean_products | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/silver_clean_products_20260807.log
+2026-08-07 06:42:58,565 | INFO     | silver.clean_products | Starting Silver pipeline at 2026-08-07 06:42:58.561783
+2026-08-07 06:42:59,513 | INFO     | silver.clean_products | Incremental load from catalog_project1.bronze.products
+2026-08-07 06:43:00,616 | INFO     | silver.clean_products | Read 2 records from catalog_project1.bronze.products
+2026-08-07 06:43:00,618 | INFO     | silver.clean_products | All required columns exists in the catalog_project1.bronze.products
+2026-08-07 06:43:00,620 | WARNING  | silver.clean_products | New columns detected in catalog_project1.bronze.products: {'_source_table', '_ingestion_pipeline_id', '_source_file', '_ingestion_timestamp'}
+2026-08-07 06:43:01,429 | INFO     | silver.clean_products | Data standardization completed for the catalog_project1.bronze.products
+2026-08-07 06:43:01,948 | INFO     | silver.clean_products | Data type casting completed for the catalog_project1.bronze.products
+2026-08-07 06:43:03,073 | INFO     | silver.clean_products | Data validation completed for the catalog_project1.bronze.products
+2026-08-07 06:43:03,691 | INFO     | silver.clean_products | Deduplication completed for the catalog_project1.bronze.products
+2026-08-07 06:43:10,686 | INFO     | silver.clean_products | Data written to the catalog_project1.silver.clean_products
+2026-08-07 06:43:12,228 | INFO     | silver.clean_products | Data validation for catalog_project1.silver.clean_products completed
+2026-08-07 06:43:12,230 | INFO     | silver.clean_products | Silver pipeline for catalog_project1.silver.clean_products completed successfully
+2026-08-07 06:43:12,694 | INFO     | silver.clean_products | New watermark: 2024-12-05 00:00:00
+2026-08-07 06:43:14,344 | INFO     | silver.clean_products | Audit for catalog_project1.silver.clean_products is written successfully
+2026-08-07 07:41:28,304 | INFO     | silver.clean_products | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/silver_clean_products_20260807.log
+2026-08-07 07:41:28,306 | INFO     | silver.clean_products | Starting Silver pipeline at 2026-08-07 07:41:28.255961
+2026-08-07 07:41:29,488 | INFO     | silver.clean_products | Incremental load from catalog_project1.bronze.products
+2026-08-07 07:41:30,391 | INFO     | silver.clean_products | Read 0 records from catalog_project1.bronze.products
+2026-08-07 07:41:30,391 | INFO     | silver.clean_products | All required columns exists in the catalog_project1.bronze.products
+2026-08-07 07:41:30,393 | WARNING  | silver.clean_products | New columns detected in catalog_project1.bronze.products: {'_source_table', '_ingestion_pipeline_id', '_source_file', '_ingestion_timestamp'}
+2026-08-07 07:41:31,045 | INFO     | silver.clean_products | Data standardization completed for the catalog_project1.bronze.products
+2026-08-07 07:41:31,603 | INFO     | silver.clean_products | Data type casting completed for the catalog_project1.bronze.products
+2026-08-07 07:41:32,465 | INFO     | silver.clean_products | Data validation completed for the catalog_project1.bronze.products
+2026-08-07 07:41:32,881 | INFO     | silver.clean_products | Deduplication completed for the catalog_project1.bronze.products
+2026-08-07 07:41:36,875 | INFO     | silver.clean_products | Data written to the catalog_project1.silver.clean_products
+2026-08-07 07:41:38,322 | INFO     | silver.clean_products | Data validation for catalog_project1.silver.clean_products completed
+2026-08-07 07:41:38,324 | INFO     | silver.clean_products | Silver pipeline for catalog_project1.silver.clean_products completed successfully
+2026-08-07 07:41:38,326 | INFO     | silver.clean_products | No new data, watermark value unchanged: 2024-12-05 00:00:00
+2026-08-07 07:41:39,944 | INFO     | silver.clean_products | Audit for catalog_project1.silver.clean_products is written successfully
+2026-08-07 07:52:59,414 | INFO     | silver.clean_products | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/silver_clean_products_20260807.log
+2026-08-07 07:52:59,415 | INFO     | silver.clean_products | Starting Silver pipeline at 2026-08-07 07:52:59.386697
+2026-08-07 07:53:00,295 | INFO     | silver.clean_products | Incremental load from catalog_project1.bronze.products
+2026-08-07 07:53:01,675 | INFO     | silver.clean_products | Read 1 records from catalog_project1.bronze.products
+2026-08-07 07:53:01,676 | INFO     | silver.clean_products | All required columns exists in the catalog_project1.bronze.products
+2026-08-07 07:53:01,677 | WARNING  | silver.clean_products | New columns detected in catalog_project1.bronze.products: {'_source_table', '_ingestion_pipeline_id', '_source_file', '_ingestion_timestamp'}
+2026-08-07 07:53:02,362 | INFO     | silver.clean_products | Data standardization completed for the catalog_project1.bronze.products
+2026-08-07 07:53:02,720 | INFO     | silver.clean_products | Data type casting completed for the catalog_project1.bronze.products
+2026-08-07 07:53:03,615 | INFO     | silver.clean_products | Data validation completed for the catalog_project1.bronze.products
+2026-08-07 07:53:04,044 | INFO     | silver.clean_products | Deduplication completed for the catalog_project1.bronze.products
+2026-08-07 07:53:09,879 | INFO     | silver.clean_products | Data written to the catalog_project1.silver.clean_products
+2026-08-07 07:53:12,114 | INFO     | silver.clean_products | Data validation for catalog_project1.silver.clean_products completed
+2026-08-07 07:53:12,115 | INFO     | silver.clean_products | Silver pipeline for catalog_project1.silver.clean_products completed successfully
+2026-08-07 07:53:12,686 | INFO     | silver.clean_products | New watermark: 2024-12-06 00:00:00
+2026-08-07 07:53:14,186 | INFO     | silver.clean_products | Audit for catalog_project1.silver.clean_products is written successfully
+2026-08-07 08:06:47,860 | INFO     | silver.clean_products | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/silver_clean_products_20260807.log
+2026-08-07 08:06:47,861 | INFO     | silver.clean_products | Starting Silver pipeline at 2026-08-07 08:06:47.835330
+2026-08-07 08:06:48,688 | INFO     | silver.clean_products | Incremental load from catalog_project1.bronze.products
+2026-08-07 08:06:49,953 | INFO     | silver.clean_products | Read 1 records from catalog_project1.bronze.products
+2026-08-07 08:06:49,954 | INFO     | silver.clean_products | All required columns exists in the catalog_project1.bronze.products
+2026-08-07 08:06:49,955 | WARNING  | silver.clean_products | New columns detected in catalog_project1.bronze.products: {'_source_table', '_ingestion_pipeline_id', '_source_file', '_ingestion_timestamp'}
+2026-08-07 08:06:50,626 | INFO     | silver.clean_products | Data standardization completed for the catalog_project1.bronze.products
+2026-08-07 08:06:50,984 | INFO     | silver.clean_products | Data type casting completed for the catalog_project1.bronze.products
+2026-08-07 08:06:51,767 | INFO     | silver.clean_products | Data validation completed for the catalog_project1.bronze.products
+2026-08-07 08:06:52,195 | INFO     | silver.clean_products | Deduplication completed for the catalog_project1.bronze.products
+2026-08-07 08:06:58,000 | INFO     | silver.clean_products | Data written to the catalog_project1.silver.clean_products
+2026-08-07 08:06:59,583 | INFO     | silver.clean_products | Data validation for catalog_project1.silver.clean_products completed
+2026-08-07 08:06:59,605 | INFO     | silver.clean_products | Silver pipeline for catalog_project1.silver.clean_products completed successfully
+2026-08-07 08:06:59,980 | INFO     | silver.clean_products | New watermark: 2024-12-07 00:00:00
+2026-08-07 08:07:01,610 | INFO     | silver.clean_products | Audit for catalog_project1.silver.clean_products is written successfully
+2026-08-07 08:25:44,552 | INFO     | silver.clean_products | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/silver_clean_products_20260807.log
+2026-08-07 08:25:44,553 | INFO     | silver.clean_products | Starting Silver pipeline at 2026-08-07 08:25:44.529132
+2026-08-07 08:25:45,518 | INFO     | silver.clean_products | Incremental load from catalog_project1.bronze.products
+2026-08-07 08:25:46,470 | INFO     | silver.clean_products | Read 1 records from catalog_project1.bronze.products
+2026-08-07 08:25:46,471 | INFO     | silver.clean_products | All required columns exists in the catalog_project1.bronze.products
+2026-08-07 08:25:46,472 | WARNING  | silver.clean_products | New columns detected in catalog_project1.bronze.products: {'_source_table', '_ingestion_pipeline_id', '_source_file', '_ingestion_timestamp'}
+2026-08-07 08:25:47,137 | INFO     | silver.clean_products | Data standardization completed for the catalog_project1.bronze.products
+2026-08-07 08:25:47,716 | INFO     | silver.clean_products | Data type casting completed for the catalog_project1.bronze.products
+2026-08-07 08:25:48,747 | INFO     | silver.clean_products | Data validation completed for the catalog_project1.bronze.products
+2026-08-07 08:25:49,161 | INFO     | silver.clean_products | Deduplication completed for the catalog_project1.bronze.products
+2026-08-07 08:25:54,471 | INFO     | silver.clean_products | Data written to the catalog_project1.silver.clean_products
+2026-08-07 08:25:55,983 | INFO     | silver.clean_products | Data validation for catalog_project1.silver.clean_products completed
+2026-08-07 08:25:55,984 | INFO     | silver.clean_products | Silver pipeline for catalog_project1.silver.clean_products completed successfully
+2026-08-07 08:25:56,341 | INFO     | silver.clean_products | New watermark: 2024-12-08 00:00:00
+2026-08-07 08:25:57,821 | INFO     | silver.clean_products | Audit for catalog_project1.silver.clean_products is written successfully
+2026-08-07 08:40:03,449 | INFO     | silver.clean_products | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/silver_clean_products_20260807.log
+2026-08-07 08:40:03,451 | INFO     | silver.clean_products | Starting Silver pipeline at 2026-08-07 08:40:03.421068
+2026-08-07 08:40:04,606 | INFO     | silver.clean_products | Incremental load from catalog_project1.bronze.products
+2026-08-07 08:40:05,574 | INFO     | silver.clean_products | Read 0 records from catalog_project1.bronze.products
+2026-08-07 08:40:05,575 | INFO     | silver.clean_products | All required columns exists in the catalog_project1.bronze.products
+2026-08-07 08:40:05,576 | WARNING  | silver.clean_products | New columns detected in catalog_project1.bronze.products: {'_source_table', '_ingestion_pipeline_id', '_source_file', '_ingestion_timestamp'}
+2026-08-07 08:40:06,096 | INFO     | silver.clean_products | Data standardization completed for the catalog_project1.bronze.products
+2026-08-07 08:40:06,457 | INFO     | silver.clean_products | Data type casting completed for the catalog_project1.bronze.products
+2026-08-07 08:40:07,185 | INFO     | silver.clean_products | Data validation completed for the catalog_project1.bronze.products
+2026-08-07 08:40:07,532 | INFO     | silver.clean_products | Deduplication completed for the catalog_project1.bronze.products
+2026-08-07 08:40:11,095 | INFO     | silver.clean_products | Data written to the catalog_project1.silver.clean_products
+2026-08-07 08:40:12,241 | INFO     | silver.clean_products | Data validation for catalog_project1.silver.clean_products completed
+2026-08-07 08:40:12,242 | INFO     | silver.clean_products | Silver pipeline for catalog_project1.silver.clean_products completed successfully
+2026-08-07 08:40:12,243 | INFO     | silver.clean_products | No new data, watermark value unchanged: 2024-12-08 00:00:00
+2026-08-07 08:40:13,597 | INFO     | silver.clean_products | Audit for catalog_project1.silver.clean_products is written successfully
+2026-08-07 08:45:33,221 | INFO     | silver.clean_products | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/silver_clean_products_20260807.log
+2026-08-07 08:45:33,224 | INFO     | silver.clean_products | Starting Silver pipeline at 2026-08-07 08:45:33.193518
+2026-08-07 08:45:34,348 | INFO     | silver.clean_products | Incremental load from catalog_project1.bronze.products
+2026-08-07 08:45:35,275 | INFO     | silver.clean_products | Read 1 records from catalog_project1.bronze.products
+2026-08-07 08:45:35,276 | INFO     | silver.clean_products | All required columns exists in the catalog_project1.bronze.products
+2026-08-07 08:45:35,277 | WARNING  | silver.clean_products | New columns detected in catalog_project1.bronze.products: {'_source_table', '_ingestion_pipeline_id', '_source_file', '_ingestion_timestamp'}
+2026-08-07 08:45:35,770 | INFO     | silver.clean_products | Data standardization completed for the catalog_project1.bronze.products
+2026-08-07 08:45:36,117 | INFO     | silver.clean_products | Data type casting completed for the catalog_project1.bronze.products
+2026-08-07 08:45:36,872 | INFO     | silver.clean_products | Data validation completed for the catalog_project1.bronze.products
+2026-08-07 08:45:37,277 | INFO     | silver.clean_products | Deduplication completed for the catalog_project1.bronze.products
+2026-08-07 08:45:42,266 | INFO     | silver.clean_products | Data written to the catalog_project1.silver.clean_products
+2026-08-07 08:45:43,902 | INFO     | silver.clean_products | Data validation for catalog_project1.silver.clean_products completed
+2026-08-07 08:45:43,903 | INFO     | silver.clean_products | Silver pipeline for catalog_project1.silver.clean_products completed successfully
+2026-08-07 08:45:44,274 | INFO     | silver.clean_products | New watermark: 2024-12-09 00:00:00
+2026-08-07 08:45:45,625 | INFO     | silver.clean_products | Audit for catalog_project1.silver.clean_products is written successfully
+2026-08-07 11:12:35,925 | INFO     | silver.clean_products | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/silver_clean_products_20260807.log
+2026-08-07 11:12:35,926 | INFO     | silver.clean_products | Starting Silver pipeline at 2026-08-07 11:12:35.862892
+2026-08-07 11:12:36,846 | INFO     | silver.clean_products | Incremental load from catalog_project1.bronze.products
+2026-08-07 11:12:37,896 | INFO     | silver.clean_products | Read 1 records from catalog_project1.bronze.products
+2026-08-07 11:12:37,898 | INFO     | silver.clean_products | All required columns exists in the catalog_project1.bronze.products
+2026-08-07 11:12:37,900 | WARNING  | silver.clean_products | New columns detected in catalog_project1.bronze.products: {'_source_table', '_ingestion_pipeline_id', '_source_file', '_ingestion_timestamp'}
+2026-08-07 11:12:38,487 | INFO     | silver.clean_products | Data standardization completed for the catalog_project1.bronze.products
+2026-08-07 11:12:38,881 | INFO     | silver.clean_products | Data type casting completed for the catalog_project1.bronze.products
+2026-08-07 11:12:39,955 | INFO     | silver.clean_products | Data validation completed for the catalog_project1.bronze.products
+2026-08-07 11:12:40,443 | INFO     | silver.clean_products | Deduplication completed for the catalog_project1.bronze.products
+2026-08-07 11:12:46,916 | INFO     | silver.clean_products | Data written to the catalog_project1.silver.clean_products
+2026-08-07 11:12:48,619 | INFO     | silver.clean_products | Data validation for catalog_project1.silver.clean_products completed
+2026-08-07 11:12:48,620 | INFO     | silver.clean_products | Silver pipeline for catalog_project1.silver.clean_products completed successfully
+2026-08-07 11:12:49,107 | INFO     | silver.clean_products | New watermark: 2024-12-10 00:00:00
+2026-08-07 11:12:50,734 | INFO     | silver.clean_products | Audit for catalog_project1.silver.clean_products is written successfully

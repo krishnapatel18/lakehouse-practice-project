@@ -1,0 +1,88 @@
+2026-07-21 07:20:01,698 | INFO     | bronze.order_items | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_order_items_20260721.log
+2026-07-21 07:20:01,699 | INFO     | bronze.order_items | Reading source table
+2026-07-21 07:20:02,868 | INFO     | bronze.order_items | Rows read: 10
+2026-07-21 07:20:03,099 | INFO     | bronze.order_items | Source fetching completed successfully
+2026-07-21 07:20:03,100 | INFO     | bronze.order_items | Starting Bronze ingestion
+2026-07-21 07:20:03,113 | INFO     | bronze.order_items | Source table: order_items_raw
+2026-07-21 07:20:03,114 | INFO     | bronze.order_items | Target table: order_items
+2026-07-21 07:20:07,303 | INFO     | bronze.order_items | Bronze table written successfully.
+2026-07-21 07:20:07,789 | INFO     | bronze.order_items | Rows written: 10
+2026-07-21 07:20:08,297 | INFO     | bronze.order_items | Duplicate customer_ids: 0
+2026-07-21 07:20:08,950 | INFO     | bronze.order_items | Bronze customer ingestion completed.
+2026-07-21 07:26:56,769 | INFO     | bronze.order_items | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_order_items_20260721.log
+2026-07-21 07:26:56,770 | INFO     | bronze.order_items | Reading source table
+2026-07-21 07:26:57,866 | INFO     | bronze.order_items | Rows read: 10
+2026-07-21 07:26:58,326 | INFO     | bronze.order_items | Source fetching completed successfully
+2026-07-21 07:26:58,327 | INFO     | bronze.order_items | Starting Bronze ingestion
+2026-07-21 07:26:58,328 | INFO     | bronze.order_items | Source table: order_items_raw
+2026-07-21 07:26:58,329 | INFO     | bronze.order_items | Target table: order_items
+2026-07-21 07:27:01,498 | INFO     | bronze.order_items | Bronze table written successfully.
+2026-07-21 07:27:01,901 | INFO     | bronze.order_items | Rows written: 10
+2026-07-21 07:27:02,496 | INFO     | bronze.order_items | Duplicate customer_ids: 0
+2026-07-21 07:27:03,231 | INFO     | bronze.order_items | Bronze customer ingestion completed.
+2026-07-21 07:30:25,931 | INFO     | bronze.order_items | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_order_items_20260721.log
+2026-07-21 07:30:25,933 | INFO     | bronze.order_items | Reading source table
+2026-07-21 07:30:26,948 | INFO     | bronze.order_items | Rows read: 10
+2026-07-21 07:30:27,135 | INFO     | bronze.order_items | Source fetching completed successfully
+2026-07-21 07:30:27,136 | INFO     | bronze.order_items | Starting Bronze ingestion
+2026-07-21 07:30:27,137 | INFO     | bronze.order_items | Source table: order_items_raw
+2026-07-21 07:30:27,138 | INFO     | bronze.order_items | Target table: order_items
+2026-07-21 07:30:31,006 | INFO     | bronze.order_items | Bronze table written successfully.
+2026-07-21 07:30:31,474 | INFO     | bronze.order_items | Rows written: 10
+2026-07-21 07:30:31,985 | INFO     | bronze.order_items | Duplicate customer_ids: 0
+2026-07-21 07:30:32,639 | INFO     | bronze.order_items | Bronze customer ingestion completed.
+2026-07-21 07:36:47,275 | INFO     | bronze.order_items | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_order_items_20260721.log
+2026-07-21 07:36:47,276 | INFO     | bronze.order_items | Reading source table
+2026-07-21 07:36:48,129 | INFO     | bronze.order_items | Rows read: 10
+2026-07-21 07:36:48,463 | INFO     | bronze.order_items | Source fetching completed successfully
+2026-07-21 07:36:48,464 | INFO     | bronze.order_items | Starting Bronze ingestion
+2026-07-21 07:36:48,465 | INFO     | bronze.order_items | Source table: order_items_raw
+2026-07-21 07:36:48,465 | INFO     | bronze.order_items | Target table: order_items
+2026-07-21 07:36:51,910 | INFO     | bronze.order_items | Bronze table written successfully.
+2026-07-21 07:36:52,268 | INFO     | bronze.order_items | Rows written: 10
+2026-07-21 07:36:52,851 | INFO     | bronze.order_items | Duplicate customer_ids: 0
+2026-07-21 07:36:53,576 | INFO     | bronze.order_items | Bronze customer ingestion completed.
+2026-07-21 07:37:52,185 | INFO     | bronze.order_items | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_order_items_20260721.log
+2026-07-21 07:37:52,186 | INFO     | bronze.order_items | Reading source table
+2026-07-21 07:37:52,895 | INFO     | bronze.order_items | Rows read: 10
+2026-07-21 07:37:53,068 | INFO     | bronze.order_items | Source fetching completed successfully
+2026-07-21 07:37:53,069 | INFO     | bronze.order_items | Starting Bronze ingestion
+2026-07-21 07:37:53,069 | INFO     | bronze.order_items | Source table: order_items_raw
+2026-07-21 07:37:53,070 | INFO     | bronze.order_items | Target table: order_items
+2026-07-21 07:37:56,802 | INFO     | bronze.order_items | Bronze table written successfully.
+2026-07-21 07:37:57,142 | INFO     | bronze.order_items | Rows written: 10
+2026-07-21 07:37:57,721 | INFO     | bronze.order_items | Duplicate customer_ids: 0
+2026-07-21 07:37:58,394 | INFO     | bronze.order_items | Bronze customer ingestion completed.
+2026-07-21 07:38:59,967 | INFO     | bronze.order_items | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_order_items_20260721.log
+2026-07-21 07:38:59,969 | INFO     | bronze.order_items | Reading source order_items_raw table
+2026-07-21 07:39:00,926 | INFO     | bronze.order_items | Rows read: 10
+2026-07-21 07:39:01,107 | INFO     | bronze.order_items | Source order_items_raw fetching completed successfully
+2026-07-21 07:39:01,108 | INFO     | bronze.order_items | Starting Bronze order_items ingestion
+2026-07-21 07:39:01,109 | INFO     | bronze.order_items | Source table: order_items_raw
+2026-07-21 07:39:01,110 | INFO     | bronze.order_items | Target table: order_items
+2026-07-21 07:39:04,348 | INFO     | bronze.order_items | Bronze order_items table written successfully.
+2026-07-21 07:39:04,892 | INFO     | bronze.order_items | Rows written: 10
+2026-07-21 07:39:05,678 | INFO     | bronze.order_items | Duplicate order_item_id: 0
+2026-07-21 07:39:06,521 | INFO     | bronze.order_items | Bronze order_items ingestion completed
+2026-07-21 09:06:32,533 | INFO     | bronze.order_items | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_order_items_20260721.log
+2026-07-21 09:06:32,534 | INFO     | bronze.order_items | Reading source order_items_raw table
+2026-07-21 09:06:33,836 | INFO     | bronze.order_items | Rows read: 10
+2026-07-21 09:06:34,027 | INFO     | bronze.order_items | Source order_items_raw fetching completed successfully
+2026-07-21 09:06:34,028 | INFO     | bronze.order_items | Starting Bronze order_items ingestion
+2026-07-21 09:06:34,029 | INFO     | bronze.order_items | Source table: order_items_raw
+2026-07-21 09:06:34,029 | INFO     | bronze.order_items | Target table: order_items
+2026-07-21 09:06:38,505 | INFO     | bronze.order_items | Bronze order_items table written successfully.
+2026-07-21 09:06:39,048 | INFO     | bronze.order_items | Rows written: 10
+2026-07-21 09:06:39,834 | INFO     | bronze.order_items | Duplicate order_item_id: 0
+2026-07-21 09:06:40,777 | INFO     | bronze.order_items | Bronze order_items ingestion completed
+2026-07-21 10:39:42,676 | INFO     | bronze.order_items | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_order_items_20260721.log
+2026-07-21 10:39:42,676 | INFO     | bronze.order_items | Reading source order_items_raw table
+2026-07-21 10:39:43,595 | INFO     | bronze.order_items | Rows read: 10
+2026-07-21 10:39:43,966 | INFO     | bronze.order_items | Source order_items_raw fetching completed successfully
+2026-07-21 10:39:43,967 | INFO     | bronze.order_items | Starting Bronze order_items ingestion
+2026-07-21 10:39:43,969 | INFO     | bronze.order_items | Source table: order_items_raw
+2026-07-21 10:39:43,969 | INFO     | bronze.order_items | Target table: order_items
+2026-07-21 10:39:47,760 | INFO     | bronze.order_items | Bronze order_items table written successfully.
+2026-07-21 10:39:48,209 | INFO     | bronze.order_items | Rows written: 10
+2026-07-21 10:39:48,746 | INFO     | bronze.order_items | Duplicate order_item_id: 0
+2026-07-21 10:39:49,546 | INFO     | bronze.order_items | Bronze order_items ingestion completed

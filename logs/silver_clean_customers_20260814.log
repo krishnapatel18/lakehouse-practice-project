@@ -1,0 +1,115 @@
+2026-08-14 08:12:15,059 | INFO     | silver.clean_customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/silver_clean_customers_20260814.log
+2026-08-14 08:12:15,062 | INFO     | silver.clean_customers | Starting Silver pipeline at 2026-08-14 08:11:49.737605
+2026-08-14 08:12:19,762 | ERROR    | silver.clean_customers | Error writing audit log for catalog_project1.silver.clean_customers: cannot access local variable 'status' where it is not associated with a value
+Traceback (most recent call last):
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/client/core.py", line 697, in __iter__
+    for response in self._call:
+  File "/databricks/python_shell/lib/dbruntime/serverless/arch_pin_interceptor.py", line 79, in __next__
+    return next(self._response)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/grpc/_channel.py", line 543, in __next__
+    return self._next()
+           ^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/grpc/_channel.py", line 960, in _next
+    _common.wait(self._state.condition.wait, _response_ready)
+  File "/databricks/python/lib/python3.12/site-packages/grpc/_common.py", line 156, in wait
+    _wait_once(wait_fn, MAXIMUM_WAIT_TIMEOUT, spin_cb)
+  File "/databricks/python/lib/python3.12/site-packages/grpc/_common.py", line 116, in _wait_once
+    wait_fn(timeout=timeout)
+  File "/usr/lib/python3.12/threading.py", line 359, in wait
+    gotit = waiter.acquire(True, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/src/transformations/silver.py", line 134, in transform_table
+    watermark_value = get_last_watermark(spark, pipeline_name, target, CATALOG, AUDIT_SCHEMA, AUDIT_TABLENAME)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/src/transformations/silver.py", line 86, in get_last_watermark
+    .select("watermark_value").collect()
+                               ^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/dataframe.py", line 1846, in collect
+    table, schema = self._to_table()
+                    ^^^^^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/dataframe.py", line 1930, in _to_table
+    table, schema, self._execution_info = self._session.client.to_table(
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/client/core.py", line 1273, in to_table
+    table, schema, metrics, observed_metrics, _ = self._execute_and_fetch(req, observations)
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/client/core.py", line 2086, in _execute_and_fetch
+    for response in self._execute_and_fetch_as_iterator(
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/client/core.py", line 2060, in _execute_and_fetch_as_iterator
+    raise kb
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/client/core.py", line 2046, in _execute_and_fetch_as_iterator
+    for b in generator:
+  File "<frozen _collections_abc>", line 356, in __next__
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/client/reattach.py", line 152, in send
+    if not self._has_next():
+           ^^^^^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/client/reattach.py", line 193, in _has_next
+    self._current = self._call_iter(
+                    ^^^^^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/client/reattach.py", line 307, in _call_iter
+    return iter_fun()
+           ^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/client/reattach.py", line 194, in <lambda>
+    lambda: next(self._iterator)  # type: ignore[arg-type]
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/client/core.py", line 707, in __iter__
+    trailers = self._call.trailing_metadata()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/grpc/_channel.py", line 819, in trailing_metadata
+    _common.wait(self._state.condition.wait, _done)
+  File "/databricks/python/lib/python3.12/site-packages/grpc/_common.py", line 156, in wait
+    _wait_once(wait_fn, MAXIMUM_WAIT_TIMEOUT, spin_cb)
+  File "/databricks/python/lib/python3.12/site-packages/grpc/_common.py", line 116, in _wait_once
+    wait_fn(timeout=timeout)
+  File "/usr/lib/python3.12/threading.py", line 359, in wait
+    gotit = waiter.acquire(True, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/src/transformations/silver.py", line 260, in transform_table
+    write_audit_log(pipeline_name, target, start_time, end_time, rows_read, rows_written, status, error_message, CATALOG, AUDIT_SCHEMA, AUDIT_TABLENAME, batch_id, watermark_column, new_watermark)
+                                                                                         ^^^^^^
+UnboundLocalError: cannot access local variable 'status' where it is not associated with a value
+2026-08-14 08:12:23,749 | INFO     | silver.clean_customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/silver_clean_customers_20260814.log
+2026-08-14 08:12:23,750 | INFO     | silver.clean_customers | Starting Silver pipeline at 2026-08-14 08:12:22.862695
+2026-08-14 08:12:24,956 | INFO     | silver.clean_customers | Incremental load from catalog_project1.bronze.customers
+2026-08-14 08:12:27,604 | INFO     | silver.clean_customers | Read 0 records from catalog_project1.bronze.customers
+2026-08-14 08:12:27,605 | INFO     | silver.clean_customers | All required columns exists in the catalog_project1.bronze.customers
+2026-08-14 08:12:27,606 | WARNING  | silver.clean_customers | New columns detected in catalog_project1.bronze.customers: {'_source_table', '_ingestion_pipeline_id', '_source_file', '_ingestion_timestamp'}
+2026-08-14 08:12:28,610 | INFO     | silver.clean_customers | Data standardization completed for the catalog_project1.bronze.customers
+2026-08-14 08:12:29,226 | INFO     | silver.clean_customers | Data type casting completed for the catalog_project1.bronze.customers
+2026-08-14 08:12:31,531 | INFO     | silver.clean_customers | Business rule validation completed for catalog_project1.bronze.customers
+2026-08-14 08:12:31,532 | INFO     | silver.clean_customers | Data validation completed for the catalog_project1.bronze.customers
+2026-08-14 08:12:32,464 | INFO     | silver.clean_customers | Deduplication completed for the catalog_project1.bronze.customers
+2026-08-14 08:12:45,111 | INFO     | silver.clean_customers | Data written to the catalog_project1.silver.clean_customers
+2026-08-14 08:12:48,363 | INFO     | silver.clean_customers | Business rule validation for catalog_project1.silver.clean_customers completed
+2026-08-14 08:12:48,365 | INFO     | silver.clean_customers | Data validation for catalog_project1.silver.clean_customers completed
+2026-08-14 08:12:48,366 | INFO     | silver.clean_customers | Silver pipeline for catalog_project1.silver.clean_customers completed successfully
+2026-08-14 08:12:48,367 | INFO     | silver.clean_customers | No new data, watermark value unchanged: 2025-02-16 00:00:00
+2026-08-14 08:12:56,827 | INFO     | silver.clean_customers | Audit for catalog_project1.silver.clean_customers is written successfully
+2026-08-14 08:15:16,939 | INFO     | silver.clean_customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/silver_clean_customers_20260814.log
+2026-08-14 08:15:16,941 | INFO     | silver.clean_customers | Starting Silver pipeline at 2026-08-14 08:15:16.045869
+2026-08-14 08:15:17,844 | INFO     | silver.clean_customers | Incremental load from catalog_project1.bronze.customers
+2026-08-14 08:15:19,336 | INFO     | silver.clean_customers | Read 0 records from catalog_project1.bronze.customers
+2026-08-14 08:15:19,337 | INFO     | silver.clean_customers | All required columns exists in the catalog_project1.bronze.customers
+2026-08-14 08:15:19,339 | WARNING  | silver.clean_customers | New columns detected in catalog_project1.bronze.customers: {'_source_table', '_ingestion_pipeline_id', '_source_file', '_ingestion_timestamp'}
+2026-08-14 08:15:20,215 | INFO     | silver.clean_customers | Data standardization completed for the catalog_project1.bronze.customers
+2026-08-14 08:15:20,817 | INFO     | silver.clean_customers | Data type casting completed for the catalog_project1.bronze.customers
+2026-08-14 08:15:22,533 | INFO     | silver.clean_customers | Business rule validation completed for catalog_project1.bronze.customers
+2026-08-14 08:15:22,534 | INFO     | silver.clean_customers | Data validation completed for the catalog_project1.bronze.customers
+2026-08-14 08:15:23,134 | INFO     | silver.clean_customers | Deduplication completed for the catalog_project1.bronze.customers
+2026-08-14 08:15:27,153 | INFO     | silver.clean_customers | Data written to the catalog_project1.silver.clean_customers
+2026-08-14 08:15:29,294 | INFO     | silver.clean_customers | Business rule validation for catalog_project1.silver.clean_customers completed
+2026-08-14 08:15:29,295 | INFO     | silver.clean_customers | Data validation for catalog_project1.silver.clean_customers completed
+2026-08-14 08:15:29,297 | INFO     | silver.clean_customers | Silver pipeline for catalog_project1.silver.clean_customers completed successfully
+2026-08-14 08:15:29,298 | INFO     | silver.clean_customers | No new data, watermark value unchanged: 2025-02-16 00:00:00
+2026-08-14 08:15:31,180 | INFO     | silver.clean_customers | Audit for catalog_project1.silver.clean_customers is written successfully

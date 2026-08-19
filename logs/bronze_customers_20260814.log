@@ -1,0 +1,20 @@
+2026-08-14 08:22:51,684 | INFO     | bronze.customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_customers_20260814.log
+2026-08-14 08:22:51,686 | INFO     | bronze.customers | Checking for last successful run
+2026-08-14 08:22:52,476 | INFO     | bronze.customers | Fetched watermark value: 2025-02-16 00:00:00
+2026-08-14 08:22:52,479 | INFO     | bronze.customers | Reading source customers_raw table
+2026-08-14 08:22:52,508 | INFO     | bronze.customers | Starting pre-write validations
+2026-08-14 08:22:53,749 | INFO     | bronze.customers | Rows read from source: 0
+2026-08-14 08:22:53,954 | INFO     | bronze.customers | Pre-write validations passed. Source customers_raw ready for ingestion.
+2026-08-14 08:22:53,955 | INFO     | bronze.customers | Starting Bronze customers ingestion
+2026-08-14 08:22:53,956 | INFO     | bronze.customers | Source table: customers_raw
+2026-08-14 08:22:53,957 | INFO     | bronze.customers | Target table: customers
+2026-08-14 08:22:55,470 | INFO     | bronze.customers | Bronze customers table written successfully.
+2026-08-14 08:22:55,472 | INFO     | bronze.customers | Starting post-write validations
+2026-08-14 08:22:55,892 | INFO     | bronze.customers | No new data found. Using previous watermark: 2025-02-16 00:00:00
+2026-08-14 08:22:55,897 | INFO     | bronze.customers | Rows written in this run: 0
+2026-08-14 08:22:56,486 | INFO     | bronze.customers | Total rows in bronze table: 98
+2026-08-14 08:22:57,330 | WARNING  | bronze.customers | ⚠️ PRIMARY KEY duplicates found: 15 groups
+2026-08-14 08:22:58,239 | WARNING  | bronze.customers | ⚠️ Full row duplicates found: 15 groups
+2026-08-14 08:22:58,619 | INFO     | bronze.customers | No NULL values found
+2026-08-14 08:22:58,622 | INFO     | bronze.customers | Post-write validations completed. Bronze customers ingestion finished successfully.
+2026-08-14 08:23:00,563 | INFO     | bronze.customers | Audit log written successfully

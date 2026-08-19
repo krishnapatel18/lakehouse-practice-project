@@ -1,0 +1,15 @@
+2026-08-03 12:57:08,912 | INFO     | silver.clean_payments | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/silver_clean_payments_20260803.log
+2026-08-03 12:57:08,913 | INFO     | silver.clean_payments | Starting Silver pipeline at 2026-08-03 12:57:08.911226
+2026-08-03 12:57:09,981 | INFO     | silver.clean_payments | Incremental load from catalog_project1.bronze.payments
+2026-08-03 12:57:10,951 | INFO     | silver.clean_payments | Read 0 records from catalog_project1.bronze.payments
+2026-08-03 12:57:10,952 | INFO     | silver.clean_payments | All required columns exists in the catalog_project1.bronze.payments
+2026-08-03 12:57:10,953 | WARNING  | silver.clean_payments | New columns detected in catalog_project1.bronze.payments: {'_source_table', '_ingestion_pipeline_id', '_source_file', '_ingestion_timestamp'}
+2026-08-03 12:57:11,542 | INFO     | silver.clean_payments | Data standardization completed for the catalog_project1.bronze.payments
+2026-08-03 12:57:11,920 | INFO     | silver.clean_payments | Data type casting completed for the catalog_project1.bronze.payments
+2026-08-03 12:57:12,822 | INFO     | silver.clean_payments | Data validation completed for the catalog_project1.bronze.payments
+2026-08-03 12:57:13,227 | INFO     | silver.clean_payments | Deduplication completed for the catalog_project1.bronze.payments
+2026-08-03 12:57:16,310 | INFO     | silver.clean_payments | Data written to the catalog_project1.silver.clean_payments
+2026-08-03 12:57:17,816 | INFO     | silver.clean_payments | Data validation for catalog_project1.silver.clean_payments completed
+2026-08-03 12:57:17,817 | INFO     | silver.clean_payments | Silver pipeline for catalog_project1.silver.clean_payments completed successfully
+2026-08-03 12:57:17,818 | INFO     | silver.clean_payments | No new data, watermark value unchanged: 2025-03-28 00:00:00
+2026-08-03 12:57:19,295 | INFO     | silver.clean_payments | Audit for catalog_project1.silver.clean_payments written successfully

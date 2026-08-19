@@ -1,0 +1,22 @@
+2026-07-15 13:28:28,929 | INFO     | bronze.products | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_products_20260715.log
+2026-07-15 13:28:28,932 | INFO     | bronze.products | Reading source table
+2026-07-15 13:28:30,965 | INFO     | bronze.products | Rows read: 10
+2026-07-15 13:28:31,173 | INFO     | bronze.products | Source fetching completed successfully
+2026-07-15 13:28:31,175 | INFO     | bronze.products | Starting Bronze ingestion
+2026-07-15 13:28:31,175 | INFO     | bronze.products | Source table: product_raw
+2026-07-15 13:28:31,176 | INFO     | bronze.products | Target table: products
+2026-07-15 13:28:35,927 | INFO     | bronze.products | Bronze table written successfully.
+2026-07-15 13:28:36,362 | INFO     | bronze.products | Rows written: 10
+2026-07-15 13:28:37,056 | INFO     | bronze.products | Duplicate customer_ids: 0
+2026-07-15 13:28:38,075 | INFO     | bronze.products | Bronze customer ingestion completed.
+2026-07-15 13:37:53,141 | INFO     | bronze.products | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_products_20260715.log
+2026-07-15 13:37:53,142 | INFO     | bronze.products | Reading source table
+2026-07-15 13:37:54,131 | INFO     | bronze.products | Rows read: 10
+2026-07-15 13:37:54,365 | INFO     | bronze.products | Source fetching completed successfully
+2026-07-15 13:37:54,366 | INFO     | bronze.products | Starting Bronze ingestion
+2026-07-15 13:37:54,367 | INFO     | bronze.products | Source table: products_raw
+2026-07-15 13:37:54,369 | INFO     | bronze.products | Target table: products
+2026-07-15 13:37:58,512 | INFO     | bronze.products | Bronze table written successfully.
+2026-07-15 13:37:59,229 | INFO     | bronze.products | Rows written: 10
+2026-07-15 13:37:59,836 | INFO     | bronze.products | Duplicate customer_ids: 0
+2026-07-15 13:38:00,645 | INFO     | bronze.products | Bronze customer ingestion completed.

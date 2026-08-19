@@ -1,0 +1,40 @@
+2026-08-12 12:30:42,071 | INFO     | bronze.customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_customers_20260812.log
+2026-08-12 12:30:42,073 | INFO     | bronze.customers | Checking for last successful run
+2026-08-12 12:30:45,045 | INFO     | bronze.customers | Fetched watermark value: 2025-02-16 00:00:00
+2026-08-12 12:30:45,049 | INFO     | bronze.customers | Reading source customers_raw table
+2026-08-12 12:30:45,084 | INFO     | bronze.customers | Starting pre-write validations
+2026-08-12 12:30:46,560 | INFO     | bronze.customers | Rows read from source: 0
+2026-08-12 12:30:46,773 | INFO     | bronze.customers | Pre-write validations passed. Source customers_raw ready for ingestion.
+2026-08-12 12:30:46,775 | INFO     | bronze.customers | Starting Bronze customers ingestion
+2026-08-12 12:30:46,783 | INFO     | bronze.customers | Source table: customers_raw
+2026-08-12 12:30:46,784 | INFO     | bronze.customers | Target table: customers
+2026-08-12 12:30:49,769 | INFO     | bronze.customers | Bronze customers table written successfully.
+2026-08-12 12:30:49,770 | INFO     | bronze.customers | Starting post-write validations
+2026-08-12 12:30:50,263 | INFO     | bronze.customers | No new data found. Using previous watermark: 2025-02-16 00:00:00
+2026-08-12 12:30:50,266 | INFO     | bronze.customers | Rows written in this run: 0
+2026-08-12 12:30:50,953 | INFO     | bronze.customers | Total rows in bronze table: 23
+2026-08-12 12:30:52,235 | WARNING  | bronze.customers | ⚠️ PRIMARY KEY duplicates found: 2 groups
+2026-08-12 12:30:52,943 | INFO     | bronze.customers | No full row duplicates found
+2026-08-12 12:30:53,552 | INFO     | bronze.customers | No NULL values found
+2026-08-12 12:30:53,554 | INFO     | bronze.customers | Post-write validations completed. Bronze customers ingestion finished successfully.
+2026-08-12 12:30:55,996 | INFO     | bronze.customers | Audit log written successfully
+2026-08-12 12:40:37,590 | INFO     | bronze.customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_customers_20260812.log
+2026-08-12 12:40:37,605 | INFO     | bronze.customers | Checking for last successful run
+2026-08-12 12:40:38,871 | INFO     | bronze.customers | Fetched watermark value: 2025-02-16 00:00:00
+2026-08-12 12:40:38,874 | INFO     | bronze.customers | Reading source customers_raw table
+2026-08-12 12:40:38,913 | INFO     | bronze.customers | Starting pre-write validations
+2026-08-12 12:40:39,769 | INFO     | bronze.customers | Rows read from source: 0
+2026-08-12 12:40:40,083 | INFO     | bronze.customers | Pre-write validations passed. Source customers_raw ready for ingestion.
+2026-08-12 12:40:40,085 | INFO     | bronze.customers | Starting Bronze customers ingestion
+2026-08-12 12:40:40,088 | INFO     | bronze.customers | Source table: customers_raw
+2026-08-12 12:40:40,096 | INFO     | bronze.customers | Target table: customers
+2026-08-12 12:40:41,607 | INFO     | bronze.customers | Bronze customers table written successfully.
+2026-08-12 12:40:41,608 | INFO     | bronze.customers | Starting post-write validations
+2026-08-12 12:40:42,094 | INFO     | bronze.customers | No new data found. Using previous watermark: 2025-02-16 00:00:00
+2026-08-12 12:40:42,095 | INFO     | bronze.customers | Rows written in this run: 0
+2026-08-12 12:40:43,557 | INFO     | bronze.customers | Total rows in bronze table: 23
+2026-08-12 12:40:44,045 | WARNING  | bronze.customers | ⚠️ PRIMARY KEY duplicates found: 2 groups
+2026-08-12 12:40:44,535 | INFO     | bronze.customers | No full row duplicates found
+2026-08-12 12:40:44,926 | INFO     | bronze.customers | No NULL values found
+2026-08-12 12:40:44,928 | INFO     | bronze.customers | Post-write validations completed. Bronze customers ingestion finished successfully.
+2026-08-12 12:40:46,726 | INFO     | bronze.customers | Audit log written successfully

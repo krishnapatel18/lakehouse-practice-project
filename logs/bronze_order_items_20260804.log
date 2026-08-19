@@ -1,0 +1,60 @@
+2026-08-04 09:08:21,153 | INFO     | bronze.order_items | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_order_items_20260804.log
+2026-08-04 09:08:21,155 | INFO     | bronze.order_items | Checking for last successful run
+2026-08-04 09:08:21,910 | INFO     | bronze.order_items | Fetched watermark value: 2025-03-05 00:00:00
+2026-08-04 09:08:21,911 | INFO     | bronze.order_items | Reading source order_items_raw table
+2026-08-04 09:08:21,939 | INFO     | bronze.order_items | Starting pre-write validations
+2026-08-04 09:08:23,252 | INFO     | bronze.order_items | Rows read from source: 0
+2026-08-04 09:08:23,449 | INFO     | bronze.order_items | Pre-write validations passed. Source order_items_raw ready for ingestion.
+2026-08-04 09:08:23,451 | INFO     | bronze.order_items | Starting Bronze order_items ingestion
+2026-08-04 09:08:23,451 | INFO     | bronze.order_items | Source table: order_items_raw
+2026-08-04 09:08:23,453 | INFO     | bronze.order_items | Target table: order_items
+2026-08-04 09:08:25,479 | INFO     | bronze.order_items | Bronze order_items table written successfully.
+2026-08-04 09:08:25,479 | INFO     | bronze.order_items | Starting post-write validations
+2026-08-04 09:08:25,911 | INFO     | bronze.order_items | No new data found. Using previous watermark: 2025-03-05 00:00:00
+2026-08-04 09:08:25,912 | INFO     | bronze.order_items | Rows written in this run: 0
+2026-08-04 09:08:26,535 | INFO     | bronze.order_items | Total rows in bronze table: 10
+2026-08-04 09:08:27,028 | INFO     | bronze.order_items | No primary key duplicates found
+2026-08-04 09:08:27,454 | INFO     | bronze.order_items | No full row duplicates found
+2026-08-04 09:08:27,832 | INFO     | bronze.order_items | No NULL values found
+2026-08-04 09:08:27,833 | INFO     | bronze.order_items | Post-write validations completed. Bronze order_items ingestion finished successfully.
+2026-08-04 09:08:29,411 | INFO     | bronze.order_items | Audit log written successfully
+2026-08-04 09:33:47,687 | INFO     | bronze.order_items | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_order_items_20260804.log
+2026-08-04 09:33:47,688 | INFO     | bronze.order_items | Checking for last successful run
+2026-08-04 09:33:48,303 | INFO     | bronze.order_items | Fetched watermark value: 2025-03-05 00:00:00
+2026-08-04 09:33:48,304 | INFO     | bronze.order_items | Reading source order_items_raw table
+2026-08-04 09:33:48,333 | INFO     | bronze.order_items | Starting pre-write validations
+2026-08-04 09:33:49,085 | INFO     | bronze.order_items | Rows read from source: 0
+2026-08-04 09:33:49,245 | INFO     | bronze.order_items | Pre-write validations passed. Source order_items_raw ready for ingestion.
+2026-08-04 09:33:49,246 | INFO     | bronze.order_items | Starting Bronze order_items ingestion
+2026-08-04 09:33:49,247 | INFO     | bronze.order_items | Source table: order_items_raw
+2026-08-04 09:33:49,249 | INFO     | bronze.order_items | Target table: order_items
+2026-08-04 09:33:50,509 | INFO     | bronze.order_items | Bronze order_items table written successfully.
+2026-08-04 09:33:50,510 | INFO     | bronze.order_items | Starting post-write validations
+2026-08-04 09:33:50,906 | INFO     | bronze.order_items | No new data found. Using previous watermark: 2025-03-05 00:00:00
+2026-08-04 09:33:50,908 | INFO     | bronze.order_items | Rows written in this run: 0
+2026-08-04 09:33:51,464 | INFO     | bronze.order_items | Total rows in bronze table: 10
+2026-08-04 09:33:51,786 | INFO     | bronze.order_items | No primary key duplicates found
+2026-08-04 09:33:52,117 | INFO     | bronze.order_items | No full row duplicates found
+2026-08-04 09:33:52,467 | INFO     | bronze.order_items | No NULL values found
+2026-08-04 09:33:52,470 | INFO     | bronze.order_items | Post-write validations completed. Bronze order_items ingestion finished successfully.
+2026-08-04 09:33:53,870 | INFO     | bronze.order_items | Audit log written successfully
+2026-08-04 12:46:45,926 | INFO     | bronze.order_items | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_order_items_20260804.log
+2026-08-04 12:46:45,927 | INFO     | bronze.order_items | Checking for last successful run
+2026-08-04 12:46:46,562 | INFO     | bronze.order_items | Fetched watermark value: 2025-03-05 00:00:00
+2026-08-04 12:46:46,563 | INFO     | bronze.order_items | Reading source order_items_raw table
+2026-08-04 12:46:46,592 | INFO     | bronze.order_items | Starting pre-write validations
+2026-08-04 12:46:47,710 | INFO     | bronze.order_items | Rows read from source: 0
+2026-08-04 12:46:47,924 | INFO     | bronze.order_items | Pre-write validations passed. Source order_items_raw ready for ingestion.
+2026-08-04 12:46:47,925 | INFO     | bronze.order_items | Starting Bronze order_items ingestion
+2026-08-04 12:46:47,927 | INFO     | bronze.order_items | Source table: order_items_raw
+2026-08-04 12:46:47,927 | INFO     | bronze.order_items | Target table: order_items
+2026-08-04 12:46:49,532 | INFO     | bronze.order_items | Bronze order_items table written successfully.
+2026-08-04 12:46:49,533 | INFO     | bronze.order_items | Starting post-write validations
+2026-08-04 12:46:49,980 | INFO     | bronze.order_items | No new data found. Using previous watermark: 2025-03-05 00:00:00
+2026-08-04 12:46:49,982 | INFO     | bronze.order_items | Rows written in this run: 0
+2026-08-04 12:46:50,646 | INFO     | bronze.order_items | Total rows in bronze table: 10
+2026-08-04 12:46:51,147 | INFO     | bronze.order_items | No primary key duplicates found
+2026-08-04 12:46:51,512 | INFO     | bronze.order_items | No full row duplicates found
+2026-08-04 12:46:51,854 | INFO     | bronze.order_items | No NULL values found
+2026-08-04 12:46:51,855 | INFO     | bronze.order_items | Post-write validations completed. Bronze order_items ingestion finished successfully.
+2026-08-04 12:46:53,514 | INFO     | bronze.order_items | Audit log written successfully

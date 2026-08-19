@@ -1,0 +1,15 @@
+2026-08-03 12:56:47,381 | INFO     | silver.clean_order_items | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/silver_clean_order_items_20260803.log
+2026-08-03 12:56:47,394 | INFO     | silver.clean_order_items | Starting Silver pipeline at 2026-08-03 12:56:47.378972
+2026-08-03 12:56:48,440 | INFO     | silver.clean_order_items | Incremental load from catalog_project1.bronze.order_items
+2026-08-03 12:56:49,597 | INFO     | silver.clean_order_items | Read 0 records from catalog_project1.bronze.order_items
+2026-08-03 12:56:49,599 | INFO     | silver.clean_order_items | All required columns exists in the catalog_project1.bronze.order_items
+2026-08-03 12:56:49,602 | WARNING  | silver.clean_order_items | New columns detected in catalog_project1.bronze.order_items: {'_source_table', '_ingestion_pipeline_id', '_source_file', '_ingestion_timestamp'}
+2026-08-03 12:56:50,299 | INFO     | silver.clean_order_items | Data standardization completed for the catalog_project1.bronze.order_items
+2026-08-03 12:56:50,683 | INFO     | silver.clean_order_items | Data type casting completed for the catalog_project1.bronze.order_items
+2026-08-03 12:56:51,458 | INFO     | silver.clean_order_items | Data validation completed for the catalog_project1.bronze.order_items
+2026-08-03 12:56:51,834 | INFO     | silver.clean_order_items | Deduplication completed for the catalog_project1.bronze.order_items
+2026-08-03 12:56:54,857 | INFO     | silver.clean_order_items | Data written to the catalog_project1.silver.clean_order_items
+2026-08-03 12:56:56,487 | INFO     | silver.clean_order_items | Data validation for catalog_project1.silver.clean_order_items completed
+2026-08-03 12:56:56,490 | INFO     | silver.clean_order_items | Silver pipeline for catalog_project1.silver.clean_order_items completed successfully
+2026-08-03 12:56:56,491 | INFO     | silver.clean_order_items | No new data, watermark value unchanged: 2025-03-05 00:00:00
+2026-08-03 12:56:57,981 | INFO     | silver.clean_order_items | Audit for catalog_project1.silver.clean_order_items written successfully

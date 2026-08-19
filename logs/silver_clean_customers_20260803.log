@@ -1,0 +1,33 @@
+2026-08-03 12:55:00,486 | INFO     | silver.clean_customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/silver_clean_customers_20260803.log
+2026-08-03 12:55:00,490 | INFO     | silver.clean_customers | Starting Silver pipeline at 2026-08-03 12:55:00.485825
+2026-08-03 12:55:01,846 | ERROR    | silver.clean_customers | Silver catalog_project1.silver.clean_customers pipeline failed: [ATTRIBUTE_NOT_SUPPORTED] Attribute `orerBy` is not supported.
+Traceback (most recent call last):
+  File "/Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/src/transformations/silver.py", line 134, in transform_table
+    watermark_value = get_last_watermark(spark, pipeline_name, target, CATALOG, AUDIT_SCHEMA, AUDIT_TABLENAME)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/src/transformations/silver.py", line 93, in get_last_watermark
+    raise e
+  File "/Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/src/transformations/silver.py", line 84, in get_last_watermark
+    .orerBy(F.col("end_time").desc())\
+     ^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/dataframe.py", line 1770, in __getattr__
+    raise PySparkAttributeError(
+pyspark.errors.exceptions.base.PySparkAttributeError: [ATTRIBUTE_NOT_SUPPORTED] Attribute `orerBy` is not supported.. Did you mean: 'orderBy'?
+2026-08-03 12:55:04,194 | INFO     | silver.clean_customers | Audit for catalog_project1.silver.clean_customers written successfully
+2026-08-03 12:56:10,093 | INFO     | silver.clean_customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/silver_clean_customers_20260803.log
+2026-08-03 12:56:10,094 | INFO     | silver.clean_customers | Starting Silver pipeline at 2026-08-03 12:56:10.055907
+2026-08-03 12:56:11,090 | INFO     | silver.clean_customers | Incremental load from catalog_project1.bronze.customers
+2026-08-03 12:56:12,173 | INFO     | silver.clean_customers | Read 0 records from catalog_project1.bronze.customers
+2026-08-03 12:56:12,174 | INFO     | silver.clean_customers | All required columns exists in the catalog_project1.bronze.customers
+2026-08-03 12:56:12,175 | WARNING  | silver.clean_customers | New columns detected in catalog_project1.bronze.customers: {'_source_table', '_ingestion_pipeline_id', '_source_file', '_ingestion_timestamp'}
+2026-08-03 12:56:12,865 | INFO     | silver.clean_customers | Data standardization completed for the catalog_project1.bronze.customers
+2026-08-03 12:56:13,320 | INFO     | silver.clean_customers | Data type casting completed for the catalog_project1.bronze.customers
+2026-08-03 12:56:14,717 | INFO     | silver.clean_customers | Business rule validation completed for catalog_project1.bronze.customers
+2026-08-03 12:56:14,719 | INFO     | silver.clean_customers | Data validation completed for the catalog_project1.bronze.customers
+2026-08-03 12:56:15,136 | INFO     | silver.clean_customers | Deduplication completed for the catalog_project1.bronze.customers
+2026-08-03 12:56:18,948 | INFO     | silver.clean_customers | Data written to the catalog_project1.silver.clean_customers
+2026-08-03 12:56:20,954 | INFO     | silver.clean_customers | Business rule validation for catalog_project1.silver.clean_customers completed
+2026-08-03 12:56:20,957 | INFO     | silver.clean_customers | Data validation for catalog_project1.silver.clean_customers completed
+2026-08-03 12:56:20,958 | INFO     | silver.clean_customers | Silver pipeline for catalog_project1.silver.clean_customers completed successfully
+2026-08-03 12:56:20,959 | INFO     | silver.clean_customers | No new data, watermark value unchanged: 2025-02-01 00:00:00
+2026-08-03 12:56:22,768 | INFO     | silver.clean_customers | Audit for catalog_project1.silver.clean_customers written successfully

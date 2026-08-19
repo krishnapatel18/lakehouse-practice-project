@@ -1,0 +1,20 @@
+2026-08-03 12:54:02,964 | INFO     | bronze.order_items | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_order_items_20260803.log
+2026-08-03 12:54:02,965 | INFO     | bronze.order_items | Checking for last successful run
+2026-08-03 12:54:03,589 | INFO     | bronze.order_items | Fetched watermark value: 2025-03-05 00:00:00
+2026-08-03 12:54:03,590 | INFO     | bronze.order_items | Reading source order_items_raw table
+2026-08-03 12:54:03,619 | INFO     | bronze.order_items | Starting pre-write validations
+2026-08-03 12:54:04,931 | INFO     | bronze.order_items | Rows read from source: 0
+2026-08-03 12:54:05,100 | INFO     | bronze.order_items | Pre-write validations passed. Source order_items_raw ready for ingestion.
+2026-08-03 12:54:05,101 | INFO     | bronze.order_items | Starting Bronze order_items ingestion
+2026-08-03 12:54:05,102 | INFO     | bronze.order_items | Source table: order_items_raw
+2026-08-03 12:54:05,103 | INFO     | bronze.order_items | Target table: order_items
+2026-08-03 12:54:06,733 | INFO     | bronze.order_items | Bronze order_items table written successfully.
+2026-08-03 12:54:06,734 | INFO     | bronze.order_items | Starting post-write validations
+2026-08-03 12:54:07,118 | INFO     | bronze.order_items | No new data found. Using previous watermark: 2025-03-05 00:00:00
+2026-08-03 12:54:07,120 | INFO     | bronze.order_items | Rows written in this run: 0
+2026-08-03 12:54:07,919 | INFO     | bronze.order_items | Total rows in bronze table: 10
+2026-08-03 12:54:08,409 | INFO     | bronze.order_items | No primary key duplicates found
+2026-08-03 12:54:08,971 | INFO     | bronze.order_items | No full row duplicates found
+2026-08-03 12:54:09,335 | INFO     | bronze.order_items | No NULL values found
+2026-08-03 12:54:09,337 | INFO     | bronze.order_items | Post-write validations completed. Bronze order_items ingestion finished successfully.
+2026-08-03 12:54:10,869 | INFO     | bronze.order_items | Audit log written successfully

@@ -1,0 +1,15 @@
+2026-08-03 12:56:22,798 | INFO     | silver.clean_products | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/silver_clean_products_20260803.log
+2026-08-03 12:56:22,799 | INFO     | silver.clean_products | Starting Silver pipeline at 2026-08-03 12:56:22.769252
+2026-08-03 12:56:23,651 | INFO     | silver.clean_products | Incremental load from catalog_project1.bronze.products
+2026-08-03 12:56:24,728 | INFO     | silver.clean_products | Read 2 records from catalog_project1.bronze.products
+2026-08-03 12:56:24,729 | INFO     | silver.clean_products | All required columns exists in the catalog_project1.bronze.products
+2026-08-03 12:56:24,730 | WARNING  | silver.clean_products | New columns detected in catalog_project1.bronze.products: {'_source_table', '_ingestion_pipeline_id', '_source_file', '_ingestion_timestamp'}
+2026-08-03 12:56:25,294 | INFO     | silver.clean_products | Data standardization completed for the catalog_project1.bronze.products
+2026-08-03 12:56:25,659 | INFO     | silver.clean_products | Data type casting completed for the catalog_project1.bronze.products
+2026-08-03 12:56:26,909 | INFO     | silver.clean_products | Data validation completed for the catalog_project1.bronze.products
+2026-08-03 12:56:27,495 | INFO     | silver.clean_products | Deduplication completed for the catalog_project1.bronze.products
+2026-08-03 12:56:32,991 | INFO     | silver.clean_products | Data written to the catalog_project1.silver.clean_products
+2026-08-03 12:56:34,461 | INFO     | silver.clean_products | Data validation for catalog_project1.silver.clean_products completed
+2026-08-03 12:56:34,461 | INFO     | silver.clean_products | Silver pipeline for catalog_project1.silver.clean_products completed successfully
+2026-08-03 12:56:34,914 | INFO     | silver.clean_products | New watermark: 2024-12-01 00:00:00
+2026-08-03 12:56:36,500 | INFO     | silver.clean_products | Audit for catalog_project1.silver.clean_products written successfully

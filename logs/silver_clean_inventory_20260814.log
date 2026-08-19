@@ -1,0 +1,30 @@
+2026-08-14 08:13:52,358 | INFO     | silver.clean_inventory | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/silver_clean_inventory_20260814.log
+2026-08-14 08:13:52,359 | INFO     | silver.clean_inventory | Starting Silver pipeline at 2026-08-14 08:13:49.831729
+2026-08-14 08:13:53,675 | INFO     | silver.clean_inventory | Incremental load from catalog_project1.bronze.inventory
+2026-08-14 08:13:54,864 | INFO     | silver.clean_inventory | Read 0 records from catalog_project1.bronze.inventory
+2026-08-14 08:13:54,865 | INFO     | silver.clean_inventory | All required columns exists in the catalog_project1.bronze.inventory
+2026-08-14 08:13:54,866 | WARNING  | silver.clean_inventory | New columns detected in catalog_project1.bronze.inventory: {'_source_table', '_ingestion_pipeline_id', '_source_file', '_ingestion_timestamp'}
+2026-08-14 08:13:55,629 | INFO     | silver.clean_inventory | Data standardization completed for the catalog_project1.bronze.inventory
+2026-08-14 08:13:56,165 | INFO     | silver.clean_inventory | Data type casting completed for the catalog_project1.bronze.inventory
+2026-08-14 08:13:57,201 | INFO     | silver.clean_inventory | Data validation completed for the catalog_project1.bronze.inventory
+2026-08-14 08:13:57,627 | INFO     | silver.clean_inventory | Deduplication completed for the catalog_project1.bronze.inventory
+2026-08-14 08:14:02,328 | INFO     | silver.clean_inventory | Data written to the catalog_project1.silver.clean_inventory
+2026-08-14 08:14:03,836 | INFO     | silver.clean_inventory | Data validation for catalog_project1.silver.clean_inventory completed
+2026-08-14 08:14:03,837 | INFO     | silver.clean_inventory | Silver pipeline for catalog_project1.silver.clean_inventory completed successfully
+2026-08-14 08:14:03,838 | INFO     | silver.clean_inventory | No new data, watermark value unchanged: 2025-03-01 00:00:00
+2026-08-14 08:14:05,717 | INFO     | silver.clean_inventory | Audit for catalog_project1.silver.clean_inventory is written successfully
+2026-08-14 08:16:09,028 | INFO     | silver.clean_inventory | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/silver_clean_inventory_20260814.log
+2026-08-14 08:16:09,029 | INFO     | silver.clean_inventory | Starting Silver pipeline at 2026-08-14 08:16:08.401476
+2026-08-14 08:16:09,830 | INFO     | silver.clean_inventory | Incremental load from catalog_project1.bronze.inventory
+2026-08-14 08:16:10,989 | INFO     | silver.clean_inventory | Read 0 records from catalog_project1.bronze.inventory
+2026-08-14 08:16:10,990 | INFO     | silver.clean_inventory | All required columns exists in the catalog_project1.bronze.inventory
+2026-08-14 08:16:10,991 | WARNING  | silver.clean_inventory | New columns detected in catalog_project1.bronze.inventory: {'_source_table', '_ingestion_pipeline_id', '_source_file', '_ingestion_timestamp'}
+2026-08-14 08:16:11,699 | INFO     | silver.clean_inventory | Data standardization completed for the catalog_project1.bronze.inventory
+2026-08-14 08:16:12,071 | INFO     | silver.clean_inventory | Data type casting completed for the catalog_project1.bronze.inventory
+2026-08-14 08:16:12,881 | INFO     | silver.clean_inventory | Data validation completed for the catalog_project1.bronze.inventory
+2026-08-14 08:16:13,290 | INFO     | silver.clean_inventory | Deduplication completed for the catalog_project1.bronze.inventory
+2026-08-14 08:16:17,096 | INFO     | silver.clean_inventory | Data written to the catalog_project1.silver.clean_inventory
+2026-08-14 08:16:18,600 | INFO     | silver.clean_inventory | Data validation for catalog_project1.silver.clean_inventory completed
+2026-08-14 08:16:18,601 | INFO     | silver.clean_inventory | Silver pipeline for catalog_project1.silver.clean_inventory completed successfully
+2026-08-14 08:16:18,602 | INFO     | silver.clean_inventory | No new data, watermark value unchanged: 2025-03-01 00:00:00
+2026-08-14 08:16:20,198 | INFO     | silver.clean_inventory | Audit for catalog_project1.silver.clean_inventory is written successfully

@@ -1,0 +1,155 @@
+2026-07-15 06:22:47,846 | INFO     | bronze.customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_customers_20260715.log
+2026-07-15 06:22:54,861 | INFO     | bronze.customers | Reading source table
+2026-07-15 06:22:55,664 | INFO     | bronze.customers | Rows read: 10
+2026-07-15 06:22:56,736 | INFO     | bronze.customers | Source ingestion completed successfully
+2026-07-15 06:22:56,737 | INFO     | bronze.customers | Starting Bronze ingestion
+2026-07-15 06:22:56,738 | INFO     | bronze.customers | Source table: customers_raw
+2026-07-15 06:22:56,739 | INFO     | bronze.customers | Target table: customers
+2026-07-15 06:23:02,476 | INFO     | bronze.customers | Bronze table written successfully.
+2026-07-15 06:23:03,681 | INFO     | bronze.customers | Rows read: 10
+2026-07-15 06:23:06,104 | INFO     | bronze.customers | Duplicate customer_ids: 0
+2026-07-15 06:23:07,750 | INFO     | bronze.customers | Bronze customer ingestion completed.
+2026-07-15 06:58:29,070 | INFO     | bronze.customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_customers_20260715.log
+2026-07-15 07:35:03,218 | INFO     | bronze.customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_customers_20260715.log
+2026-07-15 07:35:04,663 | INFO     | bronze.customers | Reading source table
+2026-07-15 07:35:05,159 | INFO     | bronze.customers | Rows read: 10
+2026-07-15 07:35:06,247 | INFO     | bronze.customers | Source ingestion completed successfully
+2026-07-15 07:35:06,255 | INFO     | bronze.customers | Starting Bronze ingestion
+2026-07-15 07:35:06,256 | INFO     | bronze.customers | Source table: customers_raw
+2026-07-15 07:35:06,257 | INFO     | bronze.customers | Target table: customers
+2026-07-15 07:35:12,059 | INFO     | bronze.customers | Bronze table written successfully.
+2026-07-15 07:35:13,135 | INFO     | bronze.customers | Rows written: 10
+2026-07-15 07:35:15,537 | INFO     | bronze.customers | Duplicate customer_ids: 0
+2026-07-15 07:35:19,167 | INFO     | bronze.customers | Bronze customer ingestion completed.
+2026-07-15 09:33:38,070 | INFO     | bronze.customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_customers_20260715.log
+2026-07-15 09:33:50,520 | INFO     | bronze.customers | Reading source table
+2026-07-15 09:33:51,440 | INFO     | bronze.customers | Rows read: 10
+2026-07-15 09:33:57,343 | INFO     | bronze.customers | Source ingestion completed successfully
+2026-07-15 09:33:57,344 | INFO     | bronze.customers | Starting Bronze ingestion
+2026-07-15 09:33:57,345 | INFO     | bronze.customers | Source table: customers_raw
+2026-07-15 09:33:57,346 | INFO     | bronze.customers | Target table: customers
+2026-07-15 09:33:57,347 | ERROR    | bronze.customers | Bronze ingestion failed
+Traceback (most recent call last):
+  File "/home/spark-bac578cb-3079-4347-b855-6e/.ipykernel/346/command-7357250603041966-2796681352", line 29, in <module>
+    add_metadata("cust_raw", "cust_bronze", CATALOG, SOURCE_SCHEMA, SOURCE_TABLE, BRONZE_SCHEMA, BRONZE_TABLE)
+  File "/Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/src/ingestion/bronze.py", line 6, in add_metadata
+    .withColumn("_ingestion_timestamp", current_timestamp())
+    ^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'withColumn'
+2026-07-15 09:47:36,196 | INFO     | bronze.customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_customers_20260715.log
+2026-07-15 09:47:37,149 | INFO     | bronze.customers | Reading source table
+2026-07-15 09:47:37,675 | INFO     | bronze.customers | Rows read: 10
+2026-07-15 09:47:38,752 | INFO     | bronze.customers | Source ingestion completed successfully
+2026-07-15 09:47:38,755 | INFO     | bronze.customers | Starting Bronze ingestion
+2026-07-15 09:47:38,759 | INFO     | bronze.customers | Source table: customers_raw
+2026-07-15 09:47:38,766 | INFO     | bronze.customers | Target table: customers
+2026-07-15 09:47:38,768 | ERROR    | bronze.customers | Bronze ingestion failed
+Traceback (most recent call last):
+  File "/home/spark-b4898cc0-527a-4877-8cc0-8b/.ipykernel/308/command-7357250603041966-3992247647", line 29, in <module>
+    add_metadata(cust_raw, cust_bronze, CATALOG, SOURCE_SCHEMA, SOURCE_TABLE, BRONZE_SCHEMA, BRONZE_TABLE)
+                           ^^^^^^^^^^^
+NameError: name 'cust_bronze' is not defined
+2026-07-15 09:48:43,398 | INFO     | bronze.customers | Reading source table
+2026-07-15 09:48:44,019 | INFO     | bronze.customers | Rows read: 10
+2026-07-15 09:48:45,122 | INFO     | bronze.customers | Source ingestion completed successfully
+2026-07-15 09:48:45,123 | INFO     | bronze.customers | Starting Bronze ingestion
+2026-07-15 09:48:45,124 | INFO     | bronze.customers | Source table: customers_raw
+2026-07-15 09:48:45,125 | INFO     | bronze.customers | Target table: customers
+2026-07-15 09:48:45,195 | ERROR    | bronze.customers | Bronze ingestion failed
+Traceback (most recent call last):
+  File "/home/spark-b4898cc0-527a-4877-8cc0-8b/.ipykernel/308/command-7357250603041966-2127723428", line 29, in <module>
+    add_metadata(cust_raw, "cust_bronze", CATALOG, SOURCE_SCHEMA, SOURCE_TABLE, BRONZE_SCHEMA, BRONZE_TABLE)
+  File "/Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/src/ingestion/bronze.py", line 11, in add_metadata
+    spark.sql(f"DROP TABLE IF EXISTS {CATALOG}.{BRONZE_SCHEMA}.{BRONZE_TABLE}")
+    ^^^^^
+NameError: name 'spark' is not defined. Did you mean: 'stack'?
+2026-07-15 09:56:30,904 | INFO     | bronze.customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_customers_20260715.log
+2026-07-15 09:56:31,978 | INFO     | bronze.customers | Reading source table
+2026-07-15 09:56:32,416 | INFO     | bronze.customers | Rows read: 10
+2026-07-15 09:56:32,871 | INFO     | bronze.customers | Source ingestion completed successfully
+2026-07-15 09:56:32,872 | INFO     | bronze.customers | Starting Bronze ingestion
+2026-07-15 09:56:32,873 | INFO     | bronze.customers | Source table: customers_raw
+2026-07-15 09:56:32,874 | INFO     | bronze.customers | Target table: customers
+2026-07-15 09:56:42,372 | INFO     | bronze.customers | Bronze table written successfully.
+2026-07-15 09:56:43,962 | INFO     | bronze.customers | Rows written: 10
+2026-07-15 09:56:47,279 | INFO     | bronze.customers | Duplicate customer_ids: 0
+2026-07-15 09:56:47,990 | ERROR    | bronze.customers | Bronze ingestion failed
+Traceback (most recent call last):
+  File "/home/spark-b4898cc0-527a-4877-8cc0-8b/.ipykernel/309/command-7357250603041966-2127723428", line 52, in <module>
+    null_condition = reduce(or_, [col(c).isNull() for c in customers.columns])
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/utils.py", line 308, in wrapped
+    return getattr(functions, f.__name__)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: reduce() missing 1 required positional argument: 'merge'
+2026-07-15 10:03:27,214 | INFO     | bronze.customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_customers_20260715.log
+2026-07-15 10:03:33,899 | INFO     | bronze.customers | Reading source table
+2026-07-15 10:03:34,307 | INFO     | bronze.customers | Rows read: 10
+2026-07-15 10:03:35,209 | INFO     | bronze.customers | Source ingestion completed successfully
+2026-07-15 10:03:35,211 | INFO     | bronze.customers | Starting Bronze ingestion
+2026-07-15 10:03:35,212 | INFO     | bronze.customers | Source table: customers_raw
+2026-07-15 10:03:35,213 | INFO     | bronze.customers | Target table: customers
+2026-07-15 10:03:40,762 | INFO     | bronze.customers | Bronze table written successfully.
+2026-07-15 10:03:42,195 | INFO     | bronze.customers | Rows written: 10
+2026-07-15 10:03:45,014 | INFO     | bronze.customers | Duplicate customer_ids: 0
+2026-07-15 10:03:45,271 | ERROR    | bronze.customers | Bronze ingestion failed
+Traceback (most recent call last):
+  File "/home/spark-b4898cc0-527a-4877-8cc0-8b/.ipykernel/309/command-7357250603041966-2127723428", line 52, in <module>
+    null_condition = reduce(or_, [col(c).isNull() for c in customers.columns])
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/utils.py", line 308, in wrapped
+    return getattr(functions, f.__name__)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: reduce() missing 1 required positional argument: 'merge'
+2026-07-15 10:09:47,852 | INFO     | bronze.customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_customers_20260715.log
+2026-07-15 10:09:53,507 | INFO     | bronze.customers | Reading source table
+2026-07-15 10:09:53,899 | INFO     | bronze.customers | Rows read: 10
+2026-07-15 10:09:54,860 | INFO     | bronze.customers | Source ingestion completed successfully
+2026-07-15 10:09:54,871 | INFO     | bronze.customers | Starting Bronze ingestion
+2026-07-15 10:09:54,877 | INFO     | bronze.customers | Source table: customers_raw
+2026-07-15 10:09:54,878 | INFO     | bronze.customers | Target table: customers
+2026-07-15 10:09:59,809 | INFO     | bronze.customers | Bronze table written successfully.
+2026-07-15 10:10:01,204 | INFO     | bronze.customers | Rows written: 10
+2026-07-15 10:10:03,516 | INFO     | bronze.customers | Duplicate customer_ids: 0
+2026-07-15 10:10:06,717 | INFO     | bronze.customers | Bronze customer ingestion completed.
+2026-07-15 10:13:55,451 | INFO     | bronze.customers | Reading source table
+2026-07-15 10:13:56,227 | INFO     | bronze.customers | Rows read: 10
+2026-07-15 10:13:57,277 | INFO     | bronze.customers | Source ingestion completed successfully
+2026-07-15 10:13:57,278 | INFO     | bronze.customers | Starting Bronze ingestion
+2026-07-15 10:13:57,279 | INFO     | bronze.customers | Source table: customers_raw
+2026-07-15 10:13:57,279 | INFO     | bronze.customers | Target table: customers
+2026-07-15 10:14:01,630 | INFO     | bronze.customers | Bronze table written successfully.
+2026-07-15 10:14:02,828 | INFO     | bronze.customers | Rows written: 10
+2026-07-15 10:14:05,542 | INFO     | bronze.customers | Duplicate customer_ids: 0
+2026-07-15 10:14:05,893 | ERROR    | bronze.customers | Bronze ingestion failed
+Traceback (most recent call last):
+  File "/home/spark-b4898cc0-527a-4877-8cc0-8b/.ipykernel/309/command-7357250603041966-3332572037", line 53, in <module>
+    displa(customers.filter(null_condition))
+    ^^^^^^
+NameError: name 'displa' is not defined
+2026-07-15 10:52:43,023 | INFO     | bronze.customers | Reading source table
+2026-07-15 10:52:43,024 | ERROR    | bronze.customers | Bronze ingestion failed
+Traceback (most recent call last):
+  File "/home/spark-b4898cc0-527a-4877-8cc0-8b/.ipykernel/309/command-7357250603041966-3529342492", line 4, in <module>
+    source_empty(cust_raw)
+    ^^^^^^^^^^^^
+NameError: name 'source_empty' is not defined
+2026-07-15 12:51:00,020 | INFO     | bronze.customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_customers_20260715.log
+2026-07-15 12:51:00,021 | INFO     | bronze.customers | Reading source table
+2026-07-15 12:51:00,022 | ERROR    | bronze.customers | Bronze ingestion failed
+Traceback (most recent call last):
+  File "/Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/src/ingestion/bronze.py", line 86, in ingest_table
+    raw = spark.read.table(f"{CATALOG}.{SOURCE_SCHEMA.lower()}.{SOURCE_TABLE}")
+          ^^^^^
+NameError: name 'spark' is not defined
+2026-07-15 12:52:02,861 | INFO     | bronze.customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_customers_20260715.log
+2026-07-15 12:52:02,862 | INFO     | bronze.customers | Reading source table
+2026-07-15 12:52:07,689 | INFO     | bronze.customers | Rows read: 10
+2026-07-15 12:52:08,121 | INFO     | bronze.customers | Source fetching completed successfully
+2026-07-15 12:52:08,122 | INFO     | bronze.customers | Starting Bronze ingestion
+2026-07-15 12:52:08,123 | INFO     | bronze.customers | Source table: customers_raw
+2026-07-15 12:52:08,123 | INFO     | bronze.customers | Target table: customers
+2026-07-15 12:52:20,478 | INFO     | bronze.customers | Bronze table written successfully.
+2026-07-15 12:52:21,008 | INFO     | bronze.customers | Rows written: 10
+2026-07-15 12:52:21,920 | INFO     | bronze.customers | Duplicate customer_ids: 0
+2026-07-15 12:52:23,024 | INFO     | bronze.customers | Bronze customer ingestion completed.

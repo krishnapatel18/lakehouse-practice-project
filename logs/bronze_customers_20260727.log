@@ -1,0 +1,45 @@
+2026-07-27 12:46:43,541 | INFO     | bronze.customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_customers_20260727.log
+2026-07-27 12:46:43,543 | INFO     | bronze.customers | Checking for last successful run
+2026-07-27 12:46:47,403 | INFO     | bronze.customers | Fetched watermark value: 2025-02-01 00:00:00
+2026-07-27 12:46:47,404 | INFO     | bronze.customers | Reading source customers_raw table
+2026-07-27 12:46:47,437 | INFO     | bronze.customers | Starting pre-write validations
+2026-07-27 12:46:51,952 | INFO     | bronze.customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_customers_20260727.log
+2026-07-27 12:46:51,953 | INFO     | bronze.customers | Checking for last successful run
+2026-07-27 12:46:52,811 | INFO     | bronze.customers | Fetched watermark value: 2025-02-01 00:00:00
+2026-07-27 12:46:52,812 | INFO     | bronze.customers | Reading source customers_raw table
+2026-07-27 12:46:52,845 | INFO     | bronze.customers | Starting pre-write validations
+2026-07-27 12:46:54,133 | INFO     | bronze.customers | Rows read from source: 0
+2026-07-27 12:46:54,313 | INFO     | bronze.customers | Pre-write validations passed. Source customers_raw ready for ingestion.
+2026-07-27 12:46:54,313 | INFO     | bronze.customers | Starting Bronze customers ingestion
+2026-07-27 12:46:54,317 | INFO     | bronze.customers | Source table: customers_raw
+2026-07-27 12:46:54,317 | INFO     | bronze.customers | Target table: customers
+2026-07-27 12:46:56,225 | INFO     | bronze.customers | Bronze customers table written successfully.
+2026-07-27 12:46:56,227 | INFO     | bronze.customers | Starting post-write validations
+2026-07-27 12:46:56,663 | INFO     | bronze.customers | No new data found. Using previous watermark: 2025-02-01 00:00:00
+2026-07-27 12:46:57,270 | INFO     | bronze.customers | Rows written in this run: 10
+2026-07-27 12:46:57,790 | INFO     | bronze.customers | Total rows in bronze table after ingestion: 10
+2026-07-27 12:46:58,196 | INFO     | bronze.customers | No primary key duplicates found
+2026-07-27 12:46:58,595 | INFO     | bronze.customers | No full row duplicates found
+2026-07-27 12:46:59,092 | INFO     | bronze.customers | No NULL values found
+2026-07-27 12:46:59,093 | INFO     | bronze.customers | Post-write validations completed. Bronze customers ingestion finished successfully.
+2026-07-27 12:47:01,181 | INFO     | bronze.customers | Audit log written
+2026-07-27 12:48:34,979 | INFO     | bronze.customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_customers_20260727.log
+2026-07-27 12:48:34,981 | INFO     | bronze.customers | Checking for last successful run
+2026-07-27 12:48:35,777 | INFO     | bronze.customers | Fetched watermark value: 2025-02-01 00:00:00
+2026-07-27 12:48:35,778 | INFO     | bronze.customers | Reading source customers_raw table
+2026-07-27 12:48:35,805 | INFO     | bronze.customers | Starting pre-write validations
+2026-07-27 12:48:36,540 | INFO     | bronze.customers | Rows read from source: 0
+2026-07-27 12:48:36,719 | INFO     | bronze.customers | Pre-write validations passed. Source customers_raw ready for ingestion.
+2026-07-27 12:48:36,734 | INFO     | bronze.customers | Starting Bronze customers ingestion
+2026-07-27 12:48:36,736 | INFO     | bronze.customers | Source table: customers_raw
+2026-07-27 12:48:36,738 | INFO     | bronze.customers | Target table: customers
+2026-07-27 12:48:38,050 | INFO     | bronze.customers | Bronze customers table written successfully.
+2026-07-27 12:48:38,051 | INFO     | bronze.customers | Starting post-write validations
+2026-07-27 12:48:38,454 | INFO     | bronze.customers | No new data found. Using previous watermark: 2025-02-01 00:00:00
+2026-07-27 12:48:38,455 | INFO     | bronze.customers | Rows written in this run: 0
+2026-07-27 12:48:38,957 | INFO     | bronze.customers | Total rows in bronze table after ingestion: 10
+2026-07-27 12:48:39,326 | INFO     | bronze.customers | No primary key duplicates found
+2026-07-27 12:48:39,885 | INFO     | bronze.customers | No full row duplicates found
+2026-07-27 12:48:40,270 | INFO     | bronze.customers | No NULL values found
+2026-07-27 12:48:40,272 | INFO     | bronze.customers | Post-write validations completed. Bronze customers ingestion finished successfully.
+2026-07-27 12:48:42,421 | INFO     | bronze.customers | Audit log written

@@ -1,0 +1,165 @@
+2026-08-06 05:37:42,548 | INFO     | silver.clean_payments | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/silver_clean_payments_20260806.log
+2026-08-06 05:37:42,550 | INFO     | silver.clean_payments | Starting Silver pipeline at 2026-08-06 05:37:42.547349
+2026-08-06 05:37:43,563 | INFO     | silver.clean_payments | Incremental load from catalog_project1.bronze.payments
+2026-08-06 05:37:44,505 | INFO     | silver.clean_payments | Read 0 records from catalog_project1.bronze.payments
+2026-08-06 05:37:44,506 | INFO     | silver.clean_payments | All required columns exists in the catalog_project1.bronze.payments
+2026-08-06 05:37:44,508 | WARNING  | silver.clean_payments | New columns detected in catalog_project1.bronze.payments: {'_source_table', '_ingestion_pipeline_id', '_source_file', '_ingestion_timestamp'}
+2026-08-06 05:37:45,277 | INFO     | silver.clean_payments | Data standardization completed for the catalog_project1.bronze.payments
+2026-08-06 05:37:45,654 | INFO     | silver.clean_payments | Data type casting completed for the catalog_project1.bronze.payments
+2026-08-06 05:37:46,692 | INFO     | silver.clean_payments | Data validation completed for the catalog_project1.bronze.payments
+2026-08-06 05:37:47,254 | INFO     | silver.clean_payments | Deduplication completed for the catalog_project1.bronze.payments
+2026-08-06 05:37:51,139 | INFO     | silver.clean_payments | Data written to the catalog_project1.silver.clean_payments
+2026-08-06 05:37:52,632 | INFO     | silver.clean_payments | Data validation for catalog_project1.silver.clean_payments completed
+2026-08-06 05:37:52,647 | INFO     | silver.clean_payments | Silver pipeline for catalog_project1.silver.clean_payments completed successfully
+2026-08-06 05:37:52,667 | INFO     | silver.clean_payments | No new data, watermark value unchanged: 2025-03-28 00:00:00
+2026-08-06 05:37:54,075 | INFO     | silver.clean_payments | Audit for catalog_project1.silver.clean_payments is written successfully
+2026-08-06 06:34:15,471 | INFO     | silver.clean_payments | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/silver_clean_payments_20260806.log
+2026-08-06 06:34:15,472 | INFO     | silver.clean_payments | Starting Silver pipeline at 2026-08-06 06:34:15.470093
+2026-08-06 06:34:16,316 | INFO     | silver.clean_payments | Incremental load from catalog_project1.bronze.payments
+2026-08-06 06:34:17,147 | INFO     | silver.clean_payments | Read 0 records from catalog_project1.bronze.payments
+2026-08-06 06:34:17,148 | INFO     | silver.clean_payments | All required columns exists in the catalog_project1.bronze.payments
+2026-08-06 06:34:17,149 | WARNING  | silver.clean_payments | New columns detected in catalog_project1.bronze.payments: {'_source_table', '_ingestion_pipeline_id', '_source_file', '_ingestion_timestamp'}
+2026-08-06 06:34:17,789 | INFO     | silver.clean_payments | Data standardization completed for the catalog_project1.bronze.payments
+2026-08-06 06:34:18,381 | INFO     | silver.clean_payments | Data type casting completed for the catalog_project1.bronze.payments
+2026-08-06 06:34:19,095 | INFO     | silver.clean_payments | Data validation completed for the catalog_project1.bronze.payments
+2026-08-06 06:34:19,661 | INFO     | silver.clean_payments | Deduplication completed for the catalog_project1.bronze.payments
+2026-08-06 06:34:23,009 | INFO     | silver.clean_payments | Data written to the catalog_project1.silver.clean_payments
+2026-08-06 06:34:24,191 | INFO     | silver.clean_payments | Data validation for catalog_project1.silver.clean_payments completed
+2026-08-06 06:34:24,193 | INFO     | silver.clean_payments | Silver pipeline for catalog_project1.silver.clean_payments completed successfully
+2026-08-06 06:34:24,194 | INFO     | silver.clean_payments | No new data, watermark value unchanged: 2025-03-28 00:00:00
+2026-08-06 06:34:25,907 | INFO     | silver.clean_payments | Audit for catalog_project1.silver.clean_payments is written successfully
+2026-08-06 09:17:41,333 | INFO     | silver.clean_payments | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/silver_clean_payments_20260806.log
+2026-08-06 09:17:41,334 | INFO     | silver.clean_payments | Starting Silver pipeline at 2026-08-06 09:17:41.332269
+2026-08-06 09:17:42,248 | INFO     | silver.clean_payments | Incremental load from catalog_project1.bronze.payments
+2026-08-06 09:17:43,332 | INFO     | silver.clean_payments | Read 0 records from catalog_project1.bronze.payments
+2026-08-06 09:17:43,333 | INFO     | silver.clean_payments | All required columns exists in the catalog_project1.bronze.payments
+2026-08-06 09:17:43,334 | WARNING  | silver.clean_payments | New columns detected in catalog_project1.bronze.payments: {'_source_table', '_ingestion_pipeline_id', '_source_file', '_ingestion_timestamp'}
+2026-08-06 09:17:44,145 | INFO     | silver.clean_payments | Data standardization completed for the catalog_project1.bronze.payments
+2026-08-06 09:17:44,681 | INFO     | silver.clean_payments | Data type casting completed for the catalog_project1.bronze.payments
+2026-08-06 09:17:45,521 | INFO     | silver.clean_payments | Data validation completed for the catalog_project1.bronze.payments
+2026-08-06 09:17:45,916 | INFO     | silver.clean_payments | Deduplication completed for the catalog_project1.bronze.payments
+2026-08-06 09:17:49,757 | INFO     | silver.clean_payments | Data written to the catalog_project1.silver.clean_payments
+2026-08-06 09:17:50,996 | INFO     | silver.clean_payments | Data validation for catalog_project1.silver.clean_payments completed
+2026-08-06 09:17:50,997 | INFO     | silver.clean_payments | Silver pipeline for catalog_project1.silver.clean_payments completed successfully
+2026-08-06 09:17:50,998 | INFO     | silver.clean_payments | No new data, watermark value unchanged: 2025-03-28 00:00:00
+2026-08-06 09:17:52,976 | INFO     | silver.clean_payments | Audit for catalog_project1.silver.clean_payments is written successfully
+2026-08-06 10:01:58,975 | INFO     | silver.clean_payments | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/silver_clean_payments_20260806.log
+2026-08-06 10:01:58,976 | INFO     | silver.clean_payments | Starting Silver pipeline at 2026-08-06 10:01:58.973826
+2026-08-06 10:02:00,271 | INFO     | silver.clean_payments | Incremental load from catalog_project1.bronze.payments
+2026-08-06 10:02:01,251 | INFO     | silver.clean_payments | Read 0 records from catalog_project1.bronze.payments
+2026-08-06 10:02:01,252 | INFO     | silver.clean_payments | All required columns exists in the catalog_project1.bronze.payments
+2026-08-06 10:02:01,253 | WARNING  | silver.clean_payments | New columns detected in catalog_project1.bronze.payments: {'_source_table', '_ingestion_pipeline_id', '_source_file', '_ingestion_timestamp'}
+2026-08-06 10:02:01,983 | INFO     | silver.clean_payments | Data standardization completed for the catalog_project1.bronze.payments
+2026-08-06 10:02:02,532 | INFO     | silver.clean_payments | Data type casting completed for the catalog_project1.bronze.payments
+2026-08-06 10:02:03,472 | INFO     | silver.clean_payments | Data validation completed for the catalog_project1.bronze.payments
+2026-08-06 10:02:03,850 | INFO     | silver.clean_payments | Deduplication completed for the catalog_project1.bronze.payments
+2026-08-06 10:02:06,998 | INFO     | silver.clean_payments | Data written to the catalog_project1.silver.clean_payments
+2026-08-06 10:02:08,500 | INFO     | silver.clean_payments | Data validation for catalog_project1.silver.clean_payments completed
+2026-08-06 10:02:08,502 | INFO     | silver.clean_payments | Silver pipeline for catalog_project1.silver.clean_payments completed successfully
+2026-08-06 10:02:08,503 | INFO     | silver.clean_payments | No new data, watermark value unchanged: 2025-03-28 00:00:00
+2026-08-06 10:02:09,927 | INFO     | silver.clean_payments | Audit for catalog_project1.silver.clean_payments is written successfully
+2026-08-06 10:05:26,625 | INFO     | silver.clean_payments | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/silver_clean_payments_20260806.log
+2026-08-06 10:05:26,625 | INFO     | silver.clean_payments | Starting Silver pipeline at 2026-08-06 10:05:26.623768
+2026-08-06 10:05:27,648 | INFO     | silver.clean_payments | Incremental load from catalog_project1.bronze.payments
+2026-08-06 10:05:28,852 | INFO     | silver.clean_payments | Read 0 records from catalog_project1.bronze.payments
+2026-08-06 10:05:28,853 | INFO     | silver.clean_payments | All required columns exists in the catalog_project1.bronze.payments
+2026-08-06 10:05:28,855 | WARNING  | silver.clean_payments | New columns detected in catalog_project1.bronze.payments: {'_source_table', '_ingestion_pipeline_id', '_source_file', '_ingestion_timestamp'}
+2026-08-06 10:05:29,344 | INFO     | silver.clean_payments | Data standardization completed for the catalog_project1.bronze.payments
+2026-08-06 10:05:29,795 | INFO     | silver.clean_payments | Data type casting completed for the catalog_project1.bronze.payments
+2026-08-06 10:05:30,744 | INFO     | silver.clean_payments | Data validation completed for the catalog_project1.bronze.payments
+2026-08-06 10:05:31,085 | INFO     | silver.clean_payments | Deduplication completed for the catalog_project1.bronze.payments
+2026-08-06 10:05:34,280 | INFO     | silver.clean_payments | Data written to the catalog_project1.silver.clean_payments
+2026-08-06 10:05:35,372 | INFO     | silver.clean_payments | Data validation for catalog_project1.silver.clean_payments completed
+2026-08-06 10:05:35,374 | INFO     | silver.clean_payments | Silver pipeline for catalog_project1.silver.clean_payments completed successfully
+2026-08-06 10:05:35,375 | INFO     | silver.clean_payments | No new data, watermark value unchanged: 2025-03-28 00:00:00
+2026-08-06 10:05:36,774 | INFO     | silver.clean_payments | Audit for catalog_project1.silver.clean_payments is written successfully
+2026-08-06 10:11:02,952 | INFO     | silver.clean_payments | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/silver_clean_payments_20260806.log
+2026-08-06 10:11:02,952 | INFO     | silver.clean_payments | Starting Silver pipeline at 2026-08-06 10:11:02.950869
+2026-08-06 10:11:03,806 | INFO     | silver.clean_payments | Incremental load from catalog_project1.bronze.payments
+2026-08-06 10:11:04,766 | INFO     | silver.clean_payments | Read 0 records from catalog_project1.bronze.payments
+2026-08-06 10:11:04,767 | INFO     | silver.clean_payments | All required columns exists in the catalog_project1.bronze.payments
+2026-08-06 10:11:04,768 | WARNING  | silver.clean_payments | New columns detected in catalog_project1.bronze.payments: {'_source_table', '_ingestion_pipeline_id', '_source_file', '_ingestion_timestamp'}
+2026-08-06 10:11:05,226 | INFO     | silver.clean_payments | Data standardization completed for the catalog_project1.bronze.payments
+2026-08-06 10:11:05,633 | INFO     | silver.clean_payments | Data type casting completed for the catalog_project1.bronze.payments
+2026-08-06 10:11:06,348 | INFO     | silver.clean_payments | Data validation completed for the catalog_project1.bronze.payments
+2026-08-06 10:11:06,702 | INFO     | silver.clean_payments | Deduplication completed for the catalog_project1.bronze.payments
+2026-08-06 10:11:09,480 | INFO     | silver.clean_payments | Data written to the catalog_project1.silver.clean_payments
+2026-08-06 10:11:10,510 | INFO     | silver.clean_payments | Data validation for catalog_project1.silver.clean_payments completed
+2026-08-06 10:11:10,511 | INFO     | silver.clean_payments | Silver pipeline for catalog_project1.silver.clean_payments completed successfully
+2026-08-06 10:11:10,512 | INFO     | silver.clean_payments | No new data, watermark value unchanged: 2025-03-28 00:00:00
+2026-08-06 10:11:11,829 | INFO     | silver.clean_payments | Audit for catalog_project1.silver.clean_payments is written successfully
+2026-08-06 11:49:04,631 | INFO     | silver.clean_payments | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/silver_clean_payments_20260806.log
+2026-08-06 11:49:04,633 | INFO     | silver.clean_payments | Starting Silver pipeline at 2026-08-06 11:49:04.630270
+2026-08-06 11:49:05,629 | INFO     | silver.clean_payments | Incremental load from catalog_project1.bronze.payments
+2026-08-06 11:49:06,736 | INFO     | silver.clean_payments | Read 0 records from catalog_project1.bronze.payments
+2026-08-06 11:49:06,737 | INFO     | silver.clean_payments | All required columns exists in the catalog_project1.bronze.payments
+2026-08-06 11:49:06,738 | WARNING  | silver.clean_payments | New columns detected in catalog_project1.bronze.payments: {'_source_table', '_ingestion_pipeline_id', '_source_file', '_ingestion_timestamp'}
+2026-08-06 11:49:07,511 | INFO     | silver.clean_payments | Data standardization completed for the catalog_project1.bronze.payments
+2026-08-06 11:49:07,905 | INFO     | silver.clean_payments | Data type casting completed for the catalog_project1.bronze.payments
+2026-08-06 11:49:08,898 | INFO     | silver.clean_payments | Data validation completed for the catalog_project1.bronze.payments
+2026-08-06 11:49:09,264 | INFO     | silver.clean_payments | Deduplication completed for the catalog_project1.bronze.payments
+2026-08-06 11:49:12,326 | INFO     | silver.clean_payments | Data written to the catalog_project1.silver.clean_payments
+2026-08-06 11:49:13,602 | INFO     | silver.clean_payments | Data validation for catalog_project1.silver.clean_payments completed
+2026-08-06 11:49:13,603 | INFO     | silver.clean_payments | Silver pipeline for catalog_project1.silver.clean_payments completed successfully
+2026-08-06 11:49:13,605 | INFO     | silver.clean_payments | No new data, watermark value unchanged: 2025-03-28 00:00:00
+2026-08-06 11:49:15,160 | INFO     | silver.clean_payments | Audit for catalog_project1.silver.clean_payments is written successfully
+2026-08-06 13:20:18,371 | INFO     | silver.clean_payments | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/silver_clean_payments_20260806.log
+2026-08-06 13:20:18,372 | INFO     | silver.clean_payments | Starting Silver pipeline at 2026-08-06 13:20:18.369802
+2026-08-06 13:20:19,405 | INFO     | silver.clean_payments | Incremental load from catalog_project1.bronze.payments
+2026-08-06 13:20:20,204 | INFO     | silver.clean_payments | Read 0 records from catalog_project1.bronze.payments
+2026-08-06 13:20:20,205 | INFO     | silver.clean_payments | All required columns exists in the catalog_project1.bronze.payments
+2026-08-06 13:20:20,206 | WARNING  | silver.clean_payments | New columns detected in catalog_project1.bronze.payments: {'_source_table', '_ingestion_pipeline_id', '_source_file', '_ingestion_timestamp'}
+2026-08-06 13:20:20,672 | INFO     | silver.clean_payments | Data standardization completed for the catalog_project1.bronze.payments
+2026-08-06 13:20:21,006 | INFO     | silver.clean_payments | Data type casting completed for the catalog_project1.bronze.payments
+2026-08-06 13:20:21,743 | INFO     | silver.clean_payments | Data validation completed for the catalog_project1.bronze.payments
+2026-08-06 13:20:22,121 | INFO     | silver.clean_payments | Deduplication completed for the catalog_project1.bronze.payments
+2026-08-06 13:20:25,300 | INFO     | silver.clean_payments | Data written to the catalog_project1.silver.clean_payments
+2026-08-06 13:20:26,514 | INFO     | silver.clean_payments | Data validation for catalog_project1.silver.clean_payments completed
+2026-08-06 13:20:26,516 | INFO     | silver.clean_payments | Silver pipeline for catalog_project1.silver.clean_payments completed successfully
+2026-08-06 13:20:26,517 | INFO     | silver.clean_payments | No new data, watermark value unchanged: 2025-03-28 00:00:00
+2026-08-06 13:20:28,290 | INFO     | silver.clean_payments | Audit for catalog_project1.silver.clean_payments is written successfully
+2026-08-06 13:39:53,931 | INFO     | silver.clean_payments | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/silver_clean_payments_20260806.log
+2026-08-06 13:39:53,932 | INFO     | silver.clean_payments | Starting Silver pipeline at 2026-08-06 13:39:53.930333
+2026-08-06 13:39:54,645 | INFO     | silver.clean_payments | Incremental load from catalog_project1.bronze.payments
+2026-08-06 13:39:55,470 | INFO     | silver.clean_payments | Read 0 records from catalog_project1.bronze.payments
+2026-08-06 13:39:55,472 | INFO     | silver.clean_payments | All required columns exists in the catalog_project1.bronze.payments
+2026-08-06 13:39:55,474 | WARNING  | silver.clean_payments | New columns detected in catalog_project1.bronze.payments: {'_source_table', '_ingestion_pipeline_id', '_source_file', '_ingestion_timestamp'}
+2026-08-06 13:39:55,949 | INFO     | silver.clean_payments | Data standardization completed for the catalog_project1.bronze.payments
+2026-08-06 13:39:56,496 | INFO     | silver.clean_payments | Data type casting completed for the catalog_project1.bronze.payments
+2026-08-06 13:39:57,169 | INFO     | silver.clean_payments | Data validation completed for the catalog_project1.bronze.payments
+2026-08-06 13:39:57,503 | INFO     | silver.clean_payments | Deduplication completed for the catalog_project1.bronze.payments
+2026-08-06 13:40:00,779 | INFO     | silver.clean_payments | Data written to the catalog_project1.silver.clean_payments
+2026-08-06 13:40:02,265 | INFO     | silver.clean_payments | Data validation for catalog_project1.silver.clean_payments completed
+2026-08-06 13:40:02,268 | INFO     | silver.clean_payments | Silver pipeline for catalog_project1.silver.clean_payments completed successfully
+2026-08-06 13:40:02,269 | INFO     | silver.clean_payments | No new data, watermark value unchanged: 2025-03-28 00:00:00
+2026-08-06 13:40:03,788 | INFO     | silver.clean_payments | Audit for catalog_project1.silver.clean_payments is written successfully
+2026-08-06 14:01:36,429 | INFO     | silver.clean_payments | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/silver_clean_payments_20260806.log
+2026-08-06 14:01:36,430 | INFO     | silver.clean_payments | Starting Silver pipeline at 2026-08-06 14:01:36.428435
+2026-08-06 14:01:37,324 | INFO     | silver.clean_payments | Incremental load from catalog_project1.bronze.payments
+2026-08-06 14:01:38,261 | INFO     | silver.clean_payments | Read 0 records from catalog_project1.bronze.payments
+2026-08-06 14:01:38,262 | INFO     | silver.clean_payments | All required columns exists in the catalog_project1.bronze.payments
+2026-08-06 14:01:38,264 | WARNING  | silver.clean_payments | New columns detected in catalog_project1.bronze.payments: {'_source_table', '_ingestion_pipeline_id', '_source_file', '_ingestion_timestamp'}
+2026-08-06 14:01:38,996 | INFO     | silver.clean_payments | Data standardization completed for the catalog_project1.bronze.payments
+2026-08-06 14:01:39,332 | INFO     | silver.clean_payments | Data type casting completed for the catalog_project1.bronze.payments
+2026-08-06 14:01:40,001 | INFO     | silver.clean_payments | Data validation completed for the catalog_project1.bronze.payments
+2026-08-06 14:01:40,332 | INFO     | silver.clean_payments | Deduplication completed for the catalog_project1.bronze.payments
+2026-08-06 14:01:43,325 | INFO     | silver.clean_payments | Data written to the catalog_project1.silver.clean_payments
+2026-08-06 14:01:44,506 | INFO     | silver.clean_payments | Data validation for catalog_project1.silver.clean_payments completed
+2026-08-06 14:01:44,507 | INFO     | silver.clean_payments | Silver pipeline for catalog_project1.silver.clean_payments completed successfully
+2026-08-06 14:01:44,508 | INFO     | silver.clean_payments | No new data, watermark value unchanged: 2025-03-28 00:00:00
+2026-08-06 14:01:46,021 | INFO     | silver.clean_payments | Audit for catalog_project1.silver.clean_payments is written successfully
+2026-08-06 14:10:42,059 | INFO     | silver.clean_payments | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/silver_clean_payments_20260806.log
+2026-08-06 14:10:42,061 | INFO     | silver.clean_payments | Starting Silver pipeline at 2026-08-06 14:10:42.057837
+2026-08-06 14:10:42,987 | INFO     | silver.clean_payments | Incremental load from catalog_project1.bronze.payments
+2026-08-06 14:10:44,023 | INFO     | silver.clean_payments | Read 0 records from catalog_project1.bronze.payments
+2026-08-06 14:10:44,024 | INFO     | silver.clean_payments | All required columns exists in the catalog_project1.bronze.payments
+2026-08-06 14:10:44,024 | WARNING  | silver.clean_payments | New columns detected in catalog_project1.bronze.payments: {'_source_table', '_ingestion_pipeline_id', '_source_file', '_ingestion_timestamp'}
+2026-08-06 14:10:44,744 | INFO     | silver.clean_payments | Data standardization completed for the catalog_project1.bronze.payments
+2026-08-06 14:10:45,092 | INFO     | silver.clean_payments | Data type casting completed for the catalog_project1.bronze.payments
+2026-08-06 14:10:45,767 | INFO     | silver.clean_payments | Data validation completed for the catalog_project1.bronze.payments
+2026-08-06 14:10:46,123 | INFO     | silver.clean_payments | Deduplication completed for the catalog_project1.bronze.payments
+2026-08-06 14:10:48,973 | INFO     | silver.clean_payments | Data written to the catalog_project1.silver.clean_payments
+2026-08-06 14:10:50,209 | INFO     | silver.clean_payments | Data validation for catalog_project1.silver.clean_payments completed
+2026-08-06 14:10:50,210 | INFO     | silver.clean_payments | Silver pipeline for catalog_project1.silver.clean_payments completed successfully
+2026-08-06 14:10:50,211 | INFO     | silver.clean_payments | No new data, watermark value unchanged: 2025-03-28 00:00:00
+2026-08-06 14:10:51,705 | INFO     | silver.clean_payments | Audit for catalog_project1.silver.clean_payments is written successfully

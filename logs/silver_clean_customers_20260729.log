@@ -1,0 +1,90 @@
+2026-07-29 06:01:57,337 | INFO     | silver.clean_customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/silver_clean_customers_20260729.log
+2026-07-29 06:01:57,338 | INFO     | silver.clean_customers | Starting Silver pipeline at 2026-07-29 06:01:57.276932
+2026-07-29 06:02:00,262 | ERROR    | silver.clean_customers | Silver catalog_project1.silver.clean_customers pipeline failed: name 'AUDIT_SCEMA' is not defined
+Traceback (most recent call last):
+  File "/Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/src/transformations/silver.py", line 125, in transform_table
+    watermark_value = get_last_watermark(spark, pipeline_name, target, CATALOG, AUDIT_SCHEMA, AUDIT_TABLENAME)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/src/transformations/silver.py", line 71, in get_last_watermark
+    audit_table = f"{CATALOG}.{AUDIT_SCEMA}.{AUDIT_TABLENAME}"
+                               ^^^^^^^^^^^
+NameError: name 'AUDIT_SCEMA' is not defined. Did you mean: 'AUDIT_SCHEMA'?
+2026-07-29 06:02:00,265 | ERROR    | silver.clean_customers | Error writing audit log for catalog_project1.silver.clean_customers: cannot access local variable 'new_watermark' where it is not associated with a value
+Traceback (most recent call last):
+  File "/Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/src/transformations/silver.py", line 125, in transform_table
+    watermark_value = get_last_watermark(spark, pipeline_name, target, CATALOG, AUDIT_SCHEMA, AUDIT_TABLENAME)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/src/transformations/silver.py", line 71, in get_last_watermark
+    audit_table = f"{CATALOG}.{AUDIT_SCEMA}.{AUDIT_TABLENAME}"
+                               ^^^^^^^^^^^
+NameError: name 'AUDIT_SCEMA' is not defined. Did you mean: 'AUDIT_SCHEMA'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/src/transformations/silver.py", line 249, in transform_table
+    write_audit_log(pipeline_name, target, start_time, end_time, rows_read, rows_written, status, error_message, CATALOG, AUDIT_SCHEMA, AUDIT_TABLENAME, batch_id, watermark_column, new_watermark)
+                                                                                                                                                                                    ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'new_watermark' where it is not associated with a value
+2026-07-29 06:03:12,843 | INFO     | silver.clean_customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/silver_clean_customers_20260729.log
+2026-07-29 06:03:12,844 | INFO     | silver.clean_customers | Starting Silver pipeline at 2026-07-29 06:03:12.798427
+2026-07-29 06:03:13,613 | ERROR    | silver.clean_customers | Silver catalog_project1.silver.clean_customers pipeline failed: name 'AUDIT_SCEMA' is not defined
+Traceback (most recent call last):
+  File "/Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/src/transformations/silver.py", line 127, in transform_table
+    watermark_value = get_last_watermark(spark, pipeline_name, target, CATALOG, AUDIT_SCHEMA, AUDIT_TABLENAME)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/src/transformations/silver.py", line 71, in get_last_watermark
+    audit_table = f"{CATALOG}.{AUDIT_SCEMA}.{AUDIT_TABLENAME}"
+                               ^^^^^^^^^^^
+NameError: name 'AUDIT_SCEMA' is not defined. Did you mean: 'AUDIT_SCHEMA'?
+2026-07-29 06:03:13,615 | ERROR    | silver.clean_customers | Error writing audit log for catalog_project1.silver.clean_customers: cannot access local variable 'new_watermark' where it is not associated with a value
+Traceback (most recent call last):
+  File "/Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/src/transformations/silver.py", line 127, in transform_table
+    watermark_value = get_last_watermark(spark, pipeline_name, target, CATALOG, AUDIT_SCHEMA, AUDIT_TABLENAME)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/src/transformations/silver.py", line 71, in get_last_watermark
+    audit_table = f"{CATALOG}.{AUDIT_SCEMA}.{AUDIT_TABLENAME}"
+                               ^^^^^^^^^^^
+NameError: name 'AUDIT_SCEMA' is not defined. Did you mean: 'AUDIT_SCHEMA'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/src/transformations/silver.py", line 251, in transform_table
+    write_audit_log(pipeline_name, target, start_time, end_time, rows_read, rows_written, status, error_message, CATALOG, AUDIT_SCHEMA, AUDIT_TABLENAME, batch_id, watermark_column, new_watermark)
+                                                                                                                                                                                    ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'new_watermark' where it is not associated with a value
+2026-07-29 06:03:36,432 | INFO     | silver.clean_customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/silver_clean_customers_20260729.log
+2026-07-29 06:03:36,433 | INFO     | silver.clean_customers | Starting Silver pipeline at 2026-07-29 06:03:36.344213
+2026-07-29 06:03:44,097 | INFO     | silver.clean_customers | Initial load from catalog_project1.bronze.customers table
+2026-07-29 06:03:46,515 | INFO     | silver.clean_customers | Read 10 records from catalog_project1.bronze.customers
+2026-07-29 06:03:46,517 | INFO     | silver.clean_customers | All required columns exists in the catalog_project1.bronze.customers
+2026-07-29 06:03:46,518 | WARNING  | silver.clean_customers | New columns detected in catalog_project1.bronze.customers: {'_source_table', '_ingestion_pipeline_id', '_source_file', '_ingestion_timestamp'}
+2026-07-29 06:03:47,318 | INFO     | silver.clean_customers | Data standardization completed for the catalog_project1.bronze.customers
+2026-07-29 06:03:47,843 | INFO     | silver.clean_customers | Data type casting completed for the catalog_project1.bronze.customers
+2026-07-29 06:03:49,870 | INFO     | silver.clean_customers | Business rule validation completed for catalog_project1.bronze.customers
+2026-07-29 06:03:49,871 | INFO     | silver.clean_customers | Data validation completed for the catalog_project1.bronze.customers
+2026-07-29 06:03:50,431 | INFO     | silver.clean_customers | Deduplication completed for the catalog_project1.bronze.customers
+2026-07-29 06:04:03,996 | INFO     | silver.clean_customers | Data written to the catalog_project1.silver.clean_customers
+2026-07-29 06:04:06,561 | INFO     | silver.clean_customers | Business rule validation for catalog_project1.silver.clean_customers completed
+2026-07-29 06:04:06,562 | INFO     | silver.clean_customers | Data validation for catalog_project1.silver.clean_customers completed
+2026-07-29 06:04:06,563 | INFO     | silver.clean_customers | Silver pipeline for catalog_project1.silver.clean_customers completed successfully
+2026-07-29 06:04:07,294 | INFO     | silver.clean_customers | New watermark: 2025-02-01 00:00:00
+2026-07-29 06:04:14,139 | INFO     | silver.clean_customers | Audit for catalog_project1.silver.clean_customers written successfully
+2026-07-29 06:05:59,319 | INFO     | silver.clean_customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/silver_clean_customers_20260729.log
+2026-07-29 06:05:59,320 | INFO     | silver.clean_customers | Starting Silver pipeline at 2026-07-29 06:05:59.267962
+2026-07-29 06:06:00,569 | INFO     | silver.clean_customers | Incremental load from catalog_project1.bronze.customers
+2026-07-29 06:06:01,576 | INFO     | silver.clean_customers | Read 0 records from catalog_project1.bronze.customers
+2026-07-29 06:06:01,577 | INFO     | silver.clean_customers | All required columns exists in the catalog_project1.bronze.customers
+2026-07-29 06:06:01,578 | WARNING  | silver.clean_customers | New columns detected in catalog_project1.bronze.customers: {'_source_table', '_ingestion_pipeline_id', '_source_file', '_ingestion_timestamp'}
+2026-07-29 06:06:02,154 | INFO     | silver.clean_customers | Data standardization completed for the catalog_project1.bronze.customers
+2026-07-29 06:06:02,615 | INFO     | silver.clean_customers | Data type casting completed for the catalog_project1.bronze.customers
+2026-07-29 06:06:04,094 | INFO     | silver.clean_customers | Business rule validation completed for catalog_project1.bronze.customers
+2026-07-29 06:06:04,095 | INFO     | silver.clean_customers | Data validation completed for the catalog_project1.bronze.customers
+2026-07-29 06:06:04,529 | INFO     | silver.clean_customers | Deduplication completed for the catalog_project1.bronze.customers
+2026-07-29 06:06:07,945 | INFO     | silver.clean_customers | Data written to the catalog_project1.silver.clean_customers
+2026-07-29 06:06:09,930 | INFO     | silver.clean_customers | Business rule validation for catalog_project1.silver.clean_customers completed
+2026-07-29 06:06:09,931 | INFO     | silver.clean_customers | Data validation for catalog_project1.silver.clean_customers completed
+2026-07-29 06:06:09,931 | INFO     | silver.clean_customers | Silver pipeline for catalog_project1.silver.clean_customers completed successfully
+2026-07-29 06:06:09,932 | INFO     | silver.clean_customers | No new data, watermark value unchanged: 2025-02-01 00:00:00
+2026-07-29 06:06:12,267 | INFO     | silver.clean_customers | Audit for catalog_project1.silver.clean_customers written successfully

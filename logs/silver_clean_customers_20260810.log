@@ -1,0 +1,85 @@
+2026-08-10 05:17:08,166 | INFO     | silver.clean_customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/silver_clean_customers_20260810.log
+2026-08-10 05:17:08,170 | INFO     | silver.clean_customers | Starting Silver pipeline at 2026-08-10 05:17:08.141783
+2026-08-10 05:17:09,661 | INFO     | silver.clean_customers | Incremental load from catalog_project1.bronze.customers
+2026-08-10 05:17:10,971 | INFO     | silver.clean_customers | Read 0 records from catalog_project1.bronze.customers
+2026-08-10 05:17:10,977 | INFO     | silver.clean_customers | All required columns exists in the catalog_project1.bronze.customers
+2026-08-10 05:17:10,979 | WARNING  | silver.clean_customers | New columns detected in catalog_project1.bronze.customers: {'_source_table', '_ingestion_pipeline_id', '_source_file', '_ingestion_timestamp'}
+2026-08-10 05:17:11,595 | INFO     | silver.clean_customers | Data standardization completed for the catalog_project1.bronze.customers
+2026-08-10 05:17:12,134 | INFO     | silver.clean_customers | Data type casting completed for the catalog_project1.bronze.customers
+2026-08-10 05:17:14,045 | INFO     | silver.clean_customers | Business rule validation completed for catalog_project1.bronze.customers
+2026-08-10 05:17:14,051 | INFO     | silver.clean_customers | Data validation completed for the catalog_project1.bronze.customers
+2026-08-10 05:17:14,820 | INFO     | silver.clean_customers | Deduplication completed for the catalog_project1.bronze.customers
+2026-08-10 05:17:19,461 | INFO     | silver.clean_customers | Data written to the catalog_project1.silver.clean_customers
+2026-08-10 05:17:21,830 | INFO     | silver.clean_customers | Business rule validation for catalog_project1.silver.clean_customers completed
+2026-08-10 05:17:21,831 | INFO     | silver.clean_customers | Data validation for catalog_project1.silver.clean_customers completed
+2026-08-10 05:17:21,833 | INFO     | silver.clean_customers | Silver pipeline for catalog_project1.silver.clean_customers completed successfully
+2026-08-10 05:17:21,835 | INFO     | silver.clean_customers | No new data, watermark value unchanged: 2025-02-16 00:00:00
+2026-08-10 05:17:23,950 | INFO     | silver.clean_customers | Audit for catalog_project1.silver.clean_customers is written successfully
+2026-08-10 05:30:23,690 | INFO     | silver.clean_customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/silver_clean_customers_20260810.log
+2026-08-10 05:30:23,691 | INFO     | silver.clean_customers | Starting Silver pipeline at 2026-08-10 05:30:23.654577
+2026-08-10 05:30:24,603 | INFO     | silver.clean_customers | Incremental load from catalog_project1.bronze.customers
+2026-08-10 05:30:25,759 | INFO     | silver.clean_customers | Read 0 records from catalog_project1.bronze.customers
+2026-08-10 05:30:25,760 | INFO     | silver.clean_customers | All required columns exists in the catalog_project1.bronze.customers
+2026-08-10 05:30:25,761 | WARNING  | silver.clean_customers | New columns detected in catalog_project1.bronze.customers: {'_source_table', '_ingestion_pipeline_id', '_source_file', '_ingestion_timestamp'}
+2026-08-10 05:30:26,613 | INFO     | silver.clean_customers | Data standardization completed for the catalog_project1.bronze.customers
+2026-08-10 05:30:27,331 | INFO     | silver.clean_customers | Data type casting completed for the catalog_project1.bronze.customers
+2026-08-10 05:30:28,662 | INFO     | silver.clean_customers | Business rule validation completed for catalog_project1.bronze.customers
+2026-08-10 05:30:28,662 | INFO     | silver.clean_customers | Data validation completed for the catalog_project1.bronze.customers
+2026-08-10 05:30:29,137 | INFO     | silver.clean_customers | Deduplication completed for the catalog_project1.bronze.customers
+2026-08-10 05:30:32,998 | INFO     | silver.clean_customers | Data written to the catalog_project1.silver.clean_customers
+2026-08-10 05:30:35,309 | INFO     | silver.clean_customers | Business rule validation for catalog_project1.silver.clean_customers completed
+2026-08-10 05:30:35,310 | INFO     | silver.clean_customers | Data validation for catalog_project1.silver.clean_customers completed
+2026-08-10 05:30:35,311 | INFO     | silver.clean_customers | Silver pipeline for catalog_project1.silver.clean_customers completed successfully
+2026-08-10 05:30:35,312 | INFO     | silver.clean_customers | No new data, watermark value unchanged: 2025-02-16 00:00:00
+2026-08-10 05:30:37,143 | INFO     | silver.clean_customers | Audit for catalog_project1.silver.clean_customers is written successfully
+2026-08-10 05:56:57,951 | INFO     | silver.clean_customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/silver_clean_customers_20260810.log
+2026-08-10 05:56:57,987 | INFO     | silver.clean_customers | Starting Silver pipeline at 2026-08-10 05:56:57.825764
+2026-08-10 05:57:21,775 | INFO     | silver.clean_customers | Incremental load from catalog_project1.bronze.customers
+2026-08-10 05:57:23,663 | INFO     | silver.clean_customers | Read 0 records from catalog_project1.bronze.customers
+2026-08-10 05:57:23,664 | INFO     | silver.clean_customers | All required columns exists in the catalog_project1.bronze.customers
+2026-08-10 05:57:23,665 | WARNING  | silver.clean_customers | New columns detected in catalog_project1.bronze.customers: {'_source_table', '_ingestion_pipeline_id', '_source_file', '_ingestion_timestamp'}
+2026-08-10 05:57:24,656 | INFO     | silver.clean_customers | Data standardization completed for the catalog_project1.bronze.customers
+2026-08-10 05:57:25,314 | INFO     | silver.clean_customers | Data type casting completed for the catalog_project1.bronze.customers
+2026-08-10 05:57:27,544 | INFO     | silver.clean_customers | Business rule validation completed for catalog_project1.bronze.customers
+2026-08-10 05:57:27,545 | INFO     | silver.clean_customers | Data validation completed for the catalog_project1.bronze.customers
+2026-08-10 05:57:28,319 | INFO     | silver.clean_customers | Deduplication completed for the catalog_project1.bronze.customers
+2026-08-10 05:57:38,895 | INFO     | silver.clean_customers | Data written to the catalog_project1.silver.clean_customers
+2026-08-10 05:57:41,891 | INFO     | silver.clean_customers | Business rule validation for catalog_project1.silver.clean_customers completed
+2026-08-10 05:57:41,892 | INFO     | silver.clean_customers | Data validation for catalog_project1.silver.clean_customers completed
+2026-08-10 05:57:41,892 | INFO     | silver.clean_customers | Silver pipeline for catalog_project1.silver.clean_customers completed successfully
+2026-08-10 05:57:41,894 | INFO     | silver.clean_customers | No new data, watermark value unchanged: 2025-02-16 00:00:00
+2026-08-10 05:57:46,059 | INFO     | silver.clean_customers | Audit for catalog_project1.silver.clean_customers is written successfully
+2026-08-10 06:20:03,788 | INFO     | silver.clean_customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/silver_clean_customers_20260810.log
+2026-08-10 06:20:03,790 | INFO     | silver.clean_customers | Starting Silver pipeline at 2026-08-10 06:20:03.746033
+2026-08-10 06:20:04,970 | INFO     | silver.clean_customers | Incremental load from catalog_project1.bronze.customers
+2026-08-10 06:20:06,057 | INFO     | silver.clean_customers | Read 0 records from catalog_project1.bronze.customers
+2026-08-10 06:20:06,058 | INFO     | silver.clean_customers | All required columns exists in the catalog_project1.bronze.customers
+2026-08-10 06:20:06,059 | WARNING  | silver.clean_customers | New columns detected in catalog_project1.bronze.customers: {'_source_table', '_ingestion_pipeline_id', '_source_file', '_ingestion_timestamp'}
+2026-08-10 06:20:06,937 | INFO     | silver.clean_customers | Data standardization completed for the catalog_project1.bronze.customers
+2026-08-10 06:20:07,337 | INFO     | silver.clean_customers | Data type casting completed for the catalog_project1.bronze.customers
+2026-08-10 06:20:08,897 | INFO     | silver.clean_customers | Business rule validation completed for catalog_project1.bronze.customers
+2026-08-10 06:20:08,898 | INFO     | silver.clean_customers | Data validation completed for the catalog_project1.bronze.customers
+2026-08-10 06:20:09,317 | INFO     | silver.clean_customers | Deduplication completed for the catalog_project1.bronze.customers
+2026-08-10 06:20:12,756 | INFO     | silver.clean_customers | Data written to the catalog_project1.silver.clean_customers
+2026-08-10 06:20:14,941 | INFO     | silver.clean_customers | Business rule validation for catalog_project1.silver.clean_customers completed
+2026-08-10 06:20:14,943 | INFO     | silver.clean_customers | Data validation for catalog_project1.silver.clean_customers completed
+2026-08-10 06:20:14,944 | INFO     | silver.clean_customers | Silver pipeline for catalog_project1.silver.clean_customers completed successfully
+2026-08-10 06:20:14,946 | INFO     | silver.clean_customers | No new data, watermark value unchanged: 2025-02-16 00:00:00
+2026-08-10 06:20:16,726 | INFO     | silver.clean_customers | Audit for catalog_project1.silver.clean_customers is written successfully
+2026-08-10 06:23:16,734 | INFO     | silver.clean_customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/silver_clean_customers_20260810.log
+2026-08-10 06:23:16,736 | INFO     | silver.clean_customers | Starting Silver pipeline at 2026-08-10 06:23:16.707071
+2026-08-10 06:23:17,705 | INFO     | silver.clean_customers | Incremental load from catalog_project1.bronze.customers
+2026-08-10 06:23:18,693 | INFO     | silver.clean_customers | Read 0 records from catalog_project1.bronze.customers
+2026-08-10 06:23:18,696 | INFO     | silver.clean_customers | All required columns exists in the catalog_project1.bronze.customers
+2026-08-10 06:23:18,696 | WARNING  | silver.clean_customers | New columns detected in catalog_project1.bronze.customers: {'_source_table', '_ingestion_pipeline_id', '_source_file', '_ingestion_timestamp'}
+2026-08-10 06:23:19,464 | INFO     | silver.clean_customers | Data standardization completed for the catalog_project1.bronze.customers
+2026-08-10 06:23:19,793 | INFO     | silver.clean_customers | Data type casting completed for the catalog_project1.bronze.customers
+2026-08-10 06:23:21,246 | INFO     | silver.clean_customers | Business rule validation completed for catalog_project1.bronze.customers
+2026-08-10 06:23:21,247 | INFO     | silver.clean_customers | Data validation completed for the catalog_project1.bronze.customers
+2026-08-10 06:23:21,618 | INFO     | silver.clean_customers | Deduplication completed for the catalog_project1.bronze.customers
+2026-08-10 06:23:24,690 | INFO     | silver.clean_customers | Data written to the catalog_project1.silver.clean_customers
+2026-08-10 06:23:26,650 | INFO     | silver.clean_customers | Business rule validation for catalog_project1.silver.clean_customers completed
+2026-08-10 06:23:26,650 | INFO     | silver.clean_customers | Data validation for catalog_project1.silver.clean_customers completed
+2026-08-10 06:23:26,651 | INFO     | silver.clean_customers | Silver pipeline for catalog_project1.silver.clean_customers completed successfully
+2026-08-10 06:23:26,652 | INFO     | silver.clean_customers | No new data, watermark value unchanged: 2025-02-16 00:00:00
+2026-08-10 06:23:28,159 | INFO     | silver.clean_customers | Audit for catalog_project1.silver.clean_customers is written successfully

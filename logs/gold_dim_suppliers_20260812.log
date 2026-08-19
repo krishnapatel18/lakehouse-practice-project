@@ -1,0 +1,20 @@
+2026-08-12 12:37:37,817 | INFO     | gold.dim_suppliers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/gold_dim_suppliers_20260812.log
+2026-08-12 12:37:37,818 | INFO     | gold.dim_suppliers | Starting Gold pipeline at 2026-08-12 12:37:37.765965
+2026-08-12 12:37:38,787 | INFO     | gold.dim_suppliers | Read 10 records from catalog_project1.silver.clean_suppliers table
+2026-08-12 12:37:39,190 | INFO     | gold.dim_suppliers | Initial load from catalog_project1.silver.clean_suppliers table
+2026-08-12 12:37:42,838 | INFO     | gold.dim_suppliers | Written 10 records to catalog_project1.gold.dim_suppliers
+2026-08-12 12:37:43,587 | INFO     | gold.dim_suppliers | New watermark: 2024-11-30 00:00:00
+2026-08-12 12:37:43,588 | INFO     | gold.dim_suppliers | Initial load completed for catalog_project1.gold.dim_suppliers
+2026-08-12 12:37:43,590 | INFO     | gold.dim_suppliers | Gold pipeline for catalog_project1.gold.dim_suppliers completed successfully
+2026-08-12 12:37:45,516 | INFO     | gold.dim_suppliers | Audit for catalog_project1.gold.dim_suppliers is written successfully
+2026-08-12 12:43:38,258 | INFO     | gold.dim_suppliers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/gold_dim_suppliers_20260812.log
+2026-08-12 12:43:38,258 | INFO     | gold.dim_suppliers | Starting Gold pipeline at 2026-08-12 12:43:38.256795
+2026-08-12 12:43:39,307 | INFO     | gold.dim_suppliers | Read 2 records from catalog_project1.silver.clean_suppliers table
+2026-08-12 12:43:39,487 | INFO     | gold.dim_suppliers | Incremental load from catalog_project1.silver.clean_suppliers table
+2026-08-12 12:43:42,533 | INFO     | gold.dim_suppliers | Inserted 1 new records to catalog_project1.gold.dim_suppliers table
+2026-08-12 12:43:49,799 | INFO     | gold.dim_suppliers | Inserted 1 new versions (SCD2) to catalog_project1.gold.dim_suppliers table
+2026-08-12 12:43:49,799 | INFO     | gold.dim_suppliers | SCD2: Expired and inserted new versions for 1 records
+2026-08-12 12:43:51,036 | INFO     | gold.dim_suppliers | New watermark: 2024-12-01 00:00:00
+2026-08-12 12:43:51,037 | INFO     | gold.dim_suppliers | Incremental load completed for catalog_project1.gold.dim_suppliers
+2026-08-12 12:43:51,038 | INFO     | gold.dim_suppliers | Gold pipeline for catalog_project1.gold.dim_suppliers completed successfully
+2026-08-12 12:43:52,727 | INFO     | gold.dim_suppliers | Audit for catalog_project1.gold.dim_suppliers is written successfully

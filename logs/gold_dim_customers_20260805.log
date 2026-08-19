@@ -1,0 +1,359 @@
+2026-08-05 09:49:53,986 | INFO     | gold.dim_customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/gold_dim_customers_20260805.log
+2026-08-05 09:49:53,987 | INFO     | gold.dim_customers | Starting Gold pipeline at 2026-08-05 09:49:53.970359
+2026-08-05 09:49:55,402 | INFO     | gold.dim_customers | Read 10 records from catalog_project1.silver.clean_customers table
+2026-08-05 09:49:55,617 | INFO     | gold.dim_customers | Initial load from catalog_project1.silver.clean_customers table
+2026-08-05 09:50:00,414 | INFO     | gold.dim_customers | Written 10 records to catalog_project1.gold.dim_customers
+2026-08-05 09:50:00,837 | INFO     | gold.dim_customers | New watermark: 2025-02-01 00:00:00
+2026-08-05 09:50:00,840 | INFO     | gold.dim_customers | Initial load completed for catalog_project1.gold.dim_customers
+2026-08-05 09:50:00,840 | INFO     | gold.dim_customers | Gold pipeline for catalog_project1.gold.dim_customers completed successfully
+2026-08-05 09:50:02,521 | INFO     | gold.dim_customers | Audit for catalog_project1.gold.dim_customers is written successfully
+2026-08-05 10:11:35,073 | INFO     | gold.dim_customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/gold_dim_customers_20260805.log
+2026-08-05 10:11:35,074 | INFO     | gold.dim_customers | Starting Gold pipeline at 2026-08-05 10:11:35.017499
+2026-08-05 10:11:36,061 | INFO     | gold.dim_customers | Read 2 records from catalog_project1.silver.clean_customers table
+2026-08-05 10:11:36,263 | INFO     | gold.dim_customers | Incremental load from catalog_project1.silver.clean_customers table
+2026-08-05 10:11:36,650 | ERROR    | gold.dim_customers | gold_pipeline failed: [UNRESOLVED_COLUMN.WITH_SUGGESTION] A column, variable, or function parameter with name `customer_key` cannot be resolved. Did you mean one of the following? [`customer_id`, `product_key`, `state`, `is_current`, `name`]. SQLSTATE: 42703;
+'Aggregate [unresolvedalias('max('customer_key))]
++- Filter (is_current#34785 = true)
+   +- SubqueryAlias catalog_project1.gold.dim_customers
+      +- Relation catalog_project1.gold.dim_customers[customer_id#34769,name#34770,email#34771,city#34772,state#34773,signup_date#34774,created_date#34775,modified_date#34776,_ingestion_job_id#34777,_source_table#34778,_ingestion_pipeline_id#34779,ingestion_timestamp#34780,updation_timestamp#34781,product_key#34782L,effective_from#34783,effective_to#34784,is_current#34785] parquet
+
+
+JVM stacktrace:
+org.apache.spark.sql.catalyst.ExtendedAnalysisException
+	at org.apache.spark.sql.errors.QueryCompilationErrors$.unresolvedAttributeError(QueryCompilationErrors.scala:727)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.org$apache$spark$sql$catalyst$analysis$CheckAnalysis$$failUnresolvedAttribute(CheckAnalysis.scala:274)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$18(CheckAnalysis.scala:664)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$18$adapted(CheckAnalysis.scala:649)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.traverse$1(CheckAnalysis.scala:1378)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$foreachUpSkippingSecureView$1(CheckAnalysis.scala:1377)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$foreachUpSkippingSecureView$1$adapted(CheckAnalysis.scala:1377)
+	at scala.collection.immutable.List.foreach(List.scala:334)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.traverse$1(CheckAnalysis.scala:1377)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$foreachUpSkippingSecureView$1(CheckAnalysis.scala:1377)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$foreachUpSkippingSecureView$1$adapted(CheckAnalysis.scala:1377)
+	at scala.collection.immutable.Vector.foreach(Vector.scala:2125)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.traverse$1(CheckAnalysis.scala:1377)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.foreachUpSkippingSecureView(CheckAnalysis.scala:1380)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$17(CheckAnalysis.scala:649)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$17$adapted(CheckAnalysis.scala:649)
+	at scala.collection.immutable.List.foreach(List.scala:334)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$2(CheckAnalysis.scala:649)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$2$adapted(CheckAnalysis.scala:410)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:392)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis0(CheckAnalysis.scala:410)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis0$(CheckAnalysis.scala:377)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis0(Analyzer.scala:636)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis$1(CheckAnalysis.scala:362)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at com.databricks.spark.util.FrameProfiler$.$anonfun$record$1(FrameProfiler.scala:114)
+	at com.databricks.spark.util.FrameProfilerExporter$.maybeExportFrameProfiler(FrameProfilerExporter.scala:201)
+	at com.databricks.spark.util.FrameProfiler$.record(FrameProfiler.scala:105)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis(CheckAnalysis.scala:349)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis$(CheckAnalysis.scala:345)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis(Analyzer.scala:636)
+	at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.$anonfun$resolveInFixedPoint$1(HybridAnalyzer.scala:417)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at org.apache.spark.sql.catalyst.QueryPlanningTracker$.withTracker(QueryPlanningTracker.scala:275)
+	at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.resolveInFixedPoint(HybridAnalyzer.scala:417)
+	at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.$anonfun$apply$1(HybridAnalyzer.scala:98)
+	at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.withTrackedAnalyzerBridgeState(HybridAnalyzer.scala:135)
+	at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.apply(HybridAnalyzer.scala:91)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.$anonfun$executeAndCheck$2(Analyzer.scala:703)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper$.markInAnalyzer(AnalysisHelper.scala:425)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.$anonfun$executeAndCheck$1(Analyzer.scala:703)
+	at com.databricks.sql.unity.SAMSnapshotHelper$.visitPlansDuringAnalysis(SAMSnapshotHelper.scala:43)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.executeAndCheck(Analyzer.scala:692)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$lazyAnalyzed$3(QueryExecution.scala:607)
+	at com.databricks.spark.util.FrameProfiler$.$anonfun$record$1(FrameProfiler.scala:114)
+	at com.databricks.spark.util.FrameProfilerExporter$.maybeExportFrameProfiler(FrameProfilerExporter.scala:201)
+	at com.databricks.spark.util.FrameProfiler$.record(FrameProfiler.scala:105)
+	at org.apache.spark.sql.catalyst.QueryPlanningTracker.measurePhase(QueryPlanningTracker.scala:1021)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$8(QueryExecution.scala:1073)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withExecutionPhase$1(SQLExecution.scala:337)
+	at com.databricks.util.TracingSpanUtils$.withTracing(TracingSpanUtils.scala:251)
+	at com.databricks.spark.util.DatabricksTracingHelper.withSpan(DatabricksSparkTracingHelper.scala:154)
+	at com.databricks.spark.util.DBRTracing$.withSpan(DBRTracing.scala:87)
+	at org.apache.spark.sql.execution.SQLExecution$.withExecutionPhase(SQLExecution.scala:318)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$7(QueryExecution.scala:1073)
+	at org.apache.spark.sql.execution.QueryExecution$.withInternalError(QueryExecution.scala:1822)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$5(QueryExecution.scala:1066)
+	at com.databricks.util.LexicalThreadLocal$Handle.runWith(LexicalThreadLocal.scala:63)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$4(QueryExecution.scala:1063)
+	at com.databricks.util.LexicalThreadLocal$Handle.runWith(LexicalThreadLocal.scala:63)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$3(QueryExecution.scala:1063)
+	at com.databricks.util.LexicalThreadLocal$Handle.runWith(LexicalThreadLocal.scala:63)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$2(QueryExecution.scala:1062)
+	at com.databricks.util.LexicalThreadLocal$Handle.runWith(LexicalThreadLocal.scala:63)
+	at org.apache.spark.sql.execution.QueryExecution.localBlock$1(QueryExecution.scala:1043)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$withQueryExecutionId$4(QueryExecution.scala:1053)
+	at com.databricks.unity.UCSManager$.withTemporaryScope(UCSManager.scala:168)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$withQueryExecutionId$3(QueryExecution.scala:1052)
+	at org.apache.spark.sql.execution.QueryExecution$.$anonfun$runWithWrappers$2(QueryExecution.scala:2075)
+	at org.apache.spark.sql.execution.QueryExecution$.org$apache$spark$sql$execution$QueryExecution$$runWithWrappers(QueryExecution.scala:2074)
+	at org.apache.spark.sql.execution.QueryExecution.withQueryExecutionId(QueryExecution.scala:1053)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$1(QueryExecution.scala:1061)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:866)
+	at org.apache.spark.sql.execution.QueryExecution.executePhase(QueryExecution.scala:1060)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$lazyAnalyzed$2(QueryExecution.scala:598)
+	at com.databricks.sql.util.MemoryTrackerHelper.withMemoryTracking(MemoryTrackerHelper.scala:111)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$lazyAnalyzed$1(QueryExecution.scala:597)
+	at scala.util.Try$.apply(Try.scala:217)
+	at org.apache.spark.util.Utils$.doTryWithCallerStacktrace(Utils.scala:1796)
+	at org.apache.spark.util.Utils$.getTryWithCallerStacktrace(Utils.scala:1846)
+	at org.apache.spark.util.LazyTry.get(LazyTry.scala:78)
+	at org.apache.spark.sql.execution.QueryExecution.analyzed(QueryExecution.scala:661)
+	at org.apache.spark.sql.execution.QueryExecution.assertAnalyzed(QueryExecution.scala:520)
+	at org.apache.spark.sql.classic.Dataset$.$anonfun$ofRows$13(Dataset.scala:256)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:866)
+	at org.apache.spark.sql.classic.Dataset$.ofRows(Dataset.scala:253)
+	at org.apache.spark.sql.connect.execution.SparkConnectPlanExecution.$anonfun$handlePlan$11(SparkConnectPlanExecution.scala:149)
+	at org.apache.spark.sql.connect.utils.TimingUtils$.withTiming(TimingUtils.scala:35)
+	at org.apache.spark.sql.connect.execution.SparkConnectPlanExecution.handlePlan(SparkConnectPlanExecution.scala:144)
+	at org.apache.spark.sql.connect.execution.ExecuteThreadRunner.handlePlan(ExecuteThreadRunner.scala:522)
+	at org.apache.spark.sql.connect.execution.ExecuteThreadRunner.$anonfun$executeInternal$1(ExecuteThreadRunner.scala:421)
+	at org.apache.spark.sql.connect.execution.ExecuteThreadRunner.$anonfun$executeInternal$1$adapted(ExecuteThreadRunner.scala:340)
+	at org.apache.spark.sql.connect.service.SessionHolder.$anonfun$withSession$2(SessionHolder.scala:844)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:866)
+	at org.apache.spark.sql.connect.service.SessionHolder.$anonfun$withSession$1(SessionHolder.scala:844)
+	at org.apache.spark.JobArtifactSet$.withActiveJobArtifactState(JobArtifactSet.scala:97)
+	at org.apache.spark.sql.artifact.ArtifactManager.$anonfun$withResources$1(ArtifactManager.scala:124)
+	at org.apache.spark.sql.artifact.ArtifactManager.withClassLoaderIfNeeded(ArtifactManager.scala:118)
+	at org.apache.spark.sql.artifact.ArtifactManager.withResources(ArtifactManager.scala:123)
+	at org.apache.spark.sql.connect.service.SessionHolder.withSession(SessionHolder.scala:843)
+	at org.apache.spark.sql.connect.execution.ExecuteThreadRunner.executeInternal(ExecuteThreadRunner.scala:340)
+	at org.apache.spark.sql.connect.execution.ExecuteThreadRunner.$anonfun$execute$1(ExecuteThreadRunner.scala:200)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at com.databricks.spark.connect.service.UtilizationMetrics.recordActiveQueries(UtilizationMetrics.scala:92)
+	at com.databricks.spark.connect.service.UtilizationMetrics.recordActiveQueries$(UtilizationMetrics.scala:89)
+	at org.apache.spark.sql.connect.execution.ExecuteThreadRunner.recordActiveQueries(ExecuteThreadRunner.scala:61)
+	at org.apache.spark.sql.connect.execution.ExecuteThreadRunner.org$apache$spark$sql$connect$execution$ExecuteThreadRunner$$execute(ExecuteThreadRunner.scala:192)
+	at org.apache.spark.sql.connect.execution.ExecuteThreadRunner$ExecutionThread.$anonfun$run$3(ExecuteThreadRunner.scala:601)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at com.databricks.spark.util.DBRTracing$.withSpanFromParent(DBRTracing.scala:70)
+	at org.apache.spark.sql.connect.execution.ExecuteThreadRunner$ExecutionThread.$anonfun$run$2(ExecuteThreadRunner.scala:601)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at com.databricks.unity.UCSEphemeralState$Handle.runWith(UCSEphemeralState.scala:51)
+	at com.databricks.unity.HandleImpl.runWith(UCSHandle.scala:128)
+	at com.databricks.unity.HandleImpl.$anonfun$runWithAndClose$1(UCSHandle.scala:133)
+	at scala.util.Using$.resource(Using.scala:296)
+	at com.databricks.unity.HandleImpl.runWithAndClose(UCSHandle.scala:132)
+	at org.apache.spark.sql.connect.execution.ExecuteThreadRunner$ExecutionThread.run(ExecuteThreadRunner.scala:600)
+Traceback (most recent call last):
+  File "/Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/src/reporting/gold.py", line 125, in create_gold_table
+    max_key = existing_df.agg(F.max(surrogate_key)).collect()[0][0]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/dataframe.py", line 1846, in collect
+    table, schema = self._to_table()
+                    ^^^^^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/dataframe.py", line 1930, in _to_table
+    table, schema, self._execution_info = self._session.client.to_table(
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/client/core.py", line 1273, in to_table
+    table, schema, metrics, observed_metrics, _ = self._execute_and_fetch(req, observations)
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/client/core.py", line 2086, in _execute_and_fetch
+    for response in self._execute_and_fetch_as_iterator(
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/client/core.py", line 2062, in _execute_and_fetch_as_iterator
+    self._handle_error(error)
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/client/core.py", line 2380, in _handle_error
+    self._handle_rpc_error(error)
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/client/core.py", line 2458, in _handle_rpc_error
+    raise convert_exception(
+pyspark.errors.exceptions.connect.AnalysisException: [UNRESOLVED_COLUMN.WITH_SUGGESTION] A column, variable, or function parameter with name `customer_key` cannot be resolved. Did you mean one of the following? [`customer_id`, `product_key`, `state`, `is_current`, `name`]. SQLSTATE: 42703;
+'Aggregate [unresolvedalias('max('customer_key))]
++- Filter (is_current#34785 = true)
+   +- SubqueryAlias catalog_project1.gold.dim_customers
+      +- Relation catalog_project1.gold.dim_customers[customer_id#34769,name#34770,email#34771,city#34772,state#34773,signup_date#34774,created_date#34775,modified_date#34776,_ingestion_job_id#34777,_source_table#34778,_ingestion_pipeline_id#34779,ingestion_timestamp#34780,updation_timestamp#34781,product_key#34782L,effective_from#34783,effective_to#34784,is_current#34785] parquet
+
+
+JVM stacktrace:
+org.apache.spark.sql.catalyst.ExtendedAnalysisException
+	at org.apache.spark.sql.errors.QueryCompilationErrors$.unresolvedAttributeError(QueryCompilationErrors.scala:727)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.org$apache$spark$sql$catalyst$analysis$CheckAnalysis$$failUnresolvedAttribute(CheckAnalysis.scala:274)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$18(CheckAnalysis.scala:664)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$18$adapted(CheckAnalysis.scala:649)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.traverse$1(CheckAnalysis.scala:1378)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$foreachUpSkippingSecureView$1(CheckAnalysis.scala:1377)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$foreachUpSkippingSecureView$1$adapted(CheckAnalysis.scala:1377)
+	at scala.collection.immutable.List.foreach(List.scala:334)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.traverse$1(CheckAnalysis.scala:1377)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$foreachUpSkippingSecureView$1(CheckAnalysis.scala:1377)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$foreachUpSkippingSecureView$1$adapted(CheckAnalysis.scala:1377)
+	at scala.collection.immutable.Vector.foreach(Vector.scala:2125)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.traverse$1(CheckAnalysis.scala:1377)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.foreachUpSkippingSecureView(CheckAnalysis.scala:1380)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$17(CheckAnalysis.scala:649)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$17$adapted(CheckAnalysis.scala:649)
+	at scala.collection.immutable.List.foreach(List.scala:334)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$2(CheckAnalysis.scala:649)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$2$adapted(CheckAnalysis.scala:410)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:392)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis0(CheckAnalysis.scala:410)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis0$(CheckAnalysis.scala:377)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis0(Analyzer.scala:636)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis$1(CheckAnalysis.scala:362)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at com.databricks.spark.util.FrameProfiler$.$anonfun$record$1(FrameProfiler.scala:114)
+	at com.databricks.spark.util.FrameProfilerExporter$.maybeExportFrameProfiler(FrameProfilerExporter.scala:201)
+	at com.databricks.spark.util.FrameProfiler$.record(FrameProfiler.scala:105)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis(CheckAnalysis.scala:349)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis$(CheckAnalysis.scala:345)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis(Analyzer.scala:636)
+	at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.$anonfun$resolveInFixedPoint$1(HybridAnalyzer.scala:417)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at org.apache.spark.sql.catalyst.QueryPlanningTracker$.withTracker(QueryPlanningTracker.scala:275)
+	at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.resolveInFixedPoint(HybridAnalyzer.scala:417)
+	at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.$anonfun$apply$1(HybridAnalyzer.scala:98)
+	at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.withTrackedAnalyzerBridgeState(HybridAnalyzer.scala:135)
+	at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.apply(HybridAnalyzer.scala:91)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.$anonfun$executeAndCheck$2(Analyzer.scala:703)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper$.markInAnalyzer(AnalysisHelper.scala:425)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.$anonfun$executeAndCheck$1(Analyzer.scala:703)
+	at com.databricks.sql.unity.SAMSnapshotHelper$.visitPlansDuringAnalysis(SAMSnapshotHelper.scala:43)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.executeAndCheck(Analyzer.scala:692)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$lazyAnalyzed$3(QueryExecution.scala:607)
+	at com.databricks.spark.util.FrameProfiler$.$anonfun$record$1(FrameProfiler.scala:114)
+	at com.databricks.spark.util.FrameProfilerExporter$.maybeExportFrameProfiler(FrameProfilerExporter.scala:201)
+	at com.databricks.spark.util.FrameProfiler$.record(FrameProfiler.scala:105)
+	at org.apache.spark.sql.catalyst.QueryPlanningTracker.measurePhase(QueryPlanningTracker.scala:1021)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$8(QueryExecution.scala:1073)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withExecutionPhase$1(SQLExecution.scala:337)
+	at com.databricks.util.TracingSpanUtils$.withTracing(TracingSpanUtils.scala:251)
+	at com.databricks.spark.util.DatabricksTracingHelper.withSpan(DatabricksSparkTracingHelper.scala:154)
+	at com.databricks.spark.util.DBRTracing$.withSpan(DBRTracing.scala:87)
+	at org.apache.spark.sql.execution.SQLExecution$.withExecutionPhase(SQLExecution.scala:318)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$7(QueryExecution.scala:1073)
+	at org.apache.spark.sql.execution.QueryExecution$.withInternalError(QueryExecution.scala:1822)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$5(QueryExecution.scala:1066)
+	at com.databricks.util.LexicalThreadLocal$Handle.runWith(LexicalThreadLocal.scala:63)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$4(QueryExecution.scala:1063)
+	at com.databricks.util.LexicalThreadLocal$Handle.runWith(LexicalThreadLocal.scala:63)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$3(QueryExecution.scala:1063)
+	at com.databricks.util.LexicalThreadLocal$Handle.runWith(LexicalThreadLocal.scala:63)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$2(QueryExecution.scala:1062)
+	at com.databricks.util.LexicalThreadLocal$Handle.runWith(LexicalThreadLocal.scala:63)
+	at org.apache.spark.sql.execution.QueryExecution.localBlock$1(QueryExecution.scala:1043)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$withQueryExecutionId$4(QueryExecution.scala:1053)
+	at com.databricks.unity.UCSManager$.withTemporaryScope(UCSManager.scala:168)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$withQueryExecutionId$3(QueryExecution.scala:1052)
+	at org.apache.spark.sql.execution.QueryExecution$.$anonfun$runWithWrappers$2(QueryExecution.scala:2075)
+	at org.apache.spark.sql.execution.QueryExecution$.org$apache$spark$sql$execution$QueryExecution$$runWithWrappers(QueryExecution.scala:2074)
+	at org.apache.spark.sql.execution.QueryExecution.withQueryExecutionId(QueryExecution.scala:1053)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$1(QueryExecution.scala:1061)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:866)
+	at org.apache.spark.sql.execution.QueryExecution.executePhase(QueryExecution.scala:1060)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$lazyAnalyzed$2(QueryExecution.scala:598)
+	at com.databricks.sql.util.MemoryTrackerHelper.withMemoryTracking(MemoryTrackerHelper.scala:111)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$lazyAnalyzed$1(QueryExecution.scala:597)
+	at scala.util.Try$.apply(Try.scala:217)
+	at org.apache.spark.util.Utils$.doTryWithCallerStacktrace(Utils.scala:1796)
+	at org.apache.spark.util.Utils$.getTryWithCallerStacktrace(Utils.scala:1846)
+	at org.apache.spark.util.LazyTry.get(LazyTry.scala:78)
+	at org.apache.spark.sql.execution.QueryExecution.analyzed(QueryExecution.scala:661)
+	at org.apache.spark.sql.execution.QueryExecution.assertAnalyzed(QueryExecution.scala:520)
+	at org.apache.spark.sql.classic.Dataset$.$anonfun$ofRows$13(Dataset.scala:256)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:866)
+	at org.apache.spark.sql.classic.Dataset$.ofRows(Dataset.scala:253)
+	at org.apache.spark.sql.connect.execution.SparkConnectPlanExecution.$anonfun$handlePlan$11(SparkConnectPlanExecution.scala:149)
+	at org.apache.spark.sql.connect.utils.TimingUtils$.withTiming(TimingUtils.scala:35)
+	at org.apache.spark.sql.connect.execution.SparkConnectPlanExecution.handlePlan(SparkConnectPlanExecution.scala:144)
+	at org.apache.spark.sql.connect.execution.ExecuteThreadRunner.handlePlan(ExecuteThreadRunner.scala:522)
+	at org.apache.spark.sql.connect.execution.ExecuteThreadRunner.$anonfun$executeInternal$1(ExecuteThreadRunner.scala:421)
+	at org.apache.spark.sql.connect.execution.ExecuteThreadRunner.$anonfun$executeInternal$1$adapted(ExecuteThreadRunner.scala:340)
+	at org.apache.spark.sql.connect.service.SessionHolder.$anonfun$withSession$2(SessionHolder.scala:844)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:866)
+	at org.apache.spark.sql.connect.service.SessionHolder.$anonfun$withSession$1(SessionHolder.scala:844)
+	at org.apache.spark.JobArtifactSet$.withActiveJobArtifactState(JobArtifactSet.scala:97)
+	at org.apache.spark.sql.artifact.ArtifactManager.$anonfun$withResources$1(ArtifactManager.scala:124)
+	at org.apache.spark.sql.artifact.ArtifactManager.withClassLoaderIfNeeded(ArtifactManager.scala:118)
+	at org.apache.spark.sql.artifact.ArtifactManager.withResources(ArtifactManager.scala:123)
+	at org.apache.spark.sql.connect.service.SessionHolder.withSession(SessionHolder.scala:843)
+	at org.apache.spark.sql.connect.execution.ExecuteThreadRunner.executeInternal(ExecuteThreadRunner.scala:340)
+	at org.apache.spark.sql.connect.execution.ExecuteThreadRunner.$anonfun$execute$1(ExecuteThreadRunner.scala:200)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at com.databricks.spark.connect.service.UtilizationMetrics.recordActiveQueries(UtilizationMetrics.scala:92)
+	at com.databricks.spark.connect.service.UtilizationMetrics.recordActiveQueries$(UtilizationMetrics.scala:89)
+	at org.apache.spark.sql.connect.execution.ExecuteThreadRunner.recordActiveQueries(ExecuteThreadRunner.scala:61)
+	at org.apache.spark.sql.connect.execution.ExecuteThreadRunner.org$apache$spark$sql$connect$execution$ExecuteThreadRunner$$execute(ExecuteThreadRunner.scala:192)
+	at org.apache.spark.sql.connect.execution.ExecuteThreadRunner$ExecutionThread.$anonfun$run$3(ExecuteThreadRunner.scala:601)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at com.databricks.spark.util.DBRTracing$.withSpanFromParent(DBRTracing.scala:70)
+	at org.apache.spark.sql.connect.execution.ExecuteThreadRunner$ExecutionThread.$anonfun$run$2(ExecuteThreadRunner.scala:601)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at com.databricks.unity.UCSEphemeralState$Handle.runWith(UCSEphemeralState.scala:51)
+	at com.databricks.unity.HandleImpl.runWith(UCSHandle.scala:128)
+	at com.databricks.unity.HandleImpl.$anonfun$runWithAndClose$1(UCSHandle.scala:133)
+	at scala.util.Using$.resource(Using.scala:296)
+	at com.databricks.unity.HandleImpl.runWithAndClose(UCSHandle.scala:132)
+	at org.apache.spark.sql.connect.execution.ExecuteThreadRunner$ExecutionThread.run(ExecuteThreadRunner.scala:600)
+2026-08-05 10:11:38,056 | INFO     | gold.dim_customers | Audit for catalog_project1.gold.dim_customers is written successfully
+2026-08-05 10:49:18,237 | INFO     | gold.dim_customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/gold_dim_customers_20260805.log
+2026-08-05 10:49:18,238 | INFO     | gold.dim_customers | Starting Gold pipeline at 2026-08-05 10:49:18.155429
+2026-08-05 10:49:20,048 | INFO     | gold.dim_customers | Read 2 records from catalog_project1.silver.clean_customers table
+2026-08-05 10:49:20,325 | INFO     | gold.dim_customers | Incremental load from catalog_project1.silver.clean_customers table
+2026-08-05 10:49:22,072 | ERROR    | gold.dim_customers | gold_pipeline failed: add_scd_metadata() missing 1 required positional argument: 'surrogate_key'
+Traceback (most recent call last):
+  File "/Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/src/reporting/gold.py", line 148, in create_gold_table
+    add_scd_metadata(truly_new_df, target, SOURCE_TABLE, pipeline_id, TARGET_TABLE, window_spec, max_key)
+TypeError: add_scd_metadata() missing 1 required positional argument: 'surrogate_key'
+2026-08-05 10:49:23,834 | INFO     | gold.dim_customers | Audit for catalog_project1.gold.dim_customers is written successfully
+2026-08-05 10:53:50,031 | INFO     | gold.dim_customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/gold_dim_customers_20260805.log
+2026-08-05 10:53:50,033 | INFO     | gold.dim_customers | Starting Gold pipeline at 2026-08-05 10:53:50.008407
+2026-08-05 10:53:51,233 | INFO     | gold.dim_customers | Read 2 records from catalog_project1.silver.clean_customers table
+2026-08-05 10:53:51,479 | INFO     | gold.dim_customers | Incremental load from catalog_project1.silver.clean_customers table
+2026-08-05 10:53:56,809 | INFO     | gold.dim_customers | Inserted 1 new records to catalog_project1.gold.dim_customers table
+2026-08-05 10:54:06,912 | INFO     | gold.dim_customers | Inserted 1 new versions (SCD2) to catalog_project1.gold.dim_customers table
+2026-08-05 10:54:08,132 | INFO     | gold.dim_customers | New watermark: 2025-02-02 00:00:00
+2026-08-05 10:54:08,134 | INFO     | gold.dim_customers | Incremental load completed for catalog_project1.gold.dim_customers
+2026-08-05 10:54:08,135 | INFO     | gold.dim_customers | Gold pipeline for catalog_project1.gold.dim_customers completed successfully
+2026-08-05 10:54:09,661 | INFO     | gold.dim_customers | Audit for catalog_project1.gold.dim_customers is written successfully
+2026-08-05 12:00:53,932 | INFO     | gold.dim_customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/gold_dim_customers_20260805.log
+2026-08-05 12:00:53,935 | INFO     | gold.dim_customers | Starting Gold pipeline at 2026-08-05 12:00:53.880510
+2026-08-05 12:00:56,166 | INFO     | gold.dim_customers | Read 0 records from catalog_project1.silver.clean_customers table
+2026-08-05 12:00:56,427 | INFO     | gold.dim_customers | Incremental load from catalog_project1.silver.clean_customers table
+2026-08-05 12:01:00,941 | INFO     | gold.dim_customers | No new data processed, watermark unchanged: 2025-02-02 00:00:00
+2026-08-05 12:01:00,944 | INFO     | gold.dim_customers | Incremental load completed for catalog_project1.gold.dim_customers
+2026-08-05 12:01:00,946 | INFO     | gold.dim_customers | Gold pipeline for catalog_project1.gold.dim_customers completed successfully
+2026-08-05 12:01:03,039 | INFO     | gold.dim_customers | Audit for catalog_project1.gold.dim_customers is written successfully
+2026-08-05 12:11:20,962 | INFO     | gold.dim_customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/gold_dim_customers_20260805.log
+2026-08-05 12:11:20,963 | INFO     | gold.dim_customers | Starting Gold pipeline at 2026-08-05 12:11:20.938908
+2026-08-05 12:11:22,079 | INFO     | gold.dim_customers | Read 0 records from catalog_project1.silver.clean_customers table
+2026-08-05 12:11:22,282 | INFO     | gold.dim_customers | Incremental load from catalog_project1.silver.clean_customers table
+2026-08-05 12:11:26,012 | INFO     | gold.dim_customers | No new data processed, watermark unchanged: 2025-02-02 00:00:00
+2026-08-05 12:11:26,013 | INFO     | gold.dim_customers | Incremental load completed for catalog_project1.gold.dim_customers
+2026-08-05 12:11:26,014 | INFO     | gold.dim_customers | Gold pipeline for catalog_project1.gold.dim_customers completed successfully
+2026-08-05 12:11:27,957 | INFO     | gold.dim_customers | Audit for catalog_project1.gold.dim_customers is written successfully
+2026-08-05 12:22:02,285 | INFO     | gold.dim_customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/gold_dim_customers_20260805.log
+2026-08-05 12:22:02,287 | INFO     | gold.dim_customers | Starting Gold pipeline at 2026-08-05 12:22:02.260127
+2026-08-05 12:22:03,397 | INFO     | gold.dim_customers | Read 0 records from catalog_project1.silver.clean_customers table
+2026-08-05 12:22:03,609 | INFO     | gold.dim_customers | Incremental load from catalog_project1.silver.clean_customers table
+2026-08-05 12:22:07,949 | INFO     | gold.dim_customers | No new data processed, watermark unchanged: 2025-02-02 00:00:00
+2026-08-05 12:22:07,951 | INFO     | gold.dim_customers | Incremental load completed for catalog_project1.gold.dim_customers
+2026-08-05 12:22:07,952 | INFO     | gold.dim_customers | Gold pipeline for catalog_project1.gold.dim_customers completed successfully
+2026-08-05 12:22:09,660 | INFO     | gold.dim_customers | Audit for catalog_project1.gold.dim_customers is written successfully
+2026-08-05 13:22:54,119 | INFO     | gold.dim_customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/gold_dim_customers_20260805.log
+2026-08-05 13:22:54,120 | INFO     | gold.dim_customers | Starting Gold pipeline at 2026-08-05 13:22:54.068520
+2026-08-05 13:22:55,209 | INFO     | gold.dim_customers | Read 2 records from catalog_project1.silver.clean_customers table
+2026-08-05 13:22:55,641 | INFO     | gold.dim_customers | Incremental load from catalog_project1.silver.clean_customers table
+2026-08-05 13:22:59,381 | INFO     | gold.dim_customers | Inserted 1 new records to catalog_project1.gold.dim_customers table
+2026-08-05 13:23:01,155 | INFO     | gold.dim_customers | Inserted 1 new versions (SCD2) to catalog_project1.gold.dim_customers table
+2026-08-05 13:23:06,798 | INFO     | gold.dim_customers | New watermark: 2025-02-03 00:00:00
+2026-08-05 13:23:06,799 | INFO     | gold.dim_customers | Incremental load completed for catalog_project1.gold.dim_customers
+2026-08-05 13:23:06,800 | INFO     | gold.dim_customers | Gold pipeline for catalog_project1.gold.dim_customers completed successfully
+2026-08-05 13:23:08,364 | INFO     | gold.dim_customers | Audit for catalog_project1.gold.dim_customers is written successfully
+2026-08-05 13:24:00,210 | INFO     | gold.dim_customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/gold_dim_customers_20260805.log
+2026-08-05 13:24:00,211 | INFO     | gold.dim_customers | Starting Gold pipeline at 2026-08-05 13:24:00.187127
+2026-08-05 13:24:01,244 | INFO     | gold.dim_customers | Read 0 records from catalog_project1.silver.clean_customers table
+2026-08-05 13:24:01,439 | INFO     | gold.dim_customers | Incremental load from catalog_project1.silver.clean_customers table
+2026-08-05 13:24:03,878 | INFO     | gold.dim_customers | No new data processed, watermark unchanged: 2025-02-03 00:00:00
+2026-08-05 13:24:03,879 | INFO     | gold.dim_customers | Incremental load completed for catalog_project1.gold.dim_customers
+2026-08-05 13:24:03,880 | INFO     | gold.dim_customers | Gold pipeline for catalog_project1.gold.dim_customers completed successfully
+2026-08-05 13:24:05,280 | INFO     | gold.dim_customers | Audit for catalog_project1.gold.dim_customers is written successfully
+2026-08-05 13:37:44,611 | INFO     | gold.dim_customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/gold_dim_customers_20260805.log
+2026-08-05 13:37:44,612 | INFO     | gold.dim_customers | Starting Gold pipeline at 2026-08-05 13:37:44.585934
+2026-08-05 13:37:45,641 | INFO     | gold.dim_customers | Read 0 records from catalog_project1.silver.clean_customers table
+2026-08-05 13:37:45,879 | INFO     | gold.dim_customers | Incremental load from catalog_project1.silver.clean_customers table
+2026-08-05 13:37:48,146 | INFO     | gold.dim_customers | No new data processed, watermark unchanged: 2025-02-03 00:00:00
+2026-08-05 13:37:48,147 | INFO     | gold.dim_customers | Incremental load completed for catalog_project1.gold.dim_customers
+2026-08-05 13:37:48,148 | INFO     | gold.dim_customers | Gold pipeline for catalog_project1.gold.dim_customers completed successfully
+2026-08-05 13:37:49,647 | INFO     | gold.dim_customers | Audit for catalog_project1.gold.dim_customers is written successfully

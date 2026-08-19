@@ -1,0 +1,121 @@
+2026-08-10 05:19:12,052 | INFO     | gold.dim_customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/gold_dim_customers_20260810.log
+2026-08-10 05:19:12,053 | INFO     | gold.dim_customers | Starting Gold pipeline at 2026-08-10 05:19:12.051748
+2026-08-10 05:19:13,275 | INFO     | gold.dim_customers | Read 1 records from catalog_project1.silver.clean_customers table
+2026-08-10 05:19:13,826 | INFO     | gold.dim_customers | Incremental load from catalog_project1.silver.clean_customers table
+2026-08-10 05:19:16,733 | INFO     | gold.dim_customers | No new data processed, watermark unchanged: 2025-02-16 00:00:00
+2026-08-10 05:19:16,734 | INFO     | gold.dim_customers | Incremental load completed for catalog_project1.gold.dim_customers
+2026-08-10 05:19:16,735 | INFO     | gold.dim_customers | Gold pipeline for catalog_project1.gold.dim_customers completed successfully
+2026-08-10 05:19:18,551 | INFO     | gold.dim_customers | Audit for catalog_project1.gold.dim_customers is written successfully
+2026-08-10 05:32:50,526 | INFO     | gold.dim_customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/gold_dim_customers_20260810.log
+2026-08-10 05:32:50,527 | INFO     | gold.dim_customers | Starting Gold pipeline at 2026-08-10 05:32:50.492694
+2026-08-10 05:32:54,581 | ERROR    | gold.dim_customers | Error writing audit log for catalog_project1.gold.dim_customers: cannot access local variable 'status' where it is not associated with a value
+Traceback (most recent call last):
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/client/core.py", line 697, in __iter__
+    for response in self._call:
+  File "/databricks/python_shell/lib/dbruntime/serverless/arch_pin_interceptor.py", line 79, in __next__
+    return next(self._response)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/grpc/_channel.py", line 543, in __next__
+    return self._next()
+           ^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/grpc/_channel.py", line 960, in _next
+    _common.wait(self._state.condition.wait, _response_ready)
+  File "/databricks/python/lib/python3.12/site-packages/grpc/_common.py", line 156, in wait
+    _wait_once(wait_fn, MAXIMUM_WAIT_TIMEOUT, spin_cb)
+  File "/databricks/python/lib/python3.12/site-packages/grpc/_common.py", line 116, in _wait_once
+    wait_fn(timeout=timeout)
+  File "/usr/lib/python3.12/threading.py", line 359, in wait
+    gotit = waiter.acquire(True, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/src/reporting/gold.py", line 115, in create_gold_table
+    rows_read = get_rows_count(silver_df)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/src/validation/quality_checks.py", line 8, in get_rows_count
+    rows_count = table.count()
+                 ^^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/dataframe.py", line 318, in count
+    )._to_table()  # type: ignore[operator]
+      ^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/dataframe.py", line 1930, in _to_table
+    table, schema, self._execution_info = self._session.client.to_table(
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/client/core.py", line 1273, in to_table
+    table, schema, metrics, observed_metrics, _ = self._execute_and_fetch(req, observations)
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/client/core.py", line 2086, in _execute_and_fetch
+    for response in self._execute_and_fetch_as_iterator(
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/client/core.py", line 2060, in _execute_and_fetch_as_iterator
+    raise kb
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/client/core.py", line 2046, in _execute_and_fetch_as_iterator
+    for b in generator:
+  File "<frozen _collections_abc>", line 356, in __next__
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/client/reattach.py", line 152, in send
+    if not self._has_next():
+           ^^^^^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/client/reattach.py", line 193, in _has_next
+    self._current = self._call_iter(
+                    ^^^^^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/client/reattach.py", line 307, in _call_iter
+    return iter_fun()
+           ^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/client/reattach.py", line 194, in <lambda>
+    lambda: next(self._iterator)  # type: ignore[arg-type]
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/client/core.py", line 707, in __iter__
+    trailers = self._call.trailing_metadata()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/grpc/_channel.py", line 819, in trailing_metadata
+    _common.wait(self._state.condition.wait, _done)
+  File "/databricks/python/lib/python3.12/site-packages/grpc/_common.py", line 156, in wait
+    _wait_once(wait_fn, MAXIMUM_WAIT_TIMEOUT, spin_cb)
+  File "/databricks/python/lib/python3.12/site-packages/grpc/_common.py", line 116, in _wait_once
+    wait_fn(timeout=timeout)
+  File "/usr/lib/python3.12/threading.py", line 359, in wait
+    gotit = waiter.acquire(True, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/src/reporting/gold.py", line 277, in create_gold_table
+    write_audit_log(pipeline_name, target, start_time, end_time, rows_read, rows_written, status, error_message, CATALOG, AUDIT_SCHEMA,     AUDIT_TABLENAME, batch_id, watermark_column, new_watermark)
+                                                                                          ^^^^^^
+UnboundLocalError: cannot access local variable 'status' where it is not associated with a value
+2026-08-10 05:33:34,388 | INFO     | gold.dim_customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/gold_dim_customers_20260810.log
+2026-08-10 05:33:34,388 | INFO     | gold.dim_customers | Starting Gold pipeline at 2026-08-10 05:33:34.369289
+2026-08-10 05:33:35,483 | INFO     | gold.dim_customers | Read 1 records from catalog_project1.silver.clean_customers table
+2026-08-10 05:33:35,666 | INFO     | gold.dim_customers | Incremental load from catalog_project1.silver.clean_customers table
+2026-08-10 05:33:38,192 | INFO     | gold.dim_customers | No new data processed, watermark unchanged: 2025-02-16 00:00:00
+2026-08-10 05:33:38,193 | INFO     | gold.dim_customers | Incremental load completed for catalog_project1.gold.dim_customers
+2026-08-10 05:33:38,194 | INFO     | gold.dim_customers | Gold pipeline for catalog_project1.gold.dim_customers completed successfully
+2026-08-10 05:33:39,512 | INFO     | gold.dim_customers | Audit for catalog_project1.gold.dim_customers is written successfully
+2026-08-10 06:16:07,335 | INFO     | gold.dim_customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/gold_dim_customers_20260810.log
+2026-08-10 06:16:07,336 | INFO     | gold.dim_customers | Starting Gold pipeline at 2026-08-10 06:16:07.232848
+2026-08-10 06:16:08,585 | INFO     | gold.dim_customers | Read 1 records from catalog_project1.silver.clean_customers table
+2026-08-10 06:16:09,273 | INFO     | gold.dim_customers | Incremental load from catalog_project1.silver.clean_customers table
+2026-08-10 06:16:13,149 | INFO     | gold.dim_customers | No new data processed, watermark unchanged: 2025-02-16 00:00:00
+2026-08-10 06:16:13,150 | INFO     | gold.dim_customers | Incremental load completed for catalog_project1.gold.dim_customers
+2026-08-10 06:16:13,151 | INFO     | gold.dim_customers | Gold pipeline for catalog_project1.gold.dim_customers completed successfully
+2026-08-10 06:16:14,961 | INFO     | gold.dim_customers | Audit for catalog_project1.gold.dim_customers is written successfully
+2026-08-10 06:21:36,309 | INFO     | gold.dim_customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/gold_dim_customers_20260810.log
+2026-08-10 06:21:36,310 | INFO     | gold.dim_customers | Starting Gold pipeline at 2026-08-10 06:21:36.289866
+2026-08-10 06:21:37,517 | INFO     | gold.dim_customers | Read 1 records from catalog_project1.silver.clean_customers table
+2026-08-10 06:21:37,725 | INFO     | gold.dim_customers | Incremental load from catalog_project1.silver.clean_customers table
+2026-08-10 06:21:40,451 | INFO     | gold.dim_customers | No new data processed, watermark unchanged: 2025-02-16 00:00:00
+2026-08-10 06:21:40,452 | INFO     | gold.dim_customers | Incremental load completed for catalog_project1.gold.dim_customers
+2026-08-10 06:21:40,452 | INFO     | gold.dim_customers | Gold pipeline for catalog_project1.gold.dim_customers completed successfully
+2026-08-10 06:21:42,017 | INFO     | gold.dim_customers | Audit for catalog_project1.gold.dim_customers is written successfully
+2026-08-10 06:24:53,066 | INFO     | gold.dim_customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/gold_dim_customers_20260810.log
+2026-08-10 06:24:53,067 | INFO     | gold.dim_customers | Starting Gold pipeline at 2026-08-10 06:24:53.043872
+2026-08-10 06:24:54,300 | INFO     | gold.dim_customers | Read 0 records from catalog_project1.silver.clean_customers table
+2026-08-10 06:24:54,523 | INFO     | gold.dim_customers | Incremental load from catalog_project1.silver.clean_customers table
+2026-08-10 06:24:57,478 | INFO     | gold.dim_customers | No new data processed, watermark unchanged: 2025-02-16 00:00:00
+2026-08-10 06:24:57,479 | INFO     | gold.dim_customers | Incremental load completed for catalog_project1.gold.dim_customers
+2026-08-10 06:24:57,480 | INFO     | gold.dim_customers | Gold pipeline for catalog_project1.gold.dim_customers completed successfully
+2026-08-10 06:24:58,788 | INFO     | gold.dim_customers | Audit for catalog_project1.gold.dim_customers is written successfully

@@ -1,0 +1,99 @@
+2026-07-21 07:11:57,151 | INFO     | bronze.products | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_products_20260721.log
+2026-07-21 07:11:57,152 | INFO     | bronze.products | Reading source table
+2026-07-21 07:11:58,768 | INFO     | bronze.products | Rows read: 10
+2026-07-21 07:11:59,393 | INFO     | bronze.products | Source fetching completed successfully
+2026-07-21 07:11:59,394 | INFO     | bronze.products | Starting Bronze ingestion
+2026-07-21 07:11:59,395 | INFO     | bronze.products | Source table: products_raw
+2026-07-21 07:11:59,397 | INFO     | bronze.products | Target table: products
+2026-07-21 07:12:03,905 | INFO     | bronze.products | Bronze table written successfully.
+2026-07-21 07:12:04,764 | INFO     | bronze.products | Rows written: 10
+2026-07-21 07:12:05,591 | INFO     | bronze.products | Duplicate customer_ids: 0
+2026-07-21 07:12:06,298 | INFO     | bronze.products | Bronze customer ingestion completed.
+2026-07-21 07:19:23,855 | INFO     | bronze.products | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_products_20260721.log
+2026-07-21 07:19:23,856 | INFO     | bronze.products | Reading source table
+2026-07-21 07:19:24,805 | INFO     | bronze.products | Rows read: 10
+2026-07-21 07:19:25,002 | INFO     | bronze.products | Source fetching completed successfully
+2026-07-21 07:19:25,003 | INFO     | bronze.products | Starting Bronze ingestion
+2026-07-21 07:19:25,004 | INFO     | bronze.products | Source table: products_raw
+2026-07-21 07:19:25,005 | INFO     | bronze.products | Target table: products
+2026-07-21 07:19:28,814 | INFO     | bronze.products | Bronze table written successfully.
+2026-07-21 07:19:29,355 | INFO     | bronze.products | Rows written: 10
+2026-07-21 07:19:30,139 | INFO     | bronze.products | Duplicate customer_ids: 0
+2026-07-21 07:19:30,973 | INFO     | bronze.products | Bronze customer ingestion completed.
+2026-07-21 07:26:20,130 | INFO     | bronze.products | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_products_20260721.log
+2026-07-21 07:26:20,131 | INFO     | bronze.products | Reading source table
+2026-07-21 07:26:20,977 | INFO     | bronze.products | Rows read: 10
+2026-07-21 07:26:21,169 | INFO     | bronze.products | Source fetching completed successfully
+2026-07-21 07:26:21,173 | INFO     | bronze.products | Starting Bronze ingestion
+2026-07-21 07:26:21,175 | INFO     | bronze.products | Source table: products_raw
+2026-07-21 07:26:21,178 | INFO     | bronze.products | Target table: products
+2026-07-21 07:26:24,710 | INFO     | bronze.products | Bronze table written successfully.
+2026-07-21 07:26:25,190 | INFO     | bronze.products | Rows written: 10
+2026-07-21 07:26:25,855 | INFO     | bronze.products | Duplicate customer_ids: 0
+2026-07-21 07:26:26,610 | INFO     | bronze.products | Bronze customer ingestion completed.
+2026-07-21 07:29:50,359 | INFO     | bronze.products | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_products_20260721.log
+2026-07-21 07:29:50,360 | INFO     | bronze.products | Reading source table
+2026-07-21 07:29:51,178 | INFO     | bronze.products | Rows read: 10
+2026-07-21 07:29:51,350 | INFO     | bronze.products | Source fetching completed successfully
+2026-07-21 07:29:51,351 | INFO     | bronze.products | Starting Bronze ingestion
+2026-07-21 07:29:51,352 | INFO     | bronze.products | Source table: products_raw
+2026-07-21 07:29:51,352 | INFO     | bronze.products | Target table: products
+2026-07-21 07:29:54,724 | INFO     | bronze.products | Bronze table written successfully.
+2026-07-21 07:29:55,152 | INFO     | bronze.products | Rows written: 10
+2026-07-21 07:29:55,726 | INFO     | bronze.products | Duplicate customer_ids: 0
+2026-07-21 07:29:56,357 | INFO     | bronze.products | Bronze customer ingestion completed.
+2026-07-21 07:36:11,107 | INFO     | bronze.products | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_products_20260721.log
+2026-07-21 07:36:11,108 | INFO     | bronze.products | Reading source table
+2026-07-21 07:36:12,040 | INFO     | bronze.products | Rows read: 10
+2026-07-21 07:36:12,231 | INFO     | bronze.products | Source fetching completed successfully
+2026-07-21 07:36:12,232 | INFO     | bronze.products | Starting Bronze ingestion
+2026-07-21 07:36:12,238 | INFO     | bronze.products | Source table: products_raw
+2026-07-21 07:36:12,239 | INFO     | bronze.products | Target table: products
+2026-07-21 07:36:16,024 | INFO     | bronze.products | Bronze table written successfully.
+2026-07-21 07:36:16,438 | INFO     | bronze.products | Rows written: 10
+2026-07-21 07:36:16,956 | INFO     | bronze.products | Duplicate customer_ids: 0
+2026-07-21 07:36:17,690 | INFO     | bronze.products | Bronze customer ingestion completed.
+2026-07-21 07:37:16,886 | INFO     | bronze.products | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_products_20260721.log
+2026-07-21 07:37:16,886 | INFO     | bronze.products | Reading source table
+2026-07-21 07:37:17,674 | INFO     | bronze.products | Rows read: 10
+2026-07-21 07:37:17,870 | INFO     | bronze.products | Source fetching completed successfully
+2026-07-21 07:37:17,871 | INFO     | bronze.products | Starting Bronze ingestion
+2026-07-21 07:37:17,872 | INFO     | bronze.products | Source table: products_raw
+2026-07-21 07:37:17,873 | INFO     | bronze.products | Target table: products
+2026-07-21 07:37:21,220 | INFO     | bronze.products | Bronze table written successfully.
+2026-07-21 07:37:21,645 | INFO     | bronze.products | Rows written: 10
+2026-07-21 07:37:22,177 | INFO     | bronze.products | Duplicate customer_ids: 0
+2026-07-21 07:37:22,828 | INFO     | bronze.products | Bronze customer ingestion completed.
+2026-07-21 07:38:24,849 | INFO     | bronze.products | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_products_20260721.log
+2026-07-21 07:38:24,850 | INFO     | bronze.products | Reading source products_raw table
+2026-07-21 07:38:26,241 | INFO     | bronze.products | Rows read: 10
+2026-07-21 07:38:26,453 | INFO     | bronze.products | Source products_raw fetching completed successfully
+2026-07-21 07:38:26,454 | INFO     | bronze.products | Starting Bronze products ingestion
+2026-07-21 07:38:26,454 | INFO     | bronze.products | Source table: products_raw
+2026-07-21 07:38:26,455 | INFO     | bronze.products | Target table: products
+2026-07-21 07:38:29,793 | INFO     | bronze.products | Bronze products table written successfully.
+2026-07-21 07:38:30,135 | INFO     | bronze.products | Rows written: 10
+2026-07-21 07:38:30,637 | INFO     | bronze.products | Duplicate product_id: 0
+2026-07-21 07:38:31,321 | INFO     | bronze.products | Bronze products ingestion completed
+2026-07-21 09:05:47,847 | INFO     | bronze.products | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_products_20260721.log
+2026-07-21 09:05:47,849 | INFO     | bronze.products | Reading source products_raw table
+2026-07-21 09:05:49,337 | INFO     | bronze.products | Rows read: 10
+2026-07-21 09:05:49,653 | INFO     | bronze.products | Source products_raw fetching completed successfully
+2026-07-21 09:05:49,655 | INFO     | bronze.products | Starting Bronze products ingestion
+2026-07-21 09:05:49,656 | INFO     | bronze.products | Source table: products_raw
+2026-07-21 09:05:49,659 | INFO     | bronze.products | Target table: products
+2026-07-21 09:05:54,054 | INFO     | bronze.products | Bronze products table written successfully.
+2026-07-21 09:05:54,809 | INFO     | bronze.products | Rows written: 10
+2026-07-21 09:05:55,693 | INFO     | bronze.products | Duplicate product_id: 0
+2026-07-21 09:05:56,522 | INFO     | bronze.products | Bronze products ingestion completed
+2026-07-21 10:39:04,773 | INFO     | bronze.products | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_products_20260721.log
+2026-07-21 10:39:04,774 | INFO     | bronze.products | Reading source products_raw table
+2026-07-21 10:39:05,897 | INFO     | bronze.products | Rows read: 10
+2026-07-21 10:39:06,087 | INFO     | bronze.products | Source products_raw fetching completed successfully
+2026-07-21 10:39:06,089 | INFO     | bronze.products | Starting Bronze products ingestion
+2026-07-21 10:39:06,089 | INFO     | bronze.products | Source table: products_raw
+2026-07-21 10:39:06,091 | INFO     | bronze.products | Target table: products
+2026-07-21 10:39:09,956 | INFO     | bronze.products | Bronze products table written successfully.
+2026-07-21 10:39:10,414 | INFO     | bronze.products | Rows written: 10
+2026-07-21 10:39:11,067 | INFO     | bronze.products | Duplicate product_id: 0
+2026-07-21 10:39:11,866 | INFO     | bronze.products | Bronze products ingestion completed

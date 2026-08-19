@@ -1,0 +1,30 @@
+2026-07-29 06:05:16,844 | INFO     | silver.clean_payments | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/silver_clean_payments_20260729.log
+2026-07-29 06:05:16,845 | INFO     | silver.clean_payments | Starting Silver pipeline at 2026-07-29 06:05:16.814764
+2026-07-29 06:05:18,514 | INFO     | silver.clean_payments | Initial load from catalog_project1.bronze.payments table
+2026-07-29 06:05:19,870 | INFO     | silver.clean_payments | Read 10 records from catalog_project1.bronze.payments
+2026-07-29 06:05:19,871 | INFO     | silver.clean_payments | All required columns exists in the catalog_project1.bronze.payments
+2026-07-29 06:05:19,871 | WARNING  | silver.clean_payments | New columns detected in catalog_project1.bronze.payments: {'_source_table', '_ingestion_pipeline_id', '_source_file', '_ingestion_timestamp'}
+2026-07-29 06:05:20,626 | INFO     | silver.clean_payments | Data standardization completed for the catalog_project1.bronze.payments
+2026-07-29 06:05:21,205 | INFO     | silver.clean_payments | Data type casting completed for the catalog_project1.bronze.payments
+2026-07-29 06:05:22,058 | INFO     | silver.clean_payments | Data validation completed for the catalog_project1.bronze.payments
+2026-07-29 06:05:22,470 | INFO     | silver.clean_payments | Deduplication completed for the catalog_project1.bronze.payments
+2026-07-29 06:05:27,465 | INFO     | silver.clean_payments | Data written to the catalog_project1.silver.clean_payments
+2026-07-29 06:05:29,075 | INFO     | silver.clean_payments | Data validation for catalog_project1.silver.clean_payments completed
+2026-07-29 06:05:29,077 | INFO     | silver.clean_payments | Silver pipeline for catalog_project1.silver.clean_payments completed successfully
+2026-07-29 06:05:29,816 | INFO     | silver.clean_payments | New watermark: 2025-03-28 00:00:00
+2026-07-29 06:05:31,973 | INFO     | silver.clean_payments | Audit for catalog_project1.silver.clean_payments written successfully
+2026-07-29 06:06:58,378 | INFO     | silver.clean_payments | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/silver_clean_payments_20260729.log
+2026-07-29 06:06:58,381 | INFO     | silver.clean_payments | Starting Silver pipeline at 2026-07-29 06:06:58.332913
+2026-07-29 06:06:59,454 | INFO     | silver.clean_payments | Incremental load from catalog_project1.bronze.payments
+2026-07-29 06:07:00,820 | INFO     | silver.clean_payments | Read 0 records from catalog_project1.bronze.payments
+2026-07-29 06:07:00,821 | INFO     | silver.clean_payments | All required columns exists in the catalog_project1.bronze.payments
+2026-07-29 06:07:00,822 | WARNING  | silver.clean_payments | New columns detected in catalog_project1.bronze.payments: {'_source_table', '_ingestion_pipeline_id', '_source_file', '_ingestion_timestamp'}
+2026-07-29 06:07:01,420 | INFO     | silver.clean_payments | Data standardization completed for the catalog_project1.bronze.payments
+2026-07-29 06:07:01,930 | INFO     | silver.clean_payments | Data type casting completed for the catalog_project1.bronze.payments
+2026-07-29 06:07:02,784 | INFO     | silver.clean_payments | Data validation completed for the catalog_project1.bronze.payments
+2026-07-29 06:07:03,172 | INFO     | silver.clean_payments | Deduplication completed for the catalog_project1.bronze.payments
+2026-07-29 06:07:06,100 | INFO     | silver.clean_payments | Data written to the catalog_project1.silver.clean_payments
+2026-07-29 06:07:07,412 | INFO     | silver.clean_payments | Data validation for catalog_project1.silver.clean_payments completed
+2026-07-29 06:07:07,413 | INFO     | silver.clean_payments | Silver pipeline for catalog_project1.silver.clean_payments completed successfully
+2026-07-29 06:07:07,414 | INFO     | silver.clean_payments | No new data, watermark value unchanged: 2025-03-28 00:00:00
+2026-07-29 06:07:09,180 | INFO     | silver.clean_payments | Audit for catalog_project1.silver.clean_payments written successfully

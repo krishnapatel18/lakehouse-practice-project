@@ -1,0 +1,232 @@
+2026-07-21 07:12:20,985 | INFO     | bronze.payments | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_payments_20260721.log
+2026-07-21 07:12:20,986 | INFO     | bronze.payments | Reading source table
+2026-07-21 07:12:21,470 | ERROR    | bronze.payments | Bronze ingestion failed
+Traceback (most recent call last):
+  File "/Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/src/ingestion/bronze.py", line 87, in ingest_table
+    source_empty(raw)
+  File "/Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/src/validation/quality_checks.py", line 27, in source_empty
+    if source.count() == 0:
+       ^^^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/dataframe.py", line 318, in count
+    )._to_table()  # type: ignore[operator]
+      ^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/dataframe.py", line 1930, in _to_table
+    table, schema, self._execution_info = self._session.client.to_table(
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/client/core.py", line 1273, in to_table
+    table, schema, metrics, observed_metrics, _ = self._execute_and_fetch(req, observations)
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/client/core.py", line 2086, in _execute_and_fetch
+    for response in self._execute_and_fetch_as_iterator(
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/client/core.py", line 2062, in _execute_and_fetch_as_iterator
+    self._handle_error(error)
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/client/core.py", line 2380, in _handle_error
+    self._handle_rpc_error(error)
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/client/core.py", line 2458, in _handle_rpc_error
+    raise convert_exception(
+pyspark.errors.exceptions.connect.AnalysisException: [TABLE_OR_VIEW_NOT_FOUND] The table or view `catalog_project1`.`source1`.`payments_raw` cannot be found. Verify the spelling and correctness of the schema and catalog.
+Search path: [`system`.`session`, `system`.`builtin`, `system`.`ai`, `workspace`.`default`].
+If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS. SQLSTATE: 42P01;
+'Aggregate [unresolvedalias(count(1))]
++- 'UnresolvedRelation [catalog_project1, source1, payments_raw], [], false
+
+
+JVM stacktrace:
+org.apache.spark.sql.catalyst.ExtendedAnalysisException
+	at org.apache.spark.sql.errors.QueryCompilationErrors$.tableOrViewNotFoundWithSearchPath(QueryCompilationErrors.scala:1464)
+	at org.apache.spark.sql.catalyst.analysis.package$AnalysisErrorAt.tableNotFound(package.scala:97)
+	at org.apache.spark.sql.catalyst.analysis.RelationResolution$.throwTableNotFound(RelationResolution.scala:1806)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$2(CheckAnalysis.scala:467)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$2$adapted(CheckAnalysis.scala:410)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:392)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1(TreeNode.scala:391)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1$adapted(TreeNode.scala:391)
+	at scala.collection.immutable.Vector.foreach(Vector.scala:2125)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:391)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis0(CheckAnalysis.scala:410)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis0$(CheckAnalysis.scala:377)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis0(Analyzer.scala:610)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis$1(CheckAnalysis.scala:362)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at com.databricks.spark.util.FrameProfiler$.$anonfun$record$1(FrameProfiler.scala:114)
+	at com.databricks.spark.util.FrameProfilerExporter$.maybeExportFrameProfiler(FrameProfilerExporter.scala:201)
+	at com.databricks.spark.util.FrameProfiler$.record(FrameProfiler.scala:105)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis(CheckAnalysis.scala:349)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis$(CheckAnalysis.scala:345)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis(Analyzer.scala:610)
+	at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.$anonfun$resolveInFixedPoint$1(HybridAnalyzer.scala:417)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at org.apache.spark.sql.catalyst.QueryPlanningTracker$.withTracker(QueryPlanningTracker.scala:275)
+	at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.resolveInFixedPoint(HybridAnalyzer.scala:417)
+	at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.$anonfun$apply$1(HybridAnalyzer.scala:98)
+	at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.withTrackedAnalyzerBridgeState(HybridAnalyzer.scala:135)
+	at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.apply(HybridAnalyzer.scala:91)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.$anonfun$executeAndCheck$2(Analyzer.scala:677)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper$.markInAnalyzer(AnalysisHelper.scala:425)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.$anonfun$executeAndCheck$1(Analyzer.scala:677)
+	at com.databricks.sql.unity.SAMSnapshotHelper$.visitPlansDuringAnalysis(SAMSnapshotHelper.scala:43)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.executeAndCheck(Analyzer.scala:666)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$lazyAnalyzed$3(QueryExecution.scala:607)
+	at com.databricks.spark.util.FrameProfiler$.$anonfun$record$1(FrameProfiler.scala:114)
+	at com.databricks.spark.util.FrameProfilerExporter$.maybeExportFrameProfiler(FrameProfilerExporter.scala:201)
+	at com.databricks.spark.util.FrameProfiler$.record(FrameProfiler.scala:105)
+	at org.apache.spark.sql.catalyst.QueryPlanningTracker.measurePhase(QueryPlanningTracker.scala:1021)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$8(QueryExecution.scala:1073)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withExecutionPhase$1(SQLExecution.scala:335)
+	at com.databricks.util.TracingSpanUtils$.withTracing(TracingSpanUtils.scala:251)
+	at com.databricks.spark.util.DatabricksTracingHelper.withSpan(DatabricksSparkTracingHelper.scala:154)
+	at com.databricks.spark.util.DBRTracing$.withSpan(DBRTracing.scala:87)
+	at org.apache.spark.sql.execution.SQLExecution$.withExecutionPhase(SQLExecution.scala:316)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$7(QueryExecution.scala:1073)
+	at org.apache.spark.sql.execution.QueryExecution$.withInternalError(QueryExecution.scala:1822)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$5(QueryExecution.scala:1066)
+	at com.databricks.util.LexicalThreadLocal$Handle.runWith(LexicalThreadLocal.scala:63)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$4(QueryExecution.scala:1063)
+	at com.databricks.util.LexicalThreadLocal$Handle.runWith(LexicalThreadLocal.scala:63)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$3(QueryExecution.scala:1063)
+	at com.databricks.util.LexicalThreadLocal$Handle.runWith(LexicalThreadLocal.scala:63)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$2(QueryExecution.scala:1062)
+	at com.databricks.util.LexicalThreadLocal$Handle.runWith(LexicalThreadLocal.scala:63)
+	at org.apache.spark.sql.execution.QueryExecution.localBlock$1(QueryExecution.scala:1043)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$withQueryExecutionId$4(QueryExecution.scala:1053)
+	at com.databricks.unity.UCSManager$.withTemporaryScope(UCSManager.scala:168)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$withQueryExecutionId$3(QueryExecution.scala:1052)
+	at org.apache.spark.sql.execution.QueryExecution$.$anonfun$runWithWrappers$2(QueryExecution.scala:2075)
+	at org.apache.spark.sql.execution.QueryExecution$.org$apache$spark$sql$execution$QueryExecution$$runWithWrappers(QueryExecution.scala:2074)
+	at org.apache.spark.sql.execution.QueryExecution.withQueryExecutionId(QueryExecution.scala:1053)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$1(QueryExecution.scala:1061)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:866)
+	at org.apache.spark.sql.execution.QueryExecution.executePhase(QueryExecution.scala:1060)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$lazyAnalyzed$2(QueryExecution.scala:598)
+	at com.databricks.sql.util.MemoryTrackerHelper.withMemoryTracking(MemoryTrackerHelper.scala:111)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$lazyAnalyzed$1(QueryExecution.scala:597)
+	at scala.util.Try$.apply(Try.scala:217)
+	at org.apache.spark.util.Utils$.doTryWithCallerStacktrace(Utils.scala:1796)
+	at org.apache.spark.util.Utils$.getTryWithCallerStacktrace(Utils.scala:1846)
+	at org.apache.spark.util.LazyTry.get(LazyTry.scala:78)
+	at org.apache.spark.sql.execution.QueryExecution.analyzed(QueryExecution.scala:661)
+	at org.apache.spark.sql.execution.QueryExecution.assertAnalyzed(QueryExecution.scala:520)
+	at org.apache.spark.sql.classic.Dataset$.$anonfun$ofRows$13(Dataset.scala:256)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:866)
+	at org.apache.spark.sql.classic.Dataset$.ofRows(Dataset.scala:253)
+	at org.apache.spark.sql.connect.execution.SparkConnectPlanExecution.$anonfun$handlePlan$11(SparkConnectPlanExecution.scala:149)
+	at org.apache.spark.sql.connect.utils.TimingUtils$.withTiming(TimingUtils.scala:35)
+	at org.apache.spark.sql.connect.execution.SparkConnectPlanExecution.handlePlan(SparkConnectPlanExecution.scala:144)
+	at org.apache.spark.sql.connect.execution.ExecuteThreadRunner.handlePlan(ExecuteThreadRunner.scala:522)
+	at org.apache.spark.sql.connect.execution.ExecuteThreadRunner.$anonfun$executeInternal$1(ExecuteThreadRunner.scala:421)
+	at org.apache.spark.sql.connect.execution.ExecuteThreadRunner.$anonfun$executeInternal$1$adapted(ExecuteThreadRunner.scala:340)
+	at org.apache.spark.sql.connect.service.SessionHolder.$anonfun$withSession$2(SessionHolder.scala:844)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:866)
+	at org.apache.spark.sql.connect.service.SessionHolder.$anonfun$withSession$1(SessionHolder.scala:844)
+	at org.apache.spark.JobArtifactSet$.withActiveJobArtifactState(JobArtifactSet.scala:97)
+	at org.apache.spark.sql.artifact.ArtifactManager.$anonfun$withResources$1(ArtifactManager.scala:124)
+	at org.apache.spark.sql.artifact.ArtifactManager.withClassLoaderIfNeeded(ArtifactManager.scala:118)
+	at org.apache.spark.sql.artifact.ArtifactManager.withResources(ArtifactManager.scala:123)
+	at org.apache.spark.sql.connect.service.SessionHolder.withSession(SessionHolder.scala:843)
+	at org.apache.spark.sql.connect.execution.ExecuteThreadRunner.executeInternal(ExecuteThreadRunner.scala:340)
+	at org.apache.spark.sql.connect.execution.ExecuteThreadRunner.$anonfun$execute$1(ExecuteThreadRunner.scala:200)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at com.databricks.spark.connect.service.UtilizationMetrics.recordActiveQueries(UtilizationMetrics.scala:92)
+	at com.databricks.spark.connect.service.UtilizationMetrics.recordActiveQueries$(UtilizationMetrics.scala:89)
+	at org.apache.spark.sql.connect.execution.ExecuteThreadRunner.recordActiveQueries(ExecuteThreadRunner.scala:61)
+	at org.apache.spark.sql.connect.execution.ExecuteThreadRunner.org$apache$spark$sql$connect$execution$ExecuteThreadRunner$$execute(ExecuteThreadRunner.scala:192)
+	at org.apache.spark.sql.connect.execution.ExecuteThreadRunner$ExecutionThread.$anonfun$run$3(ExecuteThreadRunner.scala:601)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at com.databricks.spark.util.DBRTracing$.withSpanFromParent(DBRTracing.scala:70)
+	at org.apache.spark.sql.connect.execution.ExecuteThreadRunner$ExecutionThread.$anonfun$run$2(ExecuteThreadRunner.scala:601)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at com.databricks.unity.UCSEphemeralState$Handle.runWith(UCSEphemeralState.scala:51)
+	at com.databricks.unity.HandleImpl.runWith(UCSHandle.scala:128)
+	at com.databricks.unity.HandleImpl.$anonfun$runWithAndClose$1(UCSHandle.scala:133)
+	at scala.util.Using$.resource(Using.scala:296)
+	at com.databricks.unity.HandleImpl.runWithAndClose(UCSHandle.scala:132)
+	at org.apache.spark.sql.connect.execution.ExecuteThreadRunner$ExecutionThread.run(ExecuteThreadRunner.scala:600)
+2026-07-21 07:19:43,058 | INFO     | bronze.payments | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_payments_20260721.log
+2026-07-21 07:19:43,059 | INFO     | bronze.payments | Reading source table
+2026-07-21 07:19:43,886 | INFO     | bronze.payments | Rows read: 10
+2026-07-21 07:19:44,216 | INFO     | bronze.payments | Source fetching completed successfully
+2026-07-21 07:19:44,217 | INFO     | bronze.payments | Starting Bronze ingestion
+2026-07-21 07:19:44,217 | INFO     | bronze.payments | Source table: payments_raw
+2026-07-21 07:19:44,218 | INFO     | bronze.payments | Target table: payments
+2026-07-21 07:19:47,791 | INFO     | bronze.payments | Bronze table written successfully.
+2026-07-21 07:19:48,246 | INFO     | bronze.payments | Rows written: 10
+2026-07-21 07:19:49,044 | INFO     | bronze.payments | Duplicate customer_ids: 0
+2026-07-21 07:19:49,855 | INFO     | bronze.payments | Bronze customer ingestion completed.
+2026-07-21 07:26:38,362 | INFO     | bronze.payments | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_payments_20260721.log
+2026-07-21 07:26:38,362 | INFO     | bronze.payments | Reading source table
+2026-07-21 07:26:39,672 | INFO     | bronze.payments | Rows read: 10
+2026-07-21 07:26:39,959 | INFO     | bronze.payments | Source fetching completed successfully
+2026-07-21 07:26:39,960 | INFO     | bronze.payments | Starting Bronze ingestion
+2026-07-21 07:26:39,961 | INFO     | bronze.payments | Source table: payments_raw
+2026-07-21 07:26:39,963 | INFO     | bronze.payments | Target table: payments
+2026-07-21 07:26:43,493 | INFO     | bronze.payments | Bronze table written successfully.
+2026-07-21 07:26:44,047 | INFO     | bronze.payments | Rows written: 10
+2026-07-21 07:26:44,563 | INFO     | bronze.payments | Duplicate customer_ids: 0
+2026-07-21 07:26:45,311 | INFO     | bronze.payments | Bronze customer ingestion completed.
+2026-07-21 07:30:08,113 | INFO     | bronze.payments | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_payments_20260721.log
+2026-07-21 07:30:08,114 | INFO     | bronze.payments | Reading source table
+2026-07-21 07:30:08,996 | INFO     | bronze.payments | Rows read: 10
+2026-07-21 07:30:09,256 | INFO     | bronze.payments | Source fetching completed successfully
+2026-07-21 07:30:09,258 | INFO     | bronze.payments | Starting Bronze ingestion
+2026-07-21 07:30:09,259 | INFO     | bronze.payments | Source table: payments_raw
+2026-07-21 07:30:09,260 | INFO     | bronze.payments | Target table: payments
+2026-07-21 07:30:12,807 | INFO     | bronze.payments | Bronze table written successfully.
+2026-07-21 07:30:13,221 | INFO     | bronze.payments | Rows written: 10
+2026-07-21 07:30:13,730 | INFO     | bronze.payments | Duplicate customer_ids: 0
+2026-07-21 07:30:14,469 | INFO     | bronze.payments | Bronze customer ingestion completed.
+2026-07-21 07:36:28,270 | INFO     | bronze.payments | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_payments_20260721.log
+2026-07-21 07:36:28,271 | INFO     | bronze.payments | Reading source table
+2026-07-21 07:36:29,417 | INFO     | bronze.payments | Rows read: 10
+2026-07-21 07:36:29,601 | INFO     | bronze.payments | Source fetching completed successfully
+2026-07-21 07:36:29,602 | INFO     | bronze.payments | Starting Bronze ingestion
+2026-07-21 07:36:29,603 | INFO     | bronze.payments | Source table: payments_raw
+2026-07-21 07:36:29,603 | INFO     | bronze.payments | Target table: payments
+2026-07-21 07:36:32,833 | INFO     | bronze.payments | Bronze table written successfully.
+2026-07-21 07:36:33,507 | INFO     | bronze.payments | Rows written: 10
+2026-07-21 07:36:34,241 | INFO     | bronze.payments | Duplicate customer_ids: 0
+2026-07-21 07:36:34,953 | INFO     | bronze.payments | Bronze customer ingestion completed.
+2026-07-21 07:37:33,492 | INFO     | bronze.payments | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_payments_20260721.log
+2026-07-21 07:37:33,493 | INFO     | bronze.payments | Reading source table
+2026-07-21 07:37:34,753 | INFO     | bronze.payments | Rows read: 10
+2026-07-21 07:37:34,943 | INFO     | bronze.payments | Source fetching completed successfully
+2026-07-21 07:37:34,944 | INFO     | bronze.payments | Starting Bronze ingestion
+2026-07-21 07:37:34,945 | INFO     | bronze.payments | Source table: payments_raw
+2026-07-21 07:37:34,946 | INFO     | bronze.payments | Target table: payments
+2026-07-21 07:37:38,622 | INFO     | bronze.payments | Bronze table written successfully.
+2026-07-21 07:37:39,104 | INFO     | bronze.payments | Rows written: 10
+2026-07-21 07:37:39,715 | INFO     | bronze.payments | Duplicate customer_ids: 0
+2026-07-21 07:37:40,361 | INFO     | bronze.payments | Bronze customer ingestion completed.
+2026-07-21 07:38:42,337 | INFO     | bronze.payments | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_payments_20260721.log
+2026-07-21 07:38:42,338 | INFO     | bronze.payments | Reading source payments_raw table
+2026-07-21 07:38:43,534 | INFO     | bronze.payments | Rows read: 10
+2026-07-21 07:38:43,748 | INFO     | bronze.payments | Source payments_raw fetching completed successfully
+2026-07-21 07:38:43,748 | INFO     | bronze.payments | Starting Bronze payments ingestion
+2026-07-21 07:38:43,749 | INFO     | bronze.payments | Source table: payments_raw
+2026-07-21 07:38:43,750 | INFO     | bronze.payments | Target table: payments
+2026-07-21 07:38:46,806 | INFO     | bronze.payments | Bronze payments table written successfully.
+2026-07-21 07:38:47,203 | INFO     | bronze.payments | Rows written: 10
+2026-07-21 07:38:47,934 | INFO     | bronze.payments | Duplicate payment_id: 0
+2026-07-21 07:38:48,741 | INFO     | bronze.payments | Bronze payments ingestion completed
+2026-07-21 09:06:10,173 | INFO     | bronze.payments | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_payments_20260721.log
+2026-07-21 09:06:10,174 | INFO     | bronze.payments | Reading source payments_raw table
+2026-07-21 09:06:11,488 | INFO     | bronze.payments | Rows read: 10
+2026-07-21 09:06:11,689 | INFO     | bronze.payments | Source payments_raw fetching completed successfully
+2026-07-21 09:06:11,690 | INFO     | bronze.payments | Starting Bronze payments ingestion
+2026-07-21 09:06:11,691 | INFO     | bronze.payments | Source table: payments_raw
+2026-07-21 09:06:11,692 | INFO     | bronze.payments | Target table: payments
+2026-07-21 09:06:16,177 | INFO     | bronze.payments | Bronze payments table written successfully.
+2026-07-21 09:06:17,118 | INFO     | bronze.payments | Rows written: 10
+2026-07-21 09:06:17,856 | INFO     | bronze.payments | Duplicate payment_id: 0
+2026-07-21 09:06:18,792 | INFO     | bronze.payments | Bronze payments ingestion completed
+2026-07-21 10:39:23,098 | INFO     | bronze.payments | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_payments_20260721.log
+2026-07-21 10:39:23,099 | INFO     | bronze.payments | Reading source payments_raw table
+2026-07-21 10:39:24,198 | INFO     | bronze.payments | Rows read: 10
+2026-07-21 10:39:24,417 | INFO     | bronze.payments | Source payments_raw fetching completed successfully
+2026-07-21 10:39:24,418 | INFO     | bronze.payments | Starting Bronze payments ingestion
+2026-07-21 10:39:24,419 | INFO     | bronze.payments | Source table: payments_raw
+2026-07-21 10:39:24,419 | INFO     | bronze.payments | Target table: payments
+2026-07-21 10:39:28,599 | INFO     | bronze.payments | Bronze payments table written successfully.
+2026-07-21 10:39:29,242 | INFO     | bronze.payments | Rows written: 10
+2026-07-21 10:39:29,970 | INFO     | bronze.payments | Duplicate payment_id: 0
+2026-07-21 10:39:30,644 | INFO     | bronze.payments | Bronze payments ingestion completed

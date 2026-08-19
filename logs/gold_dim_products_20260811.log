@@ -1,0 +1,20 @@
+2026-08-11 12:14:35,305 | INFO     | gold.dim_products | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/gold_dim_products_20260811.log
+2026-08-11 12:14:35,306 | INFO     | gold.dim_products | Starting Gold pipeline at 2026-08-11 12:14:35.304572
+2026-08-11 12:14:36,872 | INFO     | gold.dim_products | Read 1 records from catalog_project1.silver.clean_products table
+2026-08-11 12:14:37,456 | INFO     | gold.dim_products | Incremental load from catalog_project1.silver.clean_products table
+2026-08-11 12:14:46,884 | INFO     | gold.dim_products | Inserted 1 new versions (SCD2) to catalog_project1.gold.dim_products table
+2026-08-11 12:14:46,885 | INFO     | gold.dim_products | SCD2: Expired and inserted new versions for 1 records
+2026-08-11 12:14:48,104 | INFO     | gold.dim_products | New watermark: 2024-12-16 00:00:00
+2026-08-11 12:14:48,106 | INFO     | gold.dim_products | Incremental load completed for catalog_project1.gold.dim_products
+2026-08-11 12:14:48,107 | INFO     | gold.dim_products | Gold pipeline for catalog_project1.gold.dim_products completed successfully
+2026-08-11 12:14:49,860 | INFO     | gold.dim_products | Audit for catalog_project1.gold.dim_products is written successfully
+2026-08-11 12:30:19,031 | INFO     | gold.dim_products | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/gold_dim_products_20260811.log
+2026-08-11 12:30:19,042 | INFO     | gold.dim_products | Starting Gold pipeline at 2026-08-11 12:30:19.030382
+2026-08-11 12:30:20,762 | INFO     | gold.dim_products | Read 1 records from catalog_project1.silver.clean_products table
+2026-08-11 12:30:21,116 | INFO     | gold.dim_products | Incremental load from catalog_project1.silver.clean_products table
+2026-08-11 12:30:29,794 | INFO     | gold.dim_products | Inserted 1 new versions (SCD2) to catalog_project1.gold.dim_products table
+2026-08-11 12:30:29,795 | INFO     | gold.dim_products | SCD2: Expired and inserted new versions for 1 records
+2026-08-11 12:30:30,934 | INFO     | gold.dim_products | New watermark: 2024-12-17 00:00:00
+2026-08-11 12:30:30,935 | INFO     | gold.dim_products | Incremental load completed for catalog_project1.gold.dim_products
+2026-08-11 12:30:30,937 | INFO     | gold.dim_products | Gold pipeline for catalog_project1.gold.dim_products completed successfully
+2026-08-11 12:30:32,794 | INFO     | gold.dim_products | Audit for catalog_project1.gold.dim_products is written successfully

@@ -1,0 +1,240 @@
+2026-07-21 06:11:59,138 | INFO     | bronze.customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_customers_20260721.log
+2026-07-21 06:11:59,141 | INFO     | bronze.customers | Reading source table
+2026-07-21 06:12:20,464 | INFO     | bronze.customers | Rows read: 10
+2026-07-21 06:12:21,453 | INFO     | bronze.customers | Source fetching completed successfully
+2026-07-21 06:12:21,456 | INFO     | bronze.customers | Starting Bronze ingestion
+2026-07-21 06:12:21,456 | INFO     | bronze.customers | Source table: customers_raw
+2026-07-21 06:12:21,457 | INFO     | bronze.customers | Target table: customers
+2026-07-21 06:12:37,777 | INFO     | bronze.customers | Bronze table written successfully.
+2026-07-21 06:12:38,635 | INFO     | bronze.customers | Rows written: 10
+2026-07-21 06:12:39,549 | INFO     | bronze.customers | Duplicate customer_ids: 0
+2026-07-21 06:12:41,049 | INFO     | bronze.customers | Bronze customer ingestion completed.
+2026-07-21 07:11:39,748 | INFO     | bronze.customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_customers_20260721.log
+2026-07-21 07:11:39,749 | INFO     | bronze.customers | Reading source table
+2026-07-21 07:11:41,843 | INFO     | bronze.customers | Rows read: 10
+2026-07-21 07:11:42,160 | INFO     | bronze.customers | Source fetching completed successfully
+2026-07-21 07:11:42,160 | INFO     | bronze.customers | Starting Bronze ingestion
+2026-07-21 07:11:42,161 | INFO     | bronze.customers | Source table: customers_raw
+2026-07-21 07:11:42,162 | INFO     | bronze.customers | Target table: customers
+2026-07-21 07:11:50,668 | INFO     | bronze.customers | Bronze table written successfully.
+2026-07-21 07:11:51,286 | INFO     | bronze.customers | Rows written: 10
+2026-07-21 07:11:52,082 | INFO     | bronze.customers | Duplicate customer_ids: 0
+2026-07-21 07:11:52,972 | INFO     | bronze.customers | Bronze customer ingestion completed.
+2026-07-21 07:16:15,317 | INFO     | bronze.customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_customers_20260721.log
+2026-07-21 07:16:15,317 | INFO     | bronze.customers | Reading source table
+2026-07-21 07:16:16,466 | INFO     | bronze.customers | Rows read: 10
+2026-07-21 07:16:16,661 | INFO     | bronze.customers | Source fetching completed successfully
+2026-07-21 07:16:16,662 | INFO     | bronze.customers | Starting Bronze ingestion
+2026-07-21 07:16:16,663 | INFO     | bronze.customers | Source table: customers_raw
+2026-07-21 07:16:16,665 | INFO     | bronze.customers | Target table: customers
+2026-07-21 07:16:20,776 | INFO     | bronze.customers | Bronze table written successfully.
+2026-07-21 07:16:21,222 | INFO     | bronze.customers | Rows written: 10
+2026-07-21 07:16:21,837 | INFO     | bronze.customers | Duplicate customer_ids: 0
+2026-07-21 07:16:22,643 | INFO     | bronze.customers | Bronze customer ingestion completed.
+2026-07-21 07:19:14,520 | INFO     | bronze.customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_customers_20260721.log
+2026-07-21 07:19:14,521 | INFO     | bronze.customers | Reading source table
+2026-07-21 07:19:15,452 | INFO     | bronze.customers | Rows read: 10
+2026-07-21 07:19:15,692 | INFO     | bronze.customers | Source fetching completed successfully
+2026-07-21 07:19:15,693 | INFO     | bronze.customers | Starting Bronze ingestion
+2026-07-21 07:19:15,694 | INFO     | bronze.customers | Source table: customers_raw
+2026-07-21 07:19:15,694 | INFO     | bronze.customers | Target table: customers
+2026-07-21 07:19:19,366 | INFO     | bronze.customers | Bronze table written successfully.
+2026-07-21 07:19:19,921 | INFO     | bronze.customers | Rows written: 10
+2026-07-21 07:19:20,510 | INFO     | bronze.customers | Duplicate customer_ids: 0
+2026-07-21 07:19:21,247 | INFO     | bronze.customers | Bronze customer ingestion completed.
+2026-07-21 07:26:09,471 | INFO     | bronze.customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_customers_20260721.log
+2026-07-21 07:26:09,472 | INFO     | bronze.customers | Reading source table
+2026-07-21 07:26:10,803 | INFO     | bronze.customers | Rows read: 10
+2026-07-21 07:26:10,982 | INFO     | bronze.customers | Source fetching completed successfully
+2026-07-21 07:26:10,983 | INFO     | bronze.customers | Starting Bronze ingestion
+2026-07-21 07:26:10,984 | INFO     | bronze.customers | Source table: customers_raw
+2026-07-21 07:26:10,984 | INFO     | bronze.customers | Target table: customers
+2026-07-21 07:26:14,754 | INFO     | bronze.customers | Bronze table written successfully.
+2026-07-21 07:26:15,218 | INFO     | bronze.customers | Rows written: 10
+2026-07-21 07:26:15,890 | INFO     | bronze.customers | Duplicate customer_ids: 0
+2026-07-21 07:26:16,759 | INFO     | bronze.customers | Bronze customer ingestion completed.
+2026-07-21 07:29:40,399 | INFO     | bronze.customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_customers_20260721.log
+2026-07-21 07:29:40,401 | INFO     | bronze.customers | Reading source table
+2026-07-21 07:29:41,267 | INFO     | bronze.customers | Rows read: 10
+2026-07-21 07:29:41,558 | INFO     | bronze.customers | Source fetching completed successfully
+2026-07-21 07:29:41,560 | INFO     | bronze.customers | Starting Bronze ingestion
+2026-07-21 07:29:41,561 | INFO     | bronze.customers | Source table: customers_raw
+2026-07-21 07:29:41,564 | INFO     | bronze.customers | Target table: customers
+2026-07-21 07:29:45,763 | INFO     | bronze.customers | Bronze table written successfully.
+2026-07-21 07:29:46,241 | INFO     | bronze.customers | Rows written: 10
+2026-07-21 07:29:47,043 | INFO     | bronze.customers | Duplicate customer_ids: 0
+2026-07-21 07:29:47,828 | INFO     | bronze.customers | Bronze customer ingestion completed.
+2026-07-21 07:36:01,609 | INFO     | bronze.customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_customers_20260721.log
+2026-07-21 07:36:01,609 | INFO     | bronze.customers | Reading source table
+2026-07-21 07:36:02,728 | INFO     | bronze.customers | Rows read: 10
+2026-07-21 07:36:02,923 | INFO     | bronze.customers | Source fetching completed successfully
+2026-07-21 07:36:02,924 | INFO     | bronze.customers | Starting Bronze ingestion
+2026-07-21 07:36:02,925 | INFO     | bronze.customers | Source table: customers_raw
+2026-07-21 07:36:02,926 | INFO     | bronze.customers | Target table: customers
+2026-07-21 07:36:06,735 | INFO     | bronze.customers | Bronze table written successfully.
+2026-07-21 07:36:07,359 | INFO     | bronze.customers | Rows written: 10
+2026-07-21 07:36:07,998 | INFO     | bronze.customers | Duplicate customer_ids: 0
+2026-07-21 07:36:08,899 | INFO     | bronze.customers | Bronze customer ingestion completed.
+2026-07-21 07:37:07,971 | INFO     | bronze.customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_customers_20260721.log
+2026-07-21 07:37:07,972 | INFO     | bronze.customers | Reading source table
+2026-07-21 07:37:08,851 | INFO     | bronze.customers | Rows read: 10
+2026-07-21 07:37:09,057 | INFO     | bronze.customers | Source fetching completed successfully
+2026-07-21 07:37:09,059 | INFO     | bronze.customers | Starting Bronze ingestion
+2026-07-21 07:37:09,059 | INFO     | bronze.customers | Source table: customers_raw
+2026-07-21 07:37:09,060 | INFO     | bronze.customers | Target table: customers
+2026-07-21 07:37:12,760 | INFO     | bronze.customers | Bronze table written successfully.
+2026-07-21 07:37:13,171 | INFO     | bronze.customers | Rows written: 10
+2026-07-21 07:37:13,676 | INFO     | bronze.customers | Duplicate customer_ids: 0
+2026-07-21 07:37:14,331 | INFO     | bronze.customers | Bronze customer ingestion completed.
+2026-07-21 07:38:16,367 | INFO     | bronze.customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_customers_20260721.log
+2026-07-21 07:38:16,368 | INFO     | bronze.customers | Reading source customers_raw table
+2026-07-21 07:38:17,483 | INFO     | bronze.customers | Rows read: 10
+2026-07-21 07:38:17,697 | INFO     | bronze.customers | Source customers_raw fetching completed successfully
+2026-07-21 07:38:17,698 | INFO     | bronze.customers | Starting Bronze customers ingestion
+2026-07-21 07:38:17,699 | INFO     | bronze.customers | Source table: customers_raw
+2026-07-21 07:38:17,700 | INFO     | bronze.customers | Target table: customers
+2026-07-21 07:38:21,025 | INFO     | bronze.customers | Bronze customers table written successfully.
+2026-07-21 07:38:21,389 | INFO     | bronze.customers | Rows written: 10
+2026-07-21 07:38:21,893 | INFO     | bronze.customers | Duplicate customer_id: 0
+2026-07-21 07:38:22,518 | INFO     | bronze.customers | Bronze customers ingestion completed
+2026-07-21 09:03:15,592 | INFO     | bronze.customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_customers_20260721.log
+2026-07-21 09:03:15,593 | INFO     | bronze.customers | Reading source customers_raw table
+2026-07-21 09:03:20,164 | INFO     | bronze.customers | Rows read: 10
+2026-07-21 09:03:20,436 | INFO     | bronze.customers | Source customers_raw fetching completed successfully
+2026-07-21 09:03:20,437 | INFO     | bronze.customers | Starting Bronze customers ingestion
+2026-07-21 09:03:20,438 | INFO     | bronze.customers | Source table: customers_raw
+2026-07-21 09:03:20,438 | INFO     | bronze.customers | Target table: customers
+2026-07-21 09:03:29,947 | INFO     | bronze.customers | Bronze customers table written successfully.
+2026-07-21 09:03:30,723 | INFO     | bronze.customers | Rows written: 10
+2026-07-21 09:03:31,558 | INFO     | bronze.customers | Duplicate customer_id: 0
+2026-07-21 09:03:32,880 | INFO     | bronze.customers | Bronze customers ingestion completed
+2026-07-21 09:05:34,084 | INFO     | bronze.customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_customers_20260721.log
+2026-07-21 09:05:34,085 | INFO     | bronze.customers | Reading source customers_raw table
+2026-07-21 09:05:35,480 | INFO     | bronze.customers | Rows read: 10
+2026-07-21 09:05:35,983 | INFO     | bronze.customers | Source customers_raw fetching completed successfully
+2026-07-21 09:05:35,985 | INFO     | bronze.customers | Starting Bronze customers ingestion
+2026-07-21 09:05:35,986 | INFO     | bronze.customers | Source table: customers_raw
+2026-07-21 09:05:35,988 | INFO     | bronze.customers | Target table: customers
+2026-07-21 09:05:40,450 | INFO     | bronze.customers | Bronze customers table written successfully.
+2026-07-21 09:05:40,961 | INFO     | bronze.customers | Rows written: 10
+2026-07-21 09:05:41,583 | INFO     | bronze.customers | Duplicate customer_id: 0
+2026-07-21 09:05:42,478 | INFO     | bronze.customers | Bronze customers ingestion completed
+2026-07-21 10:38:54,992 | INFO     | bronze.customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_customers_20260721.log
+2026-07-21 10:38:55,001 | INFO     | bronze.customers | Reading source customers_raw table
+2026-07-21 10:38:56,056 | INFO     | bronze.customers | Rows read: 10
+2026-07-21 10:38:56,273 | INFO     | bronze.customers | Source customers_raw fetching completed successfully
+2026-07-21 10:38:56,275 | INFO     | bronze.customers | Starting Bronze customers ingestion
+2026-07-21 10:38:56,276 | INFO     | bronze.customers | Source table: customers_raw
+2026-07-21 10:38:56,277 | INFO     | bronze.customers | Target table: customers
+2026-07-21 10:39:00,300 | INFO     | bronze.customers | Bronze customers table written successfully.
+2026-07-21 10:39:00,727 | INFO     | bronze.customers | Rows written: 10
+2026-07-21 10:39:01,289 | INFO     | bronze.customers | Duplicate customer_id: 0
+2026-07-21 10:39:01,966 | INFO     | bronze.customers | Bronze customers ingestion completed
+2026-07-21 13:07:47,356 | INFO     | bronze.customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_customers_20260721.log
+2026-07-21 13:07:47,358 | INFO     | bronze.customers | Checking for last successful run
+2026-07-21 13:07:50,896 | ERROR    | bronze.customers | Bronze customers ingestion failed
+Traceback (most recent call last):
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/types.py", line 3816, in __getitem__
+    idx = self.__fields__.index(item)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: 'watermark_value' is not in list
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/src/ingestion/bronze.py", line 116, in ingest_table
+    watermark_value = get_watermark_value(last_success_run)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/src/ingestion/bronze.py", line 86, in get_watermark_value
+    watermark_value = last_success_run["watermark_value"]
+                      ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/types.py", line 3821, in __getitem__
+    raise PySparkValueError(item)
+pyspark.errors.exceptions.base.PySparkValueError: watermark_value
+2026-07-21 13:16:06,923 | INFO     | bronze.customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_customers_20260721.log
+2026-07-21 13:16:06,924 | INFO     | bronze.customers | Checking for last successful run
+2026-07-21 13:16:08,056 | INFO     | bronze.customers | Fetched watermark value: None
+2026-07-21 13:16:08,059 | INFO     | bronze.customers | Reading source customers_raw table
+2026-07-21 13:16:15,160 | INFO     | bronze.customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_customers_20260721.log
+2026-07-21 13:16:15,163 | INFO     | bronze.customers | Checking for last successful run
+2026-07-21 13:16:16,429 | INFO     | bronze.customers | Fetched watermark value: None
+2026-07-21 13:16:16,433 | INFO     | bronze.customers | Reading source customers_raw table
+2026-07-21 13:16:17,306 | INFO     | bronze.customers | Rows read: 10
+2026-07-21 13:16:17,617 | INFO     | bronze.customers | Source customers_raw fetching completed successfully
+2026-07-21 13:16:17,620 | INFO     | bronze.customers | Starting Bronze customers ingestion
+2026-07-21 13:16:17,621 | INFO     | bronze.customers | Source table: customers_raw
+2026-07-21 13:16:17,624 | INFO     | bronze.customers | Target table: customers
+2026-07-21 13:16:24,741 | INFO     | bronze.customers | Bronze customers table written successfully.
+2026-07-21 13:16:24,742 | ERROR    | bronze.customers | Bronze customers ingestion failed
+Traceback (most recent call last):
+  File "/Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/src/ingestion/bronze.py", line 149, in ingest_table
+    raw.agg(max(col(bronze_watermark_column)).alias("new_watermark")).first()["new_watermark"]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/column.py", line 629, in __iter__
+    raise PySparkTypeError(
+pyspark.errors.exceptions.base.PySparkTypeError: [NOT_ITERABLE] Column is not iterable.
+2026-07-21 13:18:14,977 | INFO     | bronze.customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_customers_20260721.log
+2026-07-21 13:18:14,978 | INFO     | bronze.customers | Checking for last successful run
+2026-07-21 13:18:16,121 | INFO     | bronze.customers | Fetched watermark value: None
+2026-07-21 13:18:16,122 | INFO     | bronze.customers | Reading source customers_raw table
+2026-07-21 13:18:17,202 | INFO     | bronze.customers | Rows read: 10
+2026-07-21 13:18:17,411 | INFO     | bronze.customers | Source customers_raw fetching completed successfully
+2026-07-21 13:18:17,412 | INFO     | bronze.customers | Starting Bronze customers ingestion
+2026-07-21 13:18:17,412 | INFO     | bronze.customers | Source table: customers_raw
+2026-07-21 13:18:17,413 | INFO     | bronze.customers | Target table: customers
+2026-07-21 13:18:21,596 | INFO     | bronze.customers | Bronze customers table written successfully.
+2026-07-21 13:18:21,598 | ERROR    | bronze.customers | Bronze customers ingestion failed
+Traceback (most recent call last):
+  File "/Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/src/ingestion/bronze.py", line 149, in ingest_table
+    raw.agg(max(col(bronze_watermark_column)).alias("new_watermark")).first()["new_watermark"]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/column.py", line 629, in __iter__
+    raise PySparkTypeError(
+pyspark.errors.exceptions.base.PySparkTypeError: [NOT_ITERABLE] Column is not iterable.
+2026-07-21 13:19:19,535 | INFO     | bronze.customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_customers_20260721.log
+2026-07-21 13:19:19,536 | INFO     | bronze.customers | Checking for last successful run
+2026-07-21 13:19:20,740 | INFO     | bronze.customers | Fetched watermark value: None
+2026-07-21 13:19:20,741 | INFO     | bronze.customers | Reading source customers_raw table
+2026-07-21 13:19:21,797 | INFO     | bronze.customers | Rows read: 10
+2026-07-21 13:19:22,025 | INFO     | bronze.customers | Source customers_raw fetching completed successfully
+2026-07-21 13:19:22,026 | INFO     | bronze.customers | Starting Bronze customers ingestion
+2026-07-21 13:19:22,028 | INFO     | bronze.customers | Source table: customers_raw
+2026-07-21 13:19:22,028 | INFO     | bronze.customers | Target table: customers
+2026-07-21 13:19:27,891 | INFO     | bronze.customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_customers_20260721.log
+2026-07-21 13:19:27,893 | INFO     | bronze.customers | Checking for last successful run
+2026-07-21 13:19:28,954 | INFO     | bronze.customers | Fetched watermark value: None
+2026-07-21 13:19:28,955 | INFO     | bronze.customers | Reading source customers_raw table
+2026-07-21 13:19:30,157 | INFO     | bronze.customers | Rows read: 10
+2026-07-21 13:19:30,395 | INFO     | bronze.customers | Source customers_raw fetching completed successfully
+2026-07-21 13:19:30,395 | INFO     | bronze.customers | Starting Bronze customers ingestion
+2026-07-21 13:19:30,396 | INFO     | bronze.customers | Source table: customers_raw
+2026-07-21 13:19:30,397 | INFO     | bronze.customers | Target table: customers
+2026-07-21 13:19:33,737 | INFO     | bronze.customers | Bronze customers table written successfully.
+2026-07-21 13:19:33,738 | ERROR    | bronze.customers | Bronze customers ingestion failed
+Traceback (most recent call last):
+  File "/Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/src/ingestion/bronze.py", line 149, in ingest_table
+    raw.agg(max(col({bronze_watermark_column})).alias("new_watermark")).first()["new_watermark"]
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/utils.py", line 308, in wrapped
+    return getattr(functions, f.__name__)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/errors/utils.py", line 343, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/pyspark/sql/connect/functions/builtin.py", line 258, in col
+    elif col.endswith(".*"):
+         ^^^^^^^^^^^^
+AttributeError: 'set' object has no attribute 'endswith'
+2026-07-21 13:23:45,002 | INFO     | bronze.customers | Logging to file: /Workspace/Users/krishnasumanbhaipatel@gmail.com/Practice Folder/lakehouse-practice-project/logs/bronze_customers_20260721.log
+2026-07-21 13:23:45,003 | INFO     | bronze.customers | Checking for last successful run
+2026-07-21 13:23:45,911 | INFO     | bronze.customers | Fetched watermark value: None
+2026-07-21 13:23:45,912 | INFO     | bronze.customers | Reading source customers_raw table
+2026-07-21 13:23:46,929 | INFO     | bronze.customers | Rows read: 10
+2026-07-21 13:23:47,119 | INFO     | bronze.customers | Source customers_raw fetching completed successfully
+2026-07-21 13:23:47,120 | INFO     | bronze.customers | Starting Bronze customers ingestion
+2026-07-21 13:23:47,121 | INFO     | bronze.customers | Source table: customers_raw
+2026-07-21 13:23:47,121 | INFO     | bronze.customers | Target table: customers
+2026-07-21 13:23:51,036 | INFO     | bronze.customers | Bronze customers table written successfully.
+2026-07-21 13:23:52,191 | INFO     | bronze.customers | Rows written: 10
+2026-07-21 13:23:52,760 | INFO     | bronze.customers | Duplicate customer_id: 0
+2026-07-21 13:23:53,509 | INFO     | bronze.customers | Bronze customers ingestion completed
